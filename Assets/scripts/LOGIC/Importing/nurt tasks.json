@@ -1,0 +1,4715 @@
+{
+  "data" : [ {
+    "gid" : "1200255925957351",
+    "assignee" : {
+      "gid" : "1114814711361781",
+      "name" : "Tomasz Szmal",
+      "resource_type" : "user"
+    },
+    "assignee_status" : "inbox",
+    "completed" : true,
+    "completed_at" : "2021-08-02T19:25:03.338Z",
+    "created_at" : "2021-04-27T18:09:32.727Z",
+    "due_at" : null,
+    "due_on" : null,
+    "followers" : [ {
+      "gid" : "6120693648102",
+      "name" : "marek syntro.pl",
+      "resource_type" : "user"
+    }, {
+      "gid" : "1114814711361781",
+      "name" : "Tomasz Szmal",
+      "resource_type" : "user"
+    } ],
+    "hearted" : false,
+    "hearts" : [ ],
+    "liked" : false,
+    "likes" : [ ],
+    "memberships" : [ {
+      "project" : {
+        "gid" : "1200255888947416",
+        "name" : "2021 TEAMS nurt",
+        "resource_type" : "project"
+      },
+      "section" : {
+        "gid" : "1200255838447469",
+        "name" : "FINANSOWANIE:",
+        "resource_type" : "section"
+      }
+    } ],
+    "modified_at" : "2021-08-02T19:25:04.092Z",
+    "name" : "określenie finansowania ( inwestorzy / sponsorzy / limit płynności / kto ryzykuje)",
+    "notes" : "",
+    "num_hearts" : 0,
+    "num_likes" : 0,
+    "parent" : null,
+    "permalink_url" : "https://app.asana.com/0/1200255888947416/1200255925957351",
+    "projects" : [ {
+      "gid" : "1200255888947416",
+      "name" : "2021 TEAMS nurt",
+      "resource_type" : "project"
+    } ],
+    "resource_type" : "task",
+    "start_at" : null,
+    "start_on" : null,
+    "subtasks" : [ ],
+    "tags" : [ ],
+    "resource_subtype" : "default_task",
+    "workspace" : {
+      "gid" : "11757994458578",
+      "name" : "WTP",
+      "resource_type" : "workspace"
+    }
+  }, {
+    "gid" : "1200255925966193",
+    "assignee" : {
+      "gid" : "11757994458592",
+      "name" : "Be MOzArt",
+      "resource_type" : "user"
+    },
+    "assignee_status" : "today",
+    "completed" : true,
+    "completed_at" : "2021-08-02T19:40:35.758Z",
+    "created_at" : "2021-04-27T18:09:33.151Z",
+    "due_at" : null,
+    "due_on" : "2021-06-22",
+    "followers" : [ {
+      "gid" : "6120693648102",
+      "name" : "marek syntro.pl",
+      "resource_type" : "user"
+    }, {
+      "gid" : "11757994458592",
+      "name" : "Be MOzArt",
+      "resource_type" : "user"
+    } ],
+    "hearted" : false,
+    "hearts" : [ ],
+    "liked" : false,
+    "likes" : [ ],
+    "memberships" : [ {
+      "project" : {
+        "gid" : "1200255888947416",
+        "name" : "2021 TEAMS nurt",
+        "resource_type" : "project"
+      },
+      "section" : {
+        "gid" : "1200255838447469",
+        "name" : "FINANSOWANIE:",
+        "resource_type" : "section"
+      }
+    } ],
+    "modified_at" : "2021-08-02T19:40:36.112Z",
+    "name" : "[złożenie papierów] doprowadzenie do sprzedaży alkoholu podczas wydarzenia",
+    "notes" : "wykonane gdy:\njesteśmy zobowiązująco umówieni z posiadaczem odpowiedniej licencji\nzostały poczynione ustalenia związane z:\n    zaopatrzeniem baru\n    obsługą baru\n    infrastrukturą baru\n\nzłożono całą wymaganą dokumentację do decyzji / zgody urzedu",
+    "num_hearts" : 0,
+    "num_likes" : 0,
+    "parent" : null,
+    "permalink_url" : "https://app.asana.com/0/1200255888947416/1200255925966193",
+    "projects" : [ {
+      "gid" : "1200255888947416",
+      "name" : "2021 TEAMS nurt",
+      "resource_type" : "project"
+    } ],
+    "resource_type" : "task",
+    "start_at" : null,
+    "start_on" : null,
+    "subtasks" : [ ],
+    "tags" : [ ],
+    "resource_subtype" : "default_task",
+    "workspace" : {
+      "gid" : "11757994458578",
+      "name" : "WTP",
+      "resource_type" : "workspace"
+    }
+  }, {
+    "gid" : "1200255925980482",
+    "assignee" : null,
+    "assignee_status" : "upcoming",
+    "completed" : true,
+    "completed_at" : "2021-06-08T13:09:14.779Z",
+    "created_at" : "2021-04-27T18:09:33.749Z",
+    "due_at" : null,
+    "due_on" : "2021-05-31",
+    "followers" : [ {
+      "gid" : "6120693648102",
+      "name" : "marek syntro.pl",
+      "resource_type" : "user"
+    } ],
+    "hearted" : false,
+    "hearts" : [ ],
+    "liked" : false,
+    "likes" : [ ],
+    "memberships" : [ {
+      "project" : {
+        "gid" : "1200255888947416",
+        "name" : "2021 TEAMS nurt",
+        "resource_type" : "project"
+      },
+      "section" : {
+        "gid" : "1200255838447469",
+        "name" : "FINANSOWANIE:",
+        "resource_type" : "section"
+      }
+    } ],
+    "modified_at" : "2021-06-08T13:09:14.992Z",
+    "name" : "uruchomienie przedsprzedaży biletów",
+    "notes" : "",
+    "num_hearts" : 0,
+    "num_likes" : 0,
+    "parent" : null,
+    "permalink_url" : "https://app.asana.com/0/1200255888947416/1200255925980482",
+    "projects" : [ {
+      "gid" : "1200255888947416",
+      "name" : "2021 TEAMS nurt",
+      "resource_type" : "project"
+    } ],
+    "resource_type" : "task",
+    "start_at" : null,
+    "start_on" : null,
+    "subtasks" : [ {
+      "gid" : "1200255925998499",
+      "assignee" : null,
+      "assignee_status" : "upcoming",
+      "completed" : false,
+      "completed_at" : null,
+      "created_at" : "2021-04-27T18:09:34.288Z",
+      "due_at" : null,
+      "due_on" : null,
+      "followers" : [ ],
+      "hearted" : false,
+      "hearts" : [ ],
+      "liked" : false,
+      "likes" : [ ],
+      "memberships" : [ ],
+      "modified_at" : "2021-04-27T18:09:34.288Z",
+      "name" : "projekt i druk biletów",
+      "notes" : "",
+      "num_hearts" : 0,
+      "num_likes" : 0,
+      "parent" : {
+        "gid" : "1200255925980482",
+        "name" : "uruchomienie przedsprzedaży biletów",
+        "resource_type" : "task"
+      },
+      "permalink_url" : "https://app.asana.com/0/1200255925998499/1200255925998499",
+      "projects" : [ ],
+      "resource_type" : "task",
+      "start_at" : null,
+      "start_on" : null,
+      "subtasks" : [ ],
+      "tags" : [ ],
+      "resource_subtype" : "default_task",
+      "workspace" : {
+        "gid" : "11757994458578",
+        "name" : "WTP",
+        "resource_type" : "workspace"
+      }
+    } ],
+    "tags" : [ ],
+    "resource_subtype" : "default_task",
+    "workspace" : {
+      "gid" : "11757994458578",
+      "name" : "WTP",
+      "resource_type" : "workspace"
+    }
+  }, {
+    "gid" : "1200255892438097",
+    "assignee" : {
+      "gid" : "6120693648102",
+      "name" : "marek syntro.pl",
+      "resource_type" : "user"
+    },
+    "assignee_status" : "inbox",
+    "assignee_section" : {
+      "gid" : "1200341618521373",
+      "name" : "Recently assigned",
+      "resource_type" : "section"
+    },
+    "completed" : false,
+    "completed_at" : null,
+    "created_at" : "2021-04-27T18:09:37.124Z",
+    "due_at" : null,
+    "due_on" : "2021-06-22",
+    "followers" : [ {
+      "gid" : "6120693648102",
+      "name" : "marek syntro.pl",
+      "resource_type" : "user"
+    } ],
+    "hearted" : false,
+    "hearts" : [ ],
+    "liked" : false,
+    "likes" : [ ],
+    "memberships" : [ {
+      "project" : {
+        "gid" : "1200255888947416",
+        "name" : "2021 TEAMS nurt",
+        "resource_type" : "project"
+      },
+      "section" : {
+        "gid" : "1200255838447469",
+        "name" : "FINANSOWANIE:",
+        "resource_type" : "section"
+      }
+    } ],
+    "modified_at" : "2021-06-21T22:06:25.271Z",
+    "name" : "? doprowadzenie do sprzedaży merchu podczas eventów",
+    "notes" : "wykonane gdy zostaną zagwarantowane następujące warunki:\n\nmerch będzie fizycznie w naszym posiadaniu\nstanowisko z merchem będzie uwzględnione w planie produkcji i budżecie\nzasady obsługi i rozliczenia sklepiku z merchem będą spisane w emailu lub umowie",
+    "num_hearts" : 0,
+    "num_likes" : 0,
+    "parent" : null,
+    "permalink_url" : "https://app.asana.com/0/1200255888947416/1200255892438097",
+    "projects" : [ {
+      "gid" : "1200255888947416",
+      "name" : "2021 TEAMS nurt",
+      "resource_type" : "project"
+    } ],
+    "resource_type" : "task",
+    "start_at" : null,
+    "start_on" : null,
+    "subtasks" : [ {
+      "gid" : "1200328578783259",
+      "assignee" : null,
+      "assignee_status" : "upcoming",
+      "completed" : false,
+      "completed_at" : null,
+      "created_at" : "2021-05-16T00:48:39.643Z",
+      "due_at" : null,
+      "due_on" : null,
+      "followers" : [ {
+        "gid" : "6120693648102",
+        "name" : "marek syntro.pl",
+        "resource_type" : "user"
+      } ],
+      "hearted" : false,
+      "hearts" : [ ],
+      "liked" : false,
+      "likes" : [ ],
+      "memberships" : [ ],
+      "modified_at" : "2021-05-16T00:48:48.203Z",
+      "name" : "warunki finansowe",
+      "notes" : "",
+      "num_hearts" : 0,
+      "num_likes" : 0,
+      "parent" : {
+        "gid" : "1200255892438097",
+        "name" : "? doprowadzenie do sprzedaży merchu podczas eventów",
+        "resource_type" : "task"
+      },
+      "permalink_url" : "https://app.asana.com/0/1200328578783259/1200328578783259",
+      "projects" : [ ],
+      "resource_type" : "task",
+      "start_at" : null,
+      "start_on" : null,
+      "subtasks" : [ ],
+      "tags" : [ ],
+      "resource_subtype" : "default_task",
+      "workspace" : {
+        "gid" : "11757994458578",
+        "name" : "WTP",
+        "resource_type" : "workspace"
+      }
+    }, {
+      "gid" : "1200328578783261",
+      "assignee" : null,
+      "assignee_status" : "upcoming",
+      "completed" : false,
+      "completed_at" : null,
+      "created_at" : "2021-05-16T00:48:51.021Z",
+      "due_at" : null,
+      "due_on" : null,
+      "followers" : [ {
+        "gid" : "6120693648102",
+        "name" : "marek syntro.pl",
+        "resource_type" : "user"
+      } ],
+      "hearted" : false,
+      "hearts" : [ ],
+      "liked" : false,
+      "likes" : [ ],
+      "memberships" : [ ],
+      "modified_at" : "2021-05-16T00:48:57.583Z",
+      "name" : "zapotrzebowanie produkcyjne",
+      "notes" : "",
+      "num_hearts" : 0,
+      "num_likes" : 0,
+      "parent" : {
+        "gid" : "1200255892438097",
+        "name" : "? doprowadzenie do sprzedaży merchu podczas eventów",
+        "resource_type" : "task"
+      },
+      "permalink_url" : "https://app.asana.com/0/1200328578783261/1200328578783261",
+      "projects" : [ ],
+      "resource_type" : "task",
+      "start_at" : null,
+      "start_on" : null,
+      "subtasks" : [ ],
+      "tags" : [ ],
+      "resource_subtype" : "default_task",
+      "workspace" : {
+        "gid" : "11757994458578",
+        "name" : "WTP",
+        "resource_type" : "workspace"
+      }
+    } ],
+    "tags" : [ ],
+    "resource_subtype" : "default_task",
+    "workspace" : {
+      "gid" : "11757994458578",
+      "name" : "WTP",
+      "resource_type" : "workspace"
+    }
+  }, {
+    "gid" : "1200255925937980",
+    "assignee" : null,
+    "assignee_status" : "upcoming",
+    "completed" : false,
+    "completed_at" : null,
+    "created_at" : "2021-04-27T18:09:31.667Z",
+    "due_at" : null,
+    "due_on" : "2021-07-19",
+    "followers" : [ {
+      "gid" : "6120693648102",
+      "name" : "marek syntro.pl",
+      "resource_type" : "user"
+    } ],
+    "hearted" : false,
+    "hearts" : [ ],
+    "liked" : false,
+    "likes" : [ ],
+    "memberships" : [ {
+      "project" : {
+        "gid" : "1200255888947416",
+        "name" : "2021 TEAMS nurt",
+        "resource_type" : "project"
+      },
+      "section" : {
+        "gid" : "1200255838447750",
+        "name" : "PUBLIC RELATIONS",
+        "resource_type" : "section"
+      }
+    } ],
+    "modified_at" : "2021-06-26T15:16:56.511Z",
+    "name" : "* tworzenie contentu postów",
+    "notes" : "",
+    "num_hearts" : 0,
+    "num_likes" : 0,
+    "parent" : null,
+    "permalink_url" : "https://app.asana.com/0/1200255888947416/1200255925937980",
+    "projects" : [ {
+      "gid" : "1200255888947416",
+      "name" : "2021 TEAMS nurt",
+      "resource_type" : "project"
+    } ],
+    "resource_type" : "task",
+    "start_at" : null,
+    "start_on" : null,
+    "subtasks" : [ ],
+    "tags" : [ {
+      "gid" : "1156957651821582",
+      "name" : "proces ciągły",
+      "resource_type" : "tag"
+    } ],
+    "resource_subtype" : "default_task",
+    "workspace" : {
+      "gid" : "11757994458578",
+      "name" : "WTP",
+      "resource_type" : "workspace"
+    }
+  }, {
+    "gid" : "1200255892200135",
+    "assignee" : null,
+    "assignee_status" : "upcoming",
+    "completed" : false,
+    "completed_at" : null,
+    "created_at" : "2021-04-27T18:09:28.132Z",
+    "due_at" : null,
+    "due_on" : "2021-06-07",
+    "followers" : [ {
+      "gid" : "6120693648102",
+      "name" : "marek syntro.pl",
+      "resource_type" : "user"
+    } ],
+    "hearted" : false,
+    "hearts" : [ ],
+    "liked" : false,
+    "likes" : [ ],
+    "memberships" : [ {
+      "project" : {
+        "gid" : "1200255888947416",
+        "name" : "2021 TEAMS nurt",
+        "resource_type" : "project"
+      },
+      "section" : {
+        "gid" : "1200255838447750",
+        "name" : "PUBLIC RELATIONS",
+        "resource_type" : "section"
+      }
+    } ],
+    "modified_at" : "2021-05-11T13:40:19.189Z",
+    "name" : "plakaty / flyery / vlepki / bilety",
+    "notes" : "wykoane gdy:\n    zostaną wykonane i zaakceptowane projekty graficzne elementów drukowanych\n    druk zostanie zamówiony, wykonany i odebrany\n    powstanie plan dystrybucji elementów\n    plan dystrybucji elementów zostanie zrealizowany\n",
+    "num_hearts" : 0,
+    "num_likes" : 0,
+    "parent" : null,
+    "permalink_url" : "https://app.asana.com/0/1200255888947416/1200255892200135",
+    "projects" : [ {
+      "gid" : "1200255888947416",
+      "name" : "2021 TEAMS nurt",
+      "resource_type" : "project"
+    } ],
+    "resource_type" : "task",
+    "start_at" : null,
+    "start_on" : null,
+    "subtasks" : [ ],
+    "tags" : [ ],
+    "resource_subtype" : "default_task",
+    "workspace" : {
+      "gid" : "11757994458578",
+      "name" : "WTP",
+      "resource_type" : "workspace"
+    }
+  }, {
+    "gid" : "1200255892169748",
+    "assignee" : null,
+    "assignee_status" : "upcoming",
+    "completed" : false,
+    "completed_at" : null,
+    "created_at" : "2021-04-27T18:09:27.196Z",
+    "due_at" : null,
+    "due_on" : "2021-06-01",
+    "followers" : [ {
+      "gid" : "6120693648102",
+      "name" : "marek syntro.pl",
+      "resource_type" : "user"
+    } ],
+    "hearted" : false,
+    "hearts" : [ ],
+    "liked" : false,
+    "likes" : [ ],
+    "memberships" : [ {
+      "project" : {
+        "gid" : "1200255888947416",
+        "name" : "2021 TEAMS nurt",
+        "resource_type" : "project"
+      },
+      "section" : {
+        "gid" : "1200255838447750",
+        "name" : "PUBLIC RELATIONS",
+        "resource_type" : "section"
+      }
+    } ],
+    "modified_at" : "2021-04-28T01:19:02.071Z",
+    "name" : "* pozyskiwanie uwagi mediów / influencerów",
+    "notes" : "będzie dobrze gdy: będą pojawiać się prestiżowe publikacje na temat nurtu i / lub wzmianki o nurcie",
+    "num_hearts" : 0,
+    "num_likes" : 0,
+    "parent" : null,
+    "permalink_url" : "https://app.asana.com/0/1200255888947416/1200255892169748",
+    "projects" : [ {
+      "gid" : "1200255888947416",
+      "name" : "2021 TEAMS nurt",
+      "resource_type" : "project"
+    } ],
+    "resource_type" : "task",
+    "start_at" : null,
+    "start_on" : null,
+    "subtasks" : [ ],
+    "tags" : [ {
+      "gid" : "1156957651821582",
+      "name" : "proces ciągły",
+      "resource_type" : "tag"
+    } ],
+    "resource_subtype" : "default_task",
+    "workspace" : {
+      "gid" : "11757994458578",
+      "name" : "WTP",
+      "resource_type" : "workspace"
+    }
+  }, {
+    "gid" : "1200255892218140",
+    "assignee" : null,
+    "assignee_status" : "upcoming",
+    "completed" : false,
+    "completed_at" : null,
+    "created_at" : "2021-04-27T18:09:28.881Z",
+    "due_at" : null,
+    "due_on" : "2021-06-01",
+    "followers" : [ {
+      "gid" : "6120693648102",
+      "name" : "marek syntro.pl",
+      "resource_type" : "user"
+    } ],
+    "hearted" : false,
+    "hearts" : [ ],
+    "liked" : false,
+    "likes" : [ ],
+    "memberships" : [ {
+      "project" : {
+        "gid" : "1200255888947416",
+        "name" : "2021 TEAMS nurt",
+        "resource_type" : "project"
+      },
+      "section" : {
+        "gid" : "1200255838447750",
+        "name" : "PUBLIC RELATIONS",
+        "resource_type" : "section"
+      }
+    } ],
+    "modified_at" : "2021-08-02T19:26:42.652Z",
+    "name" : "* ramowy plan postów (promo i info)  [ stworzenie / utrzymanie / monitorowanie realizacji]",
+    "notes" : "plan powinien być dostępny dla całego zespołu w google calendar i uwzględniać daty i godziny najważniejszych postów, kanały, formaty i charakter treści\n\nmiarą skuteczności realizacji będzie ilość zaplanowanych postów które zostały opublikowane zgodnie z założeniami",
+    "num_hearts" : 0,
+    "num_likes" : 0,
+    "parent" : null,
+    "permalink_url" : "https://app.asana.com/0/1200255888947416/1200255892218140",
+    "projects" : [ {
+      "gid" : "1200255888947416",
+      "name" : "2021 TEAMS nurt",
+      "resource_type" : "project"
+    } ],
+    "resource_type" : "task",
+    "start_at" : null,
+    "start_on" : null,
+    "subtasks" : [ ],
+    "tags" : [ {
+      "gid" : "1156957651821582",
+      "name" : "proces ciągły",
+      "resource_type" : "tag"
+    } ],
+    "resource_subtype" : "default_task",
+    "workspace" : {
+      "gid" : "11757994458578",
+      "name" : "WTP",
+      "resource_type" : "workspace"
+    }
+  }, {
+    "gid" : "1200255835352833",
+    "assignee" : null,
+    "assignee_status" : "upcoming",
+    "completed" : false,
+    "completed_at" : null,
+    "created_at" : "2021-04-27T18:08:47.857Z",
+    "due_at" : null,
+    "due_on" : null,
+    "followers" : [ {
+      "gid" : "6120693648102",
+      "name" : "marek syntro.pl",
+      "resource_type" : "user"
+    } ],
+    "hearted" : false,
+    "hearts" : [ ],
+    "liked" : false,
+    "likes" : [ ],
+    "memberships" : [ {
+      "project" : {
+        "gid" : "1200255888947416",
+        "name" : "2021 TEAMS nurt",
+        "resource_type" : "project"
+      },
+      "section" : {
+        "gid" : "1200255838452011",
+        "name" : "OGAR OGÓLNY:",
+        "resource_type" : "section"
+      }
+    } ],
+    "modified_at" : "2021-06-15T14:14:24.720Z",
+    "name" : "* KAMIENIE MILOWE:",
+    "notes" : "",
+    "num_hearts" : 0,
+    "num_likes" : 0,
+    "parent" : null,
+    "permalink_url" : "https://app.asana.com/0/1200255888947416/1200255835352833",
+    "projects" : [ {
+      "gid" : "1200255888947416",
+      "name" : "2021 TEAMS nurt",
+      "resource_type" : "project"
+    } ],
+    "resource_type" : "task",
+    "start_at" : null,
+    "start_on" : null,
+    "subtasks" : [ {
+      "gid" : "1200255925034931",
+      "assignee" : {
+        "gid" : "11757994458592",
+        "name" : "Be MOzArt",
+        "resource_type" : "user"
+      },
+      "assignee_status" : "today",
+      "completed" : true,
+      "completed_at" : "2021-06-15T14:14:24.263Z",
+      "created_at" : "2021-04-27T18:09:02.250Z",
+      "due_at" : null,
+      "due_on" : "2021-05-31",
+      "followers" : [ {
+        "gid" : "1114814711361781",
+        "name" : "Tomasz Szmal",
+        "resource_type" : "user"
+      }, {
+        "gid" : "11757994458592",
+        "name" : "Be MOzArt",
+        "resource_type" : "user"
+      } ],
+      "hearted" : false,
+      "hearts" : [ ],
+      "liked" : false,
+      "likes" : [ ],
+      "memberships" : [ ],
+      "modified_at" : "2021-06-15T14:14:24.745Z",
+      "name" : "Formalne potwierdzenie miejsca i daty",
+      "notes" : "",
+      "num_hearts" : 0,
+      "num_likes" : 0,
+      "parent" : {
+        "gid" : "1200255835352833",
+        "name" : "* KAMIENIE MILOWE:",
+        "resource_type" : "task"
+      },
+      "permalink_url" : "https://app.asana.com/0/1200255925034931/1200255925034931",
+      "projects" : [ ],
+      "resource_type" : "task",
+      "start_at" : null,
+      "start_on" : null,
+      "subtasks" : [ ],
+      "tags" : [ ],
+      "resource_subtype" : "default_task",
+      "workspace" : {
+        "gid" : "11757994458578",
+        "name" : "WTP",
+        "resource_type" : "workspace"
+      }
+    }, {
+      "gid" : "1200255891847458",
+      "assignee" : {
+        "gid" : "1114814711361781",
+        "name" : "Tomasz Szmal",
+        "resource_type" : "user"
+      },
+      "assignee_status" : "inbox",
+      "completed" : true,
+      "completed_at" : "2021-05-26T13:13:21.940Z",
+      "created_at" : "2021-04-27T18:09:13.031Z",
+      "due_at" : null,
+      "due_on" : "2021-05-24",
+      "followers" : [ {
+        "gid" : "1114814711361781",
+        "name" : "Tomasz Szmal",
+        "resource_type" : "user"
+      } ],
+      "hearted" : false,
+      "hearts" : [ ],
+      "liked" : false,
+      "likes" : [ ],
+      "memberships" : [ ],
+      "modified_at" : "2021-05-26T13:13:22.258Z",
+      "name" : "PLAKAT / GRAFIKA  DO PUBLIKACJI",
+      "notes" : "",
+      "num_hearts" : 0,
+      "num_likes" : 0,
+      "parent" : {
+        "gid" : "1200255835352833",
+        "name" : "* KAMIENIE MILOWE:",
+        "resource_type" : "task"
+      },
+      "permalink_url" : "https://app.asana.com/0/1200255891847458/1200255891847458",
+      "projects" : [ ],
+      "resource_type" : "task",
+      "start_at" : null,
+      "start_on" : null,
+      "subtasks" : [ ],
+      "tags" : [ ],
+      "resource_subtype" : "default_task",
+      "workspace" : {
+        "gid" : "11757994458578",
+        "name" : "WTP",
+        "resource_type" : "workspace"
+      }
+    }, {
+      "gid" : "1200255891859538",
+      "assignee" : null,
+      "assignee_status" : "inbox",
+      "completed" : true,
+      "completed_at" : "2021-06-08T13:09:42.370Z",
+      "created_at" : "2021-04-27T18:09:13.690Z",
+      "due_at" : null,
+      "due_on" : "2021-05-24",
+      "followers" : [ {
+        "gid" : "6120693648102",
+        "name" : "marek syntro.pl",
+        "resource_type" : "user"
+      } ],
+      "hearted" : false,
+      "hearts" : [ ],
+      "liked" : false,
+      "likes" : [ ],
+      "memberships" : [ ],
+      "modified_at" : "2021-06-08T13:09:42.529Z",
+      "name" : "uruchomienie eventu na wszystkich platformach (fb + RA)",
+      "notes" : "",
+      "num_hearts" : 0,
+      "num_likes" : 0,
+      "parent" : {
+        "gid" : "1200255835352833",
+        "name" : "* KAMIENIE MILOWE:",
+        "resource_type" : "task"
+      },
+      "permalink_url" : "https://app.asana.com/0/1200255891859538/1200255891859538",
+      "projects" : [ ],
+      "resource_type" : "task",
+      "start_at" : null,
+      "start_on" : null,
+      "subtasks" : [ ],
+      "tags" : [ ],
+      "resource_subtype" : "default_task",
+      "workspace" : {
+        "gid" : "11757994458578",
+        "name" : "WTP",
+        "resource_type" : "workspace"
+      }
+    }, {
+      "gid" : "1200255924807730",
+      "assignee" : {
+        "gid" : "6120693648102",
+        "name" : "marek syntro.pl",
+        "resource_type" : "user"
+      },
+      "assignee_status" : "today",
+      "assignee_section" : {
+        "gid" : "1200341618511913",
+        "name" : "ZARAZ",
+        "resource_type" : "section"
+      },
+      "completed" : false,
+      "completed_at" : null,
+      "created_at" : "2021-04-27T18:08:53.773Z",
+      "due_at" : null,
+      "due_on" : "2021-06-15",
+      "followers" : [ {
+        "gid" : "6120693648102",
+        "name" : "marek syntro.pl",
+        "resource_type" : "user"
+      } ],
+      "hearted" : false,
+      "hearts" : [ ],
+      "liked" : false,
+      "likes" : [ ],
+      "memberships" : [ ],
+      "modified_at" : "2021-06-14T22:05:46.620Z",
+      "name" : "obsadź wszystkie role",
+      "notes" : "human assets",
+      "num_hearts" : 0,
+      "num_likes" : 0,
+      "parent" : {
+        "gid" : "1200255835352833",
+        "name" : "* KAMIENIE MILOWE:",
+        "resource_type" : "task"
+      },
+      "permalink_url" : "https://app.asana.com/0/1200255924807730/1200255924807730",
+      "projects" : [ ],
+      "resource_type" : "task",
+      "start_at" : null,
+      "start_on" : null,
+      "subtasks" : [ {
+        "gid" : "1200255924832420",
+        "assignee" : null,
+        "assignee_status" : "upcoming",
+        "completed" : false,
+        "completed_at" : null,
+        "created_at" : "2021-04-27T18:08:54.411Z",
+        "due_at" : null,
+        "due_on" : null,
+        "followers" : [ ],
+        "hearted" : false,
+        "hearts" : [ ],
+        "liked" : false,
+        "likes" : [ ],
+        "memberships" : [ ],
+        "modified_at" : "2021-04-27T18:08:54.411Z",
+        "name" : "stage managers (2)",
+        "notes" : "",
+        "num_hearts" : 0,
+        "num_likes" : 0,
+        "parent" : {
+          "gid" : "1200255924807730",
+          "name" : "obsadź wszystkie role",
+          "resource_type" : "task"
+        },
+        "permalink_url" : "https://app.asana.com/0/1200255924832420/1200255924832420",
+        "projects" : [ ],
+        "resource_type" : "task",
+        "start_at" : null,
+        "start_on" : null,
+        "subtasks" : [ ],
+        "tags" : [ ],
+        "resource_subtype" : "default_task",
+        "workspace" : {
+          "gid" : "11757994458578",
+          "name" : "WTP",
+          "resource_type" : "workspace"
+        }
+      }, {
+        "gid" : "1200255924845676",
+        "assignee" : null,
+        "assignee_status" : "upcoming",
+        "completed" : false,
+        "completed_at" : null,
+        "created_at" : "2021-04-27T18:08:55.033Z",
+        "due_at" : null,
+        "due_on" : null,
+        "followers" : [ ],
+        "hearted" : false,
+        "hearts" : [ ],
+        "liked" : false,
+        "likes" : [ ],
+        "memberships" : [ ],
+        "modified_at" : "2021-05-16T00:08:20.794Z",
+        "name" : "bramka (2 + ?)",
+        "notes" : "",
+        "num_hearts" : 0,
+        "num_likes" : 0,
+        "parent" : {
+          "gid" : "1200255924807730",
+          "name" : "obsadź wszystkie role",
+          "resource_type" : "task"
+        },
+        "permalink_url" : "https://app.asana.com/0/1200255924845676/1200255924845676",
+        "projects" : [ ],
+        "resource_type" : "task",
+        "start_at" : null,
+        "start_on" : null,
+        "subtasks" : [ ],
+        "tags" : [ ],
+        "resource_subtype" : "default_task",
+        "workspace" : {
+          "gid" : "11757994458578",
+          "name" : "WTP",
+          "resource_type" : "workspace"
+        }
+      }, {
+        "gid" : "1200312713641503",
+        "assignee" : {
+          "gid" : "6120693648102",
+          "name" : "marek syntro.pl",
+          "resource_type" : "user"
+        },
+        "assignee_status" : "inbox",
+        "assignee_section" : {
+          "gid" : "1200341618521373",
+          "name" : "Recently assigned",
+          "resource_type" : "section"
+        },
+        "completed" : false,
+        "completed_at" : null,
+        "created_at" : "2021-05-11T15:49:14.767Z",
+        "due_at" : null,
+        "due_on" : "2021-06-18",
+        "followers" : [ {
+          "gid" : "6120693648102",
+          "name" : "marek syntro.pl",
+          "resource_type" : "user"
+        } ],
+        "hearted" : false,
+        "hearts" : [ ],
+        "liked" : false,
+        "likes" : [ ],
+        "memberships" : [ ],
+        "modified_at" : "2021-06-18T12:55:28.234Z",
+        "name" : "arborysta",
+        "notes" : "",
+        "num_hearts" : 0,
+        "num_likes" : 0,
+        "parent" : {
+          "gid" : "1200255924807730",
+          "name" : "obsadź wszystkie role",
+          "resource_type" : "task"
+        },
+        "permalink_url" : "https://app.asana.com/0/1200312713641503/1200312713641503",
+        "projects" : [ ],
+        "resource_type" : "task",
+        "start_at" : null,
+        "start_on" : null,
+        "subtasks" : [ ],
+        "tags" : [ ],
+        "resource_subtype" : "default_task",
+        "workspace" : {
+          "gid" : "11757994458578",
+          "name" : "WTP",
+          "resource_type" : "workspace"
+        }
+      }, {
+        "gid" : "1200255924901436",
+        "assignee" : null,
+        "assignee_status" : "upcoming",
+        "completed" : false,
+        "completed_at" : null,
+        "created_at" : "2021-04-27T18:08:56.858Z",
+        "due_at" : null,
+        "due_on" : null,
+        "followers" : [ ],
+        "hearted" : false,
+        "hearts" : [ ],
+        "liked" : false,
+        "likes" : [ ],
+        "memberships" : [ ],
+        "modified_at" : "2021-04-27T18:08:56.858Z",
+        "name" : "ognisko ?",
+        "notes" : "",
+        "num_hearts" : 0,
+        "num_likes" : 0,
+        "parent" : {
+          "gid" : "1200255924807730",
+          "name" : "obsadź wszystkie role",
+          "resource_type" : "task"
+        },
+        "permalink_url" : "https://app.asana.com/0/1200255924901436/1200255924901436",
+        "projects" : [ ],
+        "resource_type" : "task",
+        "start_at" : null,
+        "start_on" : null,
+        "subtasks" : [ ],
+        "tags" : [ ],
+        "resource_subtype" : "default_task",
+        "workspace" : {
+          "gid" : "11757994458578",
+          "name" : "WTP",
+          "resource_type" : "workspace"
+        }
+      }, {
+        "gid" : "1200255924924027",
+        "assignee" : null,
+        "assignee_status" : "upcoming",
+        "completed" : false,
+        "completed_at" : null,
+        "created_at" : "2021-04-27T18:08:57.656Z",
+        "due_at" : null,
+        "due_on" : null,
+        "followers" : [ ],
+        "hearted" : false,
+        "hearts" : [ ],
+        "liked" : false,
+        "likes" : [ ],
+        "memberships" : [ ],
+        "modified_at" : "2021-04-27T18:08:57.656Z",
+        "name" : "wolontariat",
+        "notes" : "",
+        "num_hearts" : 0,
+        "num_likes" : 0,
+        "parent" : {
+          "gid" : "1200255924807730",
+          "name" : "obsadź wszystkie role",
+          "resource_type" : "task"
+        },
+        "permalink_url" : "https://app.asana.com/0/1200255924924027/1200255924924027",
+        "projects" : [ ],
+        "resource_type" : "task",
+        "start_at" : null,
+        "start_on" : null,
+        "subtasks" : [ ],
+        "tags" : [ ],
+        "resource_subtype" : "default_task",
+        "workspace" : {
+          "gid" : "11757994458578",
+          "name" : "WTP",
+          "resource_type" : "workspace"
+        }
+      }, {
+        "gid" : "1200255925002915",
+        "assignee" : null,
+        "assignee_status" : "upcoming",
+        "completed" : false,
+        "completed_at" : null,
+        "created_at" : "2021-04-27T18:09:00.921Z",
+        "due_at" : null,
+        "due_on" : null,
+        "followers" : [ ],
+        "hearted" : false,
+        "hearts" : [ ],
+        "liked" : false,
+        "likes" : [ ],
+        "memberships" : [ ],
+        "modified_at" : "2021-05-16T00:07:07.721Z",
+        "name" : "campsite produkcja",
+        "notes" : "",
+        "num_hearts" : 0,
+        "num_likes" : 0,
+        "parent" : {
+          "gid" : "1200255924807730",
+          "name" : "obsadź wszystkie role",
+          "resource_type" : "task"
+        },
+        "permalink_url" : "https://app.asana.com/0/1200255925002915/1200255925002915",
+        "projects" : [ ],
+        "resource_type" : "task",
+        "start_at" : null,
+        "start_on" : null,
+        "subtasks" : [ ],
+        "tags" : [ ],
+        "resource_subtype" : "default_task",
+        "workspace" : {
+          "gid" : "11757994458578",
+          "name" : "WTP",
+          "resource_type" : "workspace"
+        }
+      }, {
+        "gid" : "1200328578783300",
+        "assignee" : null,
+        "assignee_status" : "upcoming",
+        "completed" : false,
+        "completed_at" : null,
+        "created_at" : "2021-05-16T01:32:30.740Z",
+        "due_at" : null,
+        "due_on" : null,
+        "followers" : [ {
+          "gid" : "6120693648102",
+          "name" : "marek syntro.pl",
+          "resource_type" : "user"
+        } ],
+        "hearted" : false,
+        "hearts" : [ ],
+        "liked" : false,
+        "likes" : [ ],
+        "memberships" : [ ],
+        "modified_at" : "2021-05-16T01:32:39.181Z",
+        "name" : "stage 1 produkcja",
+        "notes" : "",
+        "num_hearts" : 0,
+        "num_likes" : 0,
+        "parent" : {
+          "gid" : "1200255924807730",
+          "name" : "obsadź wszystkie role",
+          "resource_type" : "task"
+        },
+        "permalink_url" : "https://app.asana.com/0/1200328578783300/1200328578783300",
+        "projects" : [ ],
+        "resource_type" : "task",
+        "start_at" : null,
+        "start_on" : null,
+        "subtasks" : [ ],
+        "tags" : [ ],
+        "resource_subtype" : "default_task",
+        "workspace" : {
+          "gid" : "11757994458578",
+          "name" : "WTP",
+          "resource_type" : "workspace"
+        }
+      }, {
+        "gid" : "1200328578783301",
+        "assignee" : null,
+        "assignee_status" : "upcoming",
+        "completed" : false,
+        "completed_at" : null,
+        "created_at" : "2021-05-16T01:32:38.458Z",
+        "due_at" : null,
+        "due_on" : null,
+        "followers" : [ {
+          "gid" : "6120693648102",
+          "name" : "marek syntro.pl",
+          "resource_type" : "user"
+        } ],
+        "hearted" : false,
+        "hearts" : [ ],
+        "liked" : false,
+        "likes" : [ ],
+        "memberships" : [ ],
+        "modified_at" : "2021-05-16T01:32:43.629Z",
+        "name" : "stage 2 produkcja",
+        "notes" : "",
+        "num_hearts" : 0,
+        "num_likes" : 0,
+        "parent" : {
+          "gid" : "1200255924807730",
+          "name" : "obsadź wszystkie role",
+          "resource_type" : "task"
+        },
+        "permalink_url" : "https://app.asana.com/0/1200328578783301/1200328578783301",
+        "projects" : [ ],
+        "resource_type" : "task",
+        "start_at" : null,
+        "start_on" : null,
+        "subtasks" : [ ],
+        "tags" : [ ],
+        "resource_subtype" : "default_task",
+        "workspace" : {
+          "gid" : "11757994458578",
+          "name" : "WTP",
+          "resource_type" : "workspace"
+        }
+      }, {
+        "gid" : "1200328578783302",
+        "assignee" : null,
+        "assignee_status" : "upcoming",
+        "completed" : false,
+        "completed_at" : null,
+        "created_at" : "2021-05-16T01:33:01.312Z",
+        "due_at" : null,
+        "due_on" : null,
+        "followers" : [ {
+          "gid" : "6120693648102",
+          "name" : "marek syntro.pl",
+          "resource_type" : "user"
+        } ],
+        "hearted" : false,
+        "hearts" : [ ],
+        "liked" : false,
+        "likes" : [ ],
+        "memberships" : [ ],
+        "modified_at" : "2021-05-16T01:33:13.313Z",
+        "name" : "inne strefy nadzór",
+        "notes" : "",
+        "num_hearts" : 0,
+        "num_likes" : 0,
+        "parent" : {
+          "gid" : "1200255924807730",
+          "name" : "obsadź wszystkie role",
+          "resource_type" : "task"
+        },
+        "permalink_url" : "https://app.asana.com/0/1200328578783302/1200328578783302",
+        "projects" : [ ],
+        "resource_type" : "task",
+        "start_at" : null,
+        "start_on" : null,
+        "subtasks" : [ ],
+        "tags" : [ ],
+        "resource_subtype" : "default_task",
+        "workspace" : {
+          "gid" : "11757994458578",
+          "name" : "WTP",
+          "resource_type" : "workspace"
+        }
+      }, {
+        "gid" : "1200255924867308",
+        "assignee" : null,
+        "assignee_status" : "upcoming",
+        "completed" : true,
+        "completed_at" : "2021-06-08T13:09:52.384Z",
+        "created_at" : "2021-04-27T18:08:55.792Z",
+        "due_at" : null,
+        "due_on" : null,
+        "followers" : [ ],
+        "hearted" : false,
+        "hearts" : [ ],
+        "liked" : false,
+        "likes" : [ ],
+        "memberships" : [ ],
+        "modified_at" : "2021-06-08T13:09:52.594Z",
+        "name" : "bar (szef + obsluga)",
+        "notes" : "",
+        "num_hearts" : 0,
+        "num_likes" : 0,
+        "parent" : {
+          "gid" : "1200255924807730",
+          "name" : "obsadź wszystkie role",
+          "resource_type" : "task"
+        },
+        "permalink_url" : "https://app.asana.com/0/1200255924867308/1200255924867308",
+        "projects" : [ ],
+        "resource_type" : "task",
+        "start_at" : null,
+        "start_on" : null,
+        "subtasks" : [ ],
+        "tags" : [ ],
+        "resource_subtype" : "default_task",
+        "workspace" : {
+          "gid" : "11757994458578",
+          "name" : "WTP",
+          "resource_type" : "workspace"
+        }
+      }, {
+        "gid" : "1200255924885330",
+        "assignee" : null,
+        "assignee_status" : "upcoming",
+        "completed" : true,
+        "completed_at" : "2021-05-11T13:56:02.490Z",
+        "created_at" : "2021-04-27T18:08:56.323Z",
+        "due_at" : null,
+        "due_on" : null,
+        "followers" : [ ],
+        "hearted" : false,
+        "hearts" : [ ],
+        "liked" : false,
+        "likes" : [ ],
+        "memberships" : [ ],
+        "modified_at" : "2021-05-11T13:56:02.789Z",
+        "name" : "sound ()",
+        "notes" : "",
+        "num_hearts" : 0,
+        "num_likes" : 0,
+        "parent" : {
+          "gid" : "1200255924807730",
+          "name" : "obsadź wszystkie role",
+          "resource_type" : "task"
+        },
+        "permalink_url" : "https://app.asana.com/0/1200255924885330/1200255924885330",
+        "projects" : [ ],
+        "resource_type" : "task",
+        "start_at" : null,
+        "start_on" : null,
+        "subtasks" : [ ],
+        "tags" : [ ],
+        "resource_subtype" : "default_task",
+        "workspace" : {
+          "gid" : "11757994458578",
+          "name" : "WTP",
+          "resource_type" : "workspace"
+        }
+      }, {
+        "gid" : "1150052095757082",
+        "assignee" : null,
+        "assignee_status" : "upcoming",
+        "completed" : true,
+        "completed_at" : "2021-05-16T00:05:30.866Z",
+        "created_at" : "2021-05-16T00:05:29.077Z",
+        "due_at" : null,
+        "due_on" : null,
+        "followers" : [ {
+          "gid" : "6120693648102",
+          "name" : "marek syntro.pl",
+          "resource_type" : "user"
+        } ],
+        "hearted" : false,
+        "hearts" : [ ],
+        "liked" : false,
+        "likes" : [ ],
+        "memberships" : [ ],
+        "modified_at" : "2021-05-16T00:05:31.095Z",
+        "name" : "grafika",
+        "notes" : "",
+        "num_hearts" : 0,
+        "num_likes" : 0,
+        "parent" : {
+          "gid" : "1200255924807730",
+          "name" : "obsadź wszystkie role",
+          "resource_type" : "task"
+        },
+        "permalink_url" : "https://app.asana.com/0/1150052095757082/1150052095757082",
+        "projects" : [ ],
+        "resource_type" : "task",
+        "start_at" : null,
+        "start_on" : null,
+        "subtasks" : [ ],
+        "tags" : [ ],
+        "resource_subtype" : "default_task",
+        "workspace" : {
+          "gid" : "11757994458578",
+          "name" : "WTP",
+          "resource_type" : "workspace"
+        }
+      }, {
+        "gid" : "1200255924982127",
+        "assignee" : null,
+        "assignee_status" : "upcoming",
+        "completed" : true,
+        "completed_at" : "2021-05-27T15:50:02.766Z",
+        "created_at" : "2021-04-27T18:08:59.948Z",
+        "due_at" : null,
+        "due_on" : null,
+        "followers" : [ ],
+        "hearted" : false,
+        "hearts" : [ ],
+        "liked" : false,
+        "likes" : [ ],
+        "memberships" : [ ],
+        "modified_at" : "2021-05-27T15:50:03.002Z",
+        "name" : "runnerzy",
+        "notes" : "",
+        "num_hearts" : 0,
+        "num_likes" : 0,
+        "parent" : {
+          "gid" : "1200255924807730",
+          "name" : "obsadź wszystkie role",
+          "resource_type" : "task"
+        },
+        "permalink_url" : "https://app.asana.com/0/1200255924982127/1200255924982127",
+        "projects" : [ ],
+        "resource_type" : "task",
+        "start_at" : null,
+        "start_on" : null,
+        "subtasks" : [ ],
+        "tags" : [ ],
+        "resource_subtype" : "default_task",
+        "workspace" : {
+          "gid" : "11757994458578",
+          "name" : "WTP",
+          "resource_type" : "workspace"
+        }
+      }, {
+        "gid" : "1200328578783274",
+        "assignee" : null,
+        "assignee_status" : "upcoming",
+        "completed" : true,
+        "completed_at" : "2021-05-27T15:49:57.237Z",
+        "created_at" : "2021-05-16T01:26:10.859Z",
+        "due_at" : null,
+        "due_on" : null,
+        "followers" : [ {
+          "gid" : "6120693648102",
+          "name" : "marek syntro.pl",
+          "resource_type" : "user"
+        } ],
+        "hearted" : false,
+        "hearts" : [ ],
+        "liked" : false,
+        "likes" : [ ],
+        "memberships" : [ ],
+        "modified_at" : "2021-05-27T15:49:57.490Z",
+        "name" : "światło",
+        "notes" : "",
+        "num_hearts" : 0,
+        "num_likes" : 0,
+        "parent" : {
+          "gid" : "1200255924807730",
+          "name" : "obsadź wszystkie role",
+          "resource_type" : "task"
+        },
+        "permalink_url" : "https://app.asana.com/0/1200328578783274/1200328578783274",
+        "projects" : [ ],
+        "resource_type" : "task",
+        "start_at" : null,
+        "start_on" : null,
+        "subtasks" : [ ],
+        "tags" : [ ],
+        "resource_subtype" : "default_task",
+        "workspace" : {
+          "gid" : "11757994458578",
+          "name" : "WTP",
+          "resource_type" : "workspace"
+        }
+      } ],
+      "tags" : [ ],
+      "resource_subtype" : "default_task",
+      "workspace" : {
+        "gid" : "11757994458578",
+        "name" : "WTP",
+        "resource_type" : "workspace"
+      }
+    }, {
+      "gid" : "1200255925053231",
+      "assignee" : null,
+      "assignee_status" : "upcoming",
+      "completed" : true,
+      "completed_at" : "2021-06-08T23:37:24.234Z",
+      "created_at" : "2021-04-27T18:09:02.898Z",
+      "due_at" : null,
+      "due_on" : "2021-05-21",
+      "followers" : [ ],
+      "hearted" : false,
+      "hearts" : [ ],
+      "liked" : false,
+      "likes" : [ ],
+      "memberships" : [ ],
+      "modified_at" : "2021-06-08T23:37:24.398Z",
+      "name" : "Zamknięcie lineupu i wstępnego budżetu",
+      "notes" : "",
+      "num_hearts" : 0,
+      "num_likes" : 0,
+      "parent" : {
+        "gid" : "1200255835352833",
+        "name" : "* KAMIENIE MILOWE:",
+        "resource_type" : "task"
+      },
+      "permalink_url" : "https://app.asana.com/0/1200255925053231/1200255925053231",
+      "projects" : [ ],
+      "resource_type" : "task",
+      "start_at" : null,
+      "start_on" : null,
+      "subtasks" : [ ],
+      "tags" : [ ],
+      "resource_subtype" : "default_task",
+      "workspace" : {
+        "gid" : "11757994458578",
+        "name" : "WTP",
+        "resource_type" : "workspace"
+      }
+    }, {
+      "gid" : "1200255925096885",
+      "assignee" : {
+        "gid" : "11757994458592",
+        "name" : "Be MOzArt",
+        "resource_type" : "user"
+      },
+      "assignee_status" : "today",
+      "completed" : false,
+      "completed_at" : null,
+      "created_at" : "2021-04-27T18:09:04.194Z",
+      "due_at" : null,
+      "due_on" : "2021-06-21",
+      "followers" : [ {
+        "gid" : "11757994458592",
+        "name" : "Be MOzArt",
+        "resource_type" : "user"
+      } ],
+      "hearted" : false,
+      "hearts" : [ ],
+      "liked" : false,
+      "likes" : [ ],
+      "memberships" : [ ],
+      "modified_at" : "2021-08-02T19:38:09.062Z",
+      "name" : "pisemne określenie warunków kluczowych umów",
+      "notes" : "",
+      "num_hearts" : 0,
+      "num_likes" : 0,
+      "parent" : {
+        "gid" : "1200255835352833",
+        "name" : "* KAMIENIE MILOWE:",
+        "resource_type" : "task"
+      },
+      "permalink_url" : "https://app.asana.com/0/1200255925096885/1200255925096885",
+      "projects" : [ ],
+      "resource_type" : "task",
+      "start_at" : null,
+      "start_on" : null,
+      "subtasks" : [ {
+        "gid" : "1200708988323590",
+        "assignee" : null,
+        "assignee_status" : "upcoming",
+        "completed" : false,
+        "completed_at" : null,
+        "created_at" : "2021-08-02T19:37:16.482Z",
+        "due_at" : null,
+        "due_on" : null,
+        "followers" : [ {
+          "gid" : "6120693648102",
+          "name" : "marek syntro.pl",
+          "resource_type" : "user"
+        } ],
+        "hearted" : false,
+        "hearts" : [ ],
+        "liked" : false,
+        "likes" : [ ],
+        "memberships" : [ ],
+        "modified_at" : "2021-08-02T19:37:21.931Z",
+        "name" : "PODWYKONAWCY:",
+        "notes" : "",
+        "num_hearts" : 0,
+        "num_likes" : 0,
+        "parent" : {
+          "gid" : "1200255925096885",
+          "name" : "pisemne określenie warunków kluczowych umów",
+          "resource_type" : "task"
+        },
+        "permalink_url" : "https://app.asana.com/0/1200708988323590/1200708988323590",
+        "projects" : [ ],
+        "resource_type" : "task",
+        "start_at" : null,
+        "start_on" : null,
+        "subtasks" : [ ],
+        "tags" : [ ],
+        "resource_subtype" : "default_task",
+        "workspace" : {
+          "gid" : "11757994458578",
+          "name" : "WTP",
+          "resource_type" : "workspace"
+        }
+      }, {
+        "gid" : "1200255839502633",
+        "assignee" : {
+          "gid" : "1114814711361781",
+          "name" : "Tomasz Szmal",
+          "resource_type" : "user"
+        },
+        "assignee_status" : "inbox",
+        "completed" : false,
+        "completed_at" : null,
+        "created_at" : "2021-04-27T18:09:09.934Z",
+        "due_at" : null,
+        "due_on" : "2021-05-31",
+        "followers" : [ {
+          "gid" : "1114814711361781",
+          "name" : "Tomasz Szmal",
+          "resource_type" : "user"
+        } ],
+        "hearted" : false,
+        "hearts" : [ ],
+        "liked" : false,
+        "likes" : [ ],
+        "memberships" : [ ],
+        "modified_at" : "2021-08-02T19:32:47.624Z",
+        "name" : "lokal- potwierdzenie warunków ",
+        "notes" : "",
+        "num_hearts" : 0,
+        "num_likes" : 0,
+        "parent" : {
+          "gid" : "1200255925096885",
+          "name" : "pisemne określenie warunków kluczowych umów",
+          "resource_type" : "task"
+        },
+        "permalink_url" : "https://app.asana.com/0/1200255839502633/1200255839502633",
+        "projects" : [ ],
+        "resource_type" : "task",
+        "start_at" : null,
+        "start_on" : null,
+        "subtasks" : [ ],
+        "tags" : [ ],
+        "resource_subtype" : "default_task",
+        "workspace" : {
+          "gid" : "11757994458578",
+          "name" : "WTP",
+          "resource_type" : "workspace"
+        }
+      }, {
+        "gid" : "1200255839403201",
+        "assignee" : {
+          "gid" : "11757994458592",
+          "name" : "Be MOzArt",
+          "resource_type" : "user"
+        },
+        "assignee_status" : "inbox",
+        "completed" : false,
+        "completed_at" : null,
+        "created_at" : "2021-04-27T18:09:06.047Z",
+        "due_at" : null,
+        "due_on" : "2021-06-19",
+        "followers" : [ {
+          "gid" : "1114814711361781",
+          "name" : "Tomasz Szmal",
+          "resource_type" : "user"
+        }, {
+          "gid" : "11757994458592",
+          "name" : "Be MOzArt",
+          "resource_type" : "user"
+        } ],
+        "hearted" : false,
+        "hearts" : [ ],
+        "liked" : false,
+        "likes" : [ ],
+        "memberships" : [ ],
+        "modified_at" : "2021-06-18T22:01:25.787Z",
+        "name" : "sound - potwierdzenie warunków (gdzieś na piśmie)",
+        "notes" : "",
+        "num_hearts" : 0,
+        "num_likes" : 0,
+        "parent" : {
+          "gid" : "1200255925096885",
+          "name" : "pisemne określenie warunków kluczowych umów",
+          "resource_type" : "task"
+        },
+        "permalink_url" : "https://app.asana.com/0/1200255839403201/1200255839403201",
+        "projects" : [ ],
+        "resource_type" : "task",
+        "start_at" : null,
+        "start_on" : null,
+        "subtasks" : [ ],
+        "tags" : [ ],
+        "resource_subtype" : "default_task",
+        "workspace" : {
+          "gid" : "11757994458578",
+          "name" : "WTP",
+          "resource_type" : "workspace"
+        }
+      }, {
+        "gid" : "1200255839430050",
+        "assignee" : {
+          "gid" : "11757994458592",
+          "name" : "Be MOzArt",
+          "resource_type" : "user"
+        },
+        "assignee_status" : "today",
+        "completed" : false,
+        "completed_at" : null,
+        "created_at" : "2021-04-27T18:09:07.026Z",
+        "due_at" : null,
+        "due_on" : "2021-06-23",
+        "followers" : [ {
+          "gid" : "11757994458592",
+          "name" : "Be MOzArt",
+          "resource_type" : "user"
+        } ],
+        "hearted" : false,
+        "hearts" : [ ],
+        "liked" : false,
+        "likes" : [ ],
+        "memberships" : [ ],
+        "modified_at" : "2021-06-22T22:05:59.280Z",
+        "name" : "bar - potwierdzenie warunków (gdzieś na piśmie)",
+        "notes" : "",
+        "num_hearts" : 0,
+        "num_likes" : 0,
+        "parent" : {
+          "gid" : "1200255925096885",
+          "name" : "pisemne określenie warunków kluczowych umów",
+          "resource_type" : "task"
+        },
+        "permalink_url" : "https://app.asana.com/0/1200255839430050/1200255839430050",
+        "projects" : [ ],
+        "resource_type" : "task",
+        "start_at" : null,
+        "start_on" : null,
+        "subtasks" : [ ],
+        "tags" : [ ],
+        "resource_subtype" : "default_task",
+        "workspace" : {
+          "gid" : "11757994458578",
+          "name" : "WTP",
+          "resource_type" : "workspace"
+        }
+      }, {
+        "gid" : "1200255839440955",
+        "assignee" : {
+          "gid" : "1114814711361781",
+          "name" : "Tomasz Szmal",
+          "resource_type" : "user"
+        },
+        "assignee_status" : "inbox",
+        "completed" : false,
+        "completed_at" : null,
+        "created_at" : "2021-04-27T18:09:07.538Z",
+        "due_at" : null,
+        "due_on" : "2021-05-25",
+        "followers" : [ {
+          "gid" : "1114814711361781",
+          "name" : "Tomasz Szmal",
+          "resource_type" : "user"
+        } ],
+        "hearted" : false,
+        "hearts" : [ ],
+        "liked" : false,
+        "likes" : [ ],
+        "memberships" : [ ],
+        "modified_at" : "2021-08-02T19:35:13.078Z",
+        "name" : "świetlik / vj  - potwierdzenie warunków (gdzieś na piśmie)",
+        "notes" : "",
+        "num_hearts" : 0,
+        "num_likes" : 0,
+        "parent" : {
+          "gid" : "1200255925096885",
+          "name" : "pisemne określenie warunków kluczowych umów",
+          "resource_type" : "task"
+        },
+        "permalink_url" : "https://app.asana.com/0/1200255839440955/1200255839440955",
+        "projects" : [ ],
+        "resource_type" : "task",
+        "start_at" : null,
+        "start_on" : null,
+        "subtasks" : [ ],
+        "tags" : [ ],
+        "resource_subtype" : "default_task",
+        "workspace" : {
+          "gid" : "11757994458578",
+          "name" : "WTP",
+          "resource_type" : "workspace"
+        }
+      }, {
+        "gid" : "1200336497305089",
+        "assignee" : {
+          "gid" : "11757994458592",
+          "name" : "Be MOzArt",
+          "resource_type" : "user"
+        },
+        "assignee_status" : "inbox",
+        "completed" : false,
+        "completed_at" : null,
+        "created_at" : "2021-05-15T15:31:53.007Z",
+        "due_at" : null,
+        "due_on" : null,
+        "followers" : [ {
+          "gid" : "11757994458592",
+          "name" : "Be MOzArt",
+          "resource_type" : "user"
+        } ],
+        "hearted" : false,
+        "hearts" : [ ],
+        "liked" : false,
+        "likes" : [ ],
+        "memberships" : [ ],
+        "modified_at" : "2021-08-02T19:38:50.809Z",
+        "name" : "ochrona - uzyskanie oferty / potwierdzenie warunków (gdzieś na piśmie)",
+        "notes" : "",
+        "num_hearts" : 0,
+        "num_likes" : 0,
+        "parent" : {
+          "gid" : "1200255925096885",
+          "name" : "pisemne określenie warunków kluczowych umów",
+          "resource_type" : "task"
+        },
+        "permalink_url" : "https://app.asana.com/0/1200336497305089/1200336497305089",
+        "projects" : [ ],
+        "resource_type" : "task",
+        "start_at" : null,
+        "start_on" : null,
+        "subtasks" : [ ],
+        "tags" : [ ],
+        "resource_subtype" : "default_task",
+        "workspace" : {
+          "gid" : "11757994458578",
+          "name" : "WTP",
+          "resource_type" : "workspace"
+        }
+      }, {
+        "gid" : "1200708988323594",
+        "assignee" : null,
+        "assignee_status" : "upcoming",
+        "completed" : false,
+        "completed_at" : null,
+        "created_at" : "2021-08-02T19:37:39.144Z",
+        "due_at" : null,
+        "due_on" : null,
+        "followers" : [ {
+          "gid" : "6120693648102",
+          "name" : "marek syntro.pl",
+          "resource_type" : "user"
+        } ],
+        "hearted" : false,
+        "hearts" : [ ],
+        "liked" : false,
+        "likes" : [ ],
+        "memberships" : [ ],
+        "modified_at" : "2021-08-02T19:37:44.852Z",
+        "name" : "DOSTAWCY:",
+        "notes" : "",
+        "num_hearts" : 0,
+        "num_likes" : 0,
+        "parent" : {
+          "gid" : "1200255925096885",
+          "name" : "pisemne określenie warunków kluczowych umów",
+          "resource_type" : "task"
+        },
+        "permalink_url" : "https://app.asana.com/0/1200708988323594/1200708988323594",
+        "projects" : [ ],
+        "resource_type" : "task",
+        "start_at" : null,
+        "start_on" : null,
+        "subtasks" : [ ],
+        "tags" : [ ],
+        "resource_subtype" : "default_task",
+        "workspace" : {
+          "gid" : "11757994458578",
+          "name" : "WTP",
+          "resource_type" : "workspace"
+        }
+      }, {
+        "gid" : "1200255839515655",
+        "assignee" : null,
+        "assignee_status" : "upcoming",
+        "completed" : false,
+        "completed_at" : null,
+        "created_at" : "2021-04-27T18:09:10.374Z",
+        "due_at" : null,
+        "due_on" : null,
+        "followers" : [ ],
+        "hearted" : false,
+        "hearts" : [ ],
+        "liked" : false,
+        "likes" : [ ],
+        "memberships" : [ ],
+        "modified_at" : "2021-08-02T19:34:45.569Z",
+        "name" : "vendor biletów - potwierdzenie warunków",
+        "notes" : "",
+        "num_hearts" : 0,
+        "num_likes" : 0,
+        "parent" : {
+          "gid" : "1200255925096885",
+          "name" : "pisemne określenie warunków kluczowych umów",
+          "resource_type" : "task"
+        },
+        "permalink_url" : "https://app.asana.com/0/1200255839515655/1200255839515655",
+        "projects" : [ ],
+        "resource_type" : "task",
+        "start_at" : null,
+        "start_on" : null,
+        "subtasks" : [ ],
+        "tags" : [ ],
+        "resource_subtype" : "default_task",
+        "workspace" : {
+          "gid" : "11757994458578",
+          "name" : "WTP",
+          "resource_type" : "workspace"
+        }
+      }, {
+        "gid" : "1200708988323588",
+        "assignee" : null,
+        "assignee_status" : "upcoming",
+        "completed" : false,
+        "completed_at" : null,
+        "created_at" : "2021-08-02T19:36:24.033Z",
+        "due_at" : null,
+        "due_on" : null,
+        "followers" : [ {
+          "gid" : "6120693648102",
+          "name" : "marek syntro.pl",
+          "resource_type" : "user"
+        } ],
+        "hearted" : false,
+        "hearts" : [ ],
+        "liked" : false,
+        "likes" : [ ],
+        "memberships" : [ ],
+        "modified_at" : "2021-08-02T19:36:51.427Z",
+        "name" : "biteki, barierki, płoty - uzyskanie oferty / potwierdzenie warunków",
+        "notes" : "",
+        "num_hearts" : 0,
+        "num_likes" : 0,
+        "parent" : {
+          "gid" : "1200255925096885",
+          "name" : "pisemne określenie warunków kluczowych umów",
+          "resource_type" : "task"
+        },
+        "permalink_url" : "https://app.asana.com/0/1200708988323588/1200708988323588",
+        "projects" : [ ],
+        "resource_type" : "task",
+        "start_at" : null,
+        "start_on" : null,
+        "subtasks" : [ ],
+        "tags" : [ ],
+        "resource_subtype" : "default_task",
+        "workspace" : {
+          "gid" : "11757994458578",
+          "name" : "WTP",
+          "resource_type" : "workspace"
+        }
+      }, {
+        "gid" : "1200255839472514",
+        "assignee" : {
+          "gid" : "11757994458592",
+          "name" : "Be MOzArt",
+          "resource_type" : "user"
+        },
+        "assignee_status" : "inbox",
+        "completed" : false,
+        "completed_at" : null,
+        "created_at" : "2021-04-27T18:09:08.760Z",
+        "due_at" : null,
+        "due_on" : "2021-06-21",
+        "followers" : [ {
+          "gid" : "6120693648102",
+          "name" : "marek syntro.pl",
+          "resource_type" : "user"
+        }, {
+          "gid" : "11757994458592",
+          "name" : "Be MOzArt",
+          "resource_type" : "user"
+        } ],
+        "hearted" : false,
+        "hearts" : [ ],
+        "liked" : false,
+        "likes" : [ ],
+        "memberships" : [ ],
+        "modified_at" : "2021-08-02T19:33:18.486Z",
+        "name" : "toalety - uzyskanie oferty / potwierdzenie warunków",
+        "notes" : "toi toi\n\n\t6 toalet\n        2 umywalki\n\t1 pisuar\n\t11 x kosz na smieci\n\t2 x duzy kosz na smieci",
+        "num_hearts" : 0,
+        "num_likes" : 0,
+        "parent" : {
+          "gid" : "1200255925096885",
+          "name" : "pisemne określenie warunków kluczowych umów",
+          "resource_type" : "task"
+        },
+        "permalink_url" : "https://app.asana.com/0/1200255839472514/1200255839472514",
+        "projects" : [ ],
+        "resource_type" : "task",
+        "start_at" : null,
+        "start_on" : null,
+        "subtasks" : [ ],
+        "tags" : [ ],
+        "resource_subtype" : "default_task",
+        "workspace" : {
+          "gid" : "11757994458578",
+          "name" : "WTP",
+          "resource_type" : "workspace"
+        }
+      }, {
+        "gid" : "1200255839490640",
+        "assignee" : {
+          "gid" : "11757994458592",
+          "name" : "Be MOzArt",
+          "resource_type" : "user"
+        },
+        "assignee_status" : "inbox",
+        "completed" : false,
+        "completed_at" : null,
+        "created_at" : "2021-04-27T18:09:09.348Z",
+        "due_at" : null,
+        "due_on" : "2021-06-21",
+        "followers" : [ {
+          "gid" : "6120693648102",
+          "name" : "marek syntro.pl",
+          "resource_type" : "user"
+        }, {
+          "gid" : "11757994458592",
+          "name" : "Be MOzArt",
+          "resource_type" : "user"
+        } ],
+        "hearted" : false,
+        "hearts" : [ ],
+        "liked" : false,
+        "likes" : [ ],
+        "memberships" : [ ],
+        "modified_at" : "2021-06-21T16:56:22.109Z",
+        "name" : "ogrodzenie - uzyskanie oferty / potwierdzenie warunków",
+        "notes" : "event-factory (piatek rano - poniedzialek rano)\n\togrodzenie ażurowe wysokie 350m\n\twysłona (1 lub 8 szt lub 18) (2,40 za sztuke)\n\tkółko do ogrodzenia wysokiego\n\tbarierka lekka 4\n\tpodest sceniczny 21 \n\t\tjakie nogi\n\n\n\tmausery?\n\n\ttransporty\n\t(załadunek i wyładunek po naszej stronie)",
+        "num_hearts" : 0,
+        "num_likes" : 0,
+        "parent" : {
+          "gid" : "1200255925096885",
+          "name" : "pisemne określenie warunków kluczowych umów",
+          "resource_type" : "task"
+        },
+        "permalink_url" : "https://app.asana.com/0/1200255839490640/1200255839490640",
+        "projects" : [ ],
+        "resource_type" : "task",
+        "start_at" : null,
+        "start_on" : null,
+        "subtasks" : [ ],
+        "tags" : [ ],
+        "resource_subtype" : "default_task",
+        "workspace" : {
+          "gid" : "11757994458578",
+          "name" : "WTP",
+          "resource_type" : "workspace"
+        }
+      }, {
+        "gid" : "1200255839457301",
+        "assignee" : {
+          "gid" : "11757994458592",
+          "name" : "Be MOzArt",
+          "resource_type" : "user"
+        },
+        "assignee_status" : "inbox",
+        "completed" : false,
+        "completed_at" : null,
+        "created_at" : "2021-04-27T18:09:08.149Z",
+        "due_at" : null,
+        "due_on" : null,
+        "followers" : [ {
+          "gid" : "6120693648102",
+          "name" : "marek syntro.pl",
+          "resource_type" : "user"
+        }, {
+          "gid" : "11757994458592",
+          "name" : "Be MOzArt",
+          "resource_type" : "user"
+        } ],
+        "hearted" : false,
+        "hearts" : [ ],
+        "liked" : false,
+        "likes" : [ ],
+        "memberships" : [ ],
+        "modified_at" : "2021-08-02T19:34:31.098Z",
+        "name" : "siły, pieski, przedłużacze, agregaty - uzyskanie oferty / potwierdzenie warunków",
+        "notes" : "czwartek \n\t\tmały agregat 5,5 KW AVR\n\n \tpiątek - niedziela\n\n\t\t4 rozdzielnie prądowe\n\n\t\tpiony 32 A\n\t\t\tmala scena 40m\n\t\t\tgastro 30m\n\t\t\tduza scena 80m\n\t\t\tzapas 20 m\n\n\t\tprzedłużacze\n\t\t\t15 x 20m\n\t\t\t25 x 10m\n\t\t\t20 x listwa zasilająca",
+        "num_hearts" : 0,
+        "num_likes" : 0,
+        "parent" : {
+          "gid" : "1200255925096885",
+          "name" : "pisemne określenie warunków kluczowych umów",
+          "resource_type" : "task"
+        },
+        "permalink_url" : "https://app.asana.com/0/1200255839457301/1200255839457301",
+        "projects" : [ ],
+        "resource_type" : "task",
+        "start_at" : null,
+        "start_on" : null,
+        "subtasks" : [ ],
+        "tags" : [ ],
+        "resource_subtype" : "default_task",
+        "workspace" : {
+          "gid" : "11757994458578",
+          "name" : "WTP",
+          "resource_type" : "workspace"
+        }
+      }, {
+        "gid" : "1200708988323587",
+        "assignee" : null,
+        "assignee_status" : "upcoming",
+        "completed" : false,
+        "completed_at" : null,
+        "created_at" : "2021-08-02T19:35:38.977Z",
+        "due_at" : null,
+        "due_on" : null,
+        "followers" : [ {
+          "gid" : "6120693648102",
+          "name" : "marek syntro.pl",
+          "resource_type" : "user"
+        } ],
+        "hearted" : false,
+        "hearts" : [ ],
+        "liked" : false,
+        "likes" : [ ],
+        "memberships" : [ ],
+        "modified_at" : "2021-08-02T19:36:26.534Z",
+        "name" : "światła - uzyskanie oferty / potwierdzenie warunków",
+        "notes" : "",
+        "num_hearts" : 0,
+        "num_likes" : 0,
+        "parent" : {
+          "gid" : "1200255925096885",
+          "name" : "pisemne określenie warunków kluczowych umów",
+          "resource_type" : "task"
+        },
+        "permalink_url" : "https://app.asana.com/0/1200708988323587/1200708988323587",
+        "projects" : [ ],
+        "resource_type" : "task",
+        "start_at" : null,
+        "start_on" : null,
+        "subtasks" : [ ],
+        "tags" : [ ],
+        "resource_subtype" : "default_task",
+        "workspace" : {
+          "gid" : "11757994458578",
+          "name" : "WTP",
+          "resource_type" : "workspace"
+        }
+      } ],
+      "tags" : [ ],
+      "resource_subtype" : "default_task",
+      "workspace" : {
+        "gid" : "11757994458578",
+        "name" : "WTP",
+        "resource_type" : "workspace"
+      }
+    }, {
+      "gid" : "1200255891870191",
+      "assignee" : null,
+      "assignee_status" : "upcoming",
+      "completed" : false,
+      "completed_at" : null,
+      "created_at" : "2021-04-27T18:09:14.182Z",
+      "due_at" : null,
+      "due_on" : "2021-08-10",
+      "followers" : [ ],
+      "hearted" : false,
+      "hearts" : [ ],
+      "liked" : false,
+      "likes" : [ ],
+      "memberships" : [ ],
+      "modified_at" : "2021-08-02T19:29:34.700Z",
+      "name" : "zapewnienie wszystkich aspektów bramki",
+      "notes" : "",
+      "num_hearts" : 0,
+      "num_likes" : 0,
+      "parent" : {
+        "gid" : "1200255835352833",
+        "name" : "* KAMIENIE MILOWE:",
+        "resource_type" : "task"
+      },
+      "permalink_url" : "https://app.asana.com/0/1200255891870191/1200255891870191",
+      "projects" : [ ],
+      "resource_type" : "task",
+      "start_at" : null,
+      "start_on" : null,
+      "subtasks" : [ {
+        "gid" : "1200255891879165",
+        "assignee" : null,
+        "assignee_status" : "upcoming",
+        "completed" : false,
+        "completed_at" : null,
+        "created_at" : "2021-04-27T18:09:14.715Z",
+        "due_at" : null,
+        "due_on" : null,
+        "followers" : [ ],
+        "hearted" : false,
+        "hearts" : [ ],
+        "liked" : false,
+        "likes" : [ ],
+        "memberships" : [ ],
+        "modified_at" : "2021-08-02T19:28:06.693Z",
+        "name" : "produkcja bramki [meble, kasetka, prąd, światło, komputer]",
+        "notes" : "",
+        "num_hearts" : 0,
+        "num_likes" : 0,
+        "parent" : {
+          "gid" : "1200255891870191",
+          "name" : "zapewnienie wszystkich aspektów bramki",
+          "resource_type" : "task"
+        },
+        "permalink_url" : "https://app.asana.com/0/1200255891879165/1200255891879165",
+        "projects" : [ ],
+        "resource_type" : "task",
+        "start_at" : null,
+        "start_on" : null,
+        "subtasks" : [ ],
+        "tags" : [ ],
+        "resource_subtype" : "default_task",
+        "workspace" : {
+          "gid" : "11757994458578",
+          "name" : "WTP",
+          "resource_type" : "workspace"
+        }
+      }, {
+        "gid" : "1200255891887808",
+        "assignee" : null,
+        "assignee_status" : "upcoming",
+        "completed" : false,
+        "completed_at" : null,
+        "created_at" : "2021-04-27T18:09:15.140Z",
+        "due_at" : null,
+        "due_on" : null,
+        "followers" : [ ],
+        "hearted" : false,
+        "hearts" : [ ],
+        "liked" : false,
+        "likes" : [ ],
+        "memberships" : [ ],
+        "modified_at" : "2021-08-02T19:31:43.325Z",
+        "name" : "listy wydruk lub komputer",
+        "notes" : "",
+        "num_hearts" : 0,
+        "num_likes" : 0,
+        "parent" : {
+          "gid" : "1200255891870191",
+          "name" : "zapewnienie wszystkich aspektów bramki",
+          "resource_type" : "task"
+        },
+        "permalink_url" : "https://app.asana.com/0/1200255891887808/1200255891887808",
+        "projects" : [ ],
+        "resource_type" : "task",
+        "start_at" : null,
+        "start_on" : null,
+        "subtasks" : [ ],
+        "tags" : [ ],
+        "resource_subtype" : "default_task",
+        "workspace" : {
+          "gid" : "11757994458578",
+          "name" : "WTP",
+          "resource_type" : "workspace"
+        }
+      }, {
+        "gid" : "1200708988323586",
+        "assignee" : null,
+        "assignee_status" : "upcoming",
+        "completed" : false,
+        "completed_at" : null,
+        "created_at" : "2021-08-02T19:29:34.380Z",
+        "due_at" : null,
+        "due_on" : null,
+        "followers" : [ {
+          "gid" : "6120693648102",
+          "name" : "marek syntro.pl",
+          "resource_type" : "user"
+        } ],
+        "hearted" : false,
+        "hearts" : [ ],
+        "liked" : false,
+        "likes" : [ ],
+        "memberships" : [ ],
+        "modified_at" : "2021-08-02T19:29:55.298Z",
+        "name" : "grafik bramki",
+        "notes" : "",
+        "num_hearts" : 0,
+        "num_likes" : 0,
+        "parent" : {
+          "gid" : "1200255891870191",
+          "name" : "zapewnienie wszystkich aspektów bramki",
+          "resource_type" : "task"
+        },
+        "permalink_url" : "https://app.asana.com/0/1200708988323586/1200708988323586",
+        "projects" : [ ],
+        "resource_type" : "task",
+        "start_at" : null,
+        "start_on" : null,
+        "subtasks" : [ ],
+        "tags" : [ ],
+        "resource_subtype" : "default_task",
+        "workspace" : {
+          "gid" : "11757994458578",
+          "name" : "WTP",
+          "resource_type" : "workspace"
+        }
+      }, {
+        "gid" : "1200313580282605",
+        "assignee" : null,
+        "assignee_status" : "upcoming",
+        "completed" : false,
+        "completed_at" : null,
+        "created_at" : "2021-05-11T13:57:49.933Z",
+        "due_at" : null,
+        "due_on" : null,
+        "followers" : [ {
+          "gid" : "6120693648102",
+          "name" : "marek syntro.pl",
+          "resource_type" : "user"
+        } ],
+        "hearted" : false,
+        "hearts" : [ ],
+        "liked" : false,
+        "likes" : [ ],
+        "memberships" : [ ],
+        "modified_at" : "2021-08-02T19:28:55.208Z",
+        "name" : "regulamin wydarzenia",
+        "notes" : "",
+        "num_hearts" : 0,
+        "num_likes" : 0,
+        "parent" : {
+          "gid" : "1200255891870191",
+          "name" : "zapewnienie wszystkich aspektów bramki",
+          "resource_type" : "task"
+        },
+        "permalink_url" : "https://app.asana.com/0/1200313580282605/1200313580282605",
+        "projects" : [ ],
+        "resource_type" : "task",
+        "start_at" : null,
+        "start_on" : null,
+        "subtasks" : [ ],
+        "tags" : [ ],
+        "resource_subtype" : "default_task",
+        "workspace" : {
+          "gid" : "11757994458578",
+          "name" : "WTP",
+          "resource_type" : "workspace"
+        }
+      }, {
+        "gid" : "1200255891923384",
+        "assignee" : null,
+        "assignee_status" : "upcoming",
+        "completed" : false,
+        "completed_at" : null,
+        "created_at" : "2021-04-27T18:09:16.165Z",
+        "due_at" : null,
+        "due_on" : null,
+        "followers" : [ ],
+        "hearted" : false,
+        "hearts" : [ ],
+        "liked" : false,
+        "likes" : [ ],
+        "memberships" : [ ],
+        "modified_at" : "2021-08-02T19:28:37.668Z",
+        "name" : "workflow bramki",
+        "notes" : "",
+        "num_hearts" : 0,
+        "num_likes" : 0,
+        "parent" : {
+          "gid" : "1200255891870191",
+          "name" : "zapewnienie wszystkich aspektów bramki",
+          "resource_type" : "task"
+        },
+        "permalink_url" : "https://app.asana.com/0/1200255891923384/1200255891923384",
+        "projects" : [ ],
+        "resource_type" : "task",
+        "start_at" : null,
+        "start_on" : null,
+        "subtasks" : [ ],
+        "tags" : [ ],
+        "resource_subtype" : "default_task",
+        "workspace" : {
+          "gid" : "11757994458578",
+          "name" : "WTP",
+          "resource_type" : "workspace"
+        }
+      }, {
+        "gid" : "1200255891946429",
+        "assignee" : null,
+        "assignee_status" : "upcoming",
+        "completed" : false,
+        "completed_at" : null,
+        "created_at" : "2021-04-27T18:09:16.757Z",
+        "due_at" : null,
+        "due_on" : null,
+        "followers" : [ ],
+        "hearted" : false,
+        "hearts" : [ ],
+        "liked" : false,
+        "likes" : [ ],
+        "memberships" : [ ],
+        "modified_at" : "2021-08-02T19:29:03.118Z",
+        "name" : "rozliczenie ",
+        "notes" : "",
+        "num_hearts" : 0,
+        "num_likes" : 0,
+        "parent" : {
+          "gid" : "1200255891870191",
+          "name" : "zapewnienie wszystkich aspektów bramki",
+          "resource_type" : "task"
+        },
+        "permalink_url" : "https://app.asana.com/0/1200255891946429/1200255891946429",
+        "projects" : [ ],
+        "resource_type" : "task",
+        "start_at" : null,
+        "start_on" : null,
+        "subtasks" : [ ],
+        "tags" : [ ],
+        "resource_subtype" : "default_task",
+        "workspace" : {
+          "gid" : "11757994458578",
+          "name" : "WTP",
+          "resource_type" : "workspace"
+        }
+      } ],
+      "tags" : [ ],
+      "resource_subtype" : "default_task",
+      "workspace" : {
+        "gid" : "11757994458578",
+        "name" : "WTP",
+        "resource_type" : "workspace"
+      }
+    } ],
+    "tags" : [ {
+      "gid" : "1156957651821582",
+      "name" : "proces ciągły",
+      "resource_type" : "tag"
+    } ],
+    "resource_subtype" : "default_task",
+    "workspace" : {
+      "gid" : "11757994458578",
+      "name" : "WTP",
+      "resource_type" : "workspace"
+    }
+  }, {
+    "gid" : "1200255835352821",
+    "assignee" : {
+      "gid" : "6120693648102",
+      "name" : "marek syntro.pl",
+      "resource_type" : "user"
+    },
+    "assignee_status" : "inbox",
+    "assignee_section" : {
+      "gid" : "1200341618506735",
+      "name" : "TERAZ",
+      "resource_type" : "section"
+    },
+    "completed" : false,
+    "completed_at" : null,
+    "created_at" : "2021-04-27T18:08:46.450Z",
+    "due_at" : null,
+    "due_on" : "2021-07-02",
+    "followers" : [ {
+      "gid" : "6120693648102",
+      "name" : "marek syntro.pl",
+      "resource_type" : "user"
+    } ],
+    "hearted" : false,
+    "hearts" : [ ],
+    "liked" : false,
+    "likes" : [ ],
+    "memberships" : [ {
+      "project" : {
+        "gid" : "1200255888947416",
+        "name" : "2021 TEAMS nurt",
+        "resource_type" : "project"
+      },
+      "section" : {
+        "gid" : "1200255838452011",
+        "name" : "OGAR OGÓLNY:",
+        "resource_type" : "section"
+      }
+    } ],
+    "modified_at" : "2021-08-02T19:42:32.482Z",
+    "name" : "PROJEKTOWANIE EVENTU",
+    "notes" : "lineup, oprawa, atrakcje, infrastruktura\n\nproces projektowania fizycznego dokumentujemy tutaj:\nhttps://docs.google.com/spreadsheets/d/1Ih19n93KuPxUPDNMxP0DEF4EITQi60dqirM77dmwIcI/edit#gid=0\n\nwykonane gdy:\n    będziemy mieć 90% lineupu\n    80% elementów kosztu zostanie zaofertowane i wpisane w budżecie\n    pozostałe elementy kosztu będą oszacowane i całościowy koszt eventu będzie zaakceptowany przez stakeholderów\n    każda przestrzeń zostanie opisana pod kątem materialnym, finansowym zadań produkcyjnych, z uwzględnieniem kontekstu czasu\n    powstanie timeline dla przygotowań, montażu, obsługi i demontażu\n",
+    "num_hearts" : 0,
+    "num_likes" : 0,
+    "parent" : null,
+    "permalink_url" : "https://app.asana.com/0/1200255888947416/1200255835352821",
+    "projects" : [ {
+      "gid" : "1200255888947416",
+      "name" : "2021 TEAMS nurt",
+      "resource_type" : "project"
+    } ],
+    "resource_type" : "task",
+    "start_at" : null,
+    "start_on" : null,
+    "subtasks" : [ ],
+    "tags" : [ ],
+    "resource_subtype" : "default_task",
+    "workspace" : {
+      "gid" : "11757994458578",
+      "name" : "WTP",
+      "resource_type" : "workspace"
+    }
+  }, {
+    "gid" : "1200255835352839",
+    "assignee" : {
+      "gid" : "6120693648102",
+      "name" : "marek syntro.pl",
+      "resource_type" : "user"
+    },
+    "assignee_status" : "today",
+    "assignee_section" : {
+      "gid" : "1200341618532897",
+      "name" : "NEXT",
+      "resource_type" : "section"
+    },
+    "completed" : false,
+    "completed_at" : null,
+    "created_at" : "2021-04-27T18:08:49.114Z",
+    "due_at" : null,
+    "due_on" : "2021-05-24",
+    "followers" : [ {
+      "gid" : "6120693648102",
+      "name" : "marek syntro.pl",
+      "resource_type" : "user"
+    } ],
+    "hearted" : false,
+    "hearts" : [ ],
+    "liked" : false,
+    "likes" : [ ],
+    "memberships" : [ {
+      "project" : {
+        "gid" : "1200255888947416",
+        "name" : "2021 TEAMS nurt",
+        "resource_type" : "project"
+      },
+      "section" : {
+        "gid" : "1200255838452011",
+        "name" : "OGAR OGÓLNY:",
+        "resource_type" : "section"
+      }
+    } ],
+    "modified_at" : "2021-05-23T22:08:13.964Z",
+    "name" : "PROCESY CIĄGŁE - uruchomienie i monitorowanie ",
+    "notes" : "potrzebne są: \n    https://app.asana.com/0/0/1200255839842306\n    https://app.asana.com/0/0/1182903104443737\n    https://app.asana.com/0/0/1200310121000041\n\n",
+    "num_hearts" : 0,
+    "num_likes" : 0,
+    "parent" : null,
+    "permalink_url" : "https://app.asana.com/0/1200255888947416/1200255835352839",
+    "projects" : [ {
+      "gid" : "1200255888947416",
+      "name" : "2021 TEAMS nurt",
+      "resource_type" : "project"
+    } ],
+    "resource_type" : "task",
+    "start_at" : null,
+    "start_on" : null,
+    "subtasks" : [ {
+      "gid" : "1200255835352843",
+      "assignee" : null,
+      "assignee_status" : "upcoming",
+      "completed" : false,
+      "completed_at" : null,
+      "created_at" : "2021-04-27T18:08:49.685Z",
+      "due_at" : null,
+      "due_on" : null,
+      "followers" : [ ],
+      "hearted" : false,
+      "hearts" : [ ],
+      "liked" : false,
+      "likes" : [ ],
+      "memberships" : [ ],
+      "modified_at" : "2021-04-27T18:08:49.685Z",
+      "name" : "kalendarz postów / workflow promo",
+      "notes" : "",
+      "num_hearts" : 0,
+      "num_likes" : 0,
+      "parent" : {
+        "gid" : "1200255835352839",
+        "name" : "PROCESY CIĄGŁE - uruchomienie i monitorowanie ",
+        "resource_type" : "task"
+      },
+      "permalink_url" : "https://app.asana.com/0/1200255835352843/1200255835352843",
+      "projects" : [ ],
+      "resource_type" : "task",
+      "start_at" : null,
+      "start_on" : null,
+      "subtasks" : [ ],
+      "tags" : [ ],
+      "resource_subtype" : "default_task",
+      "workspace" : {
+        "gid" : "11757994458578",
+        "name" : "WTP",
+        "resource_type" : "workspace"
+      }
+    }, {
+      "gid" : "1200255835352847",
+      "assignee" : null,
+      "assignee_status" : "upcoming",
+      "completed" : false,
+      "completed_at" : null,
+      "created_at" : "2021-04-27T18:08:50.351Z",
+      "due_at" : null,
+      "due_on" : null,
+      "followers" : [ ],
+      "hearted" : false,
+      "hearts" : [ ],
+      "liked" : false,
+      "likes" : [ ],
+      "memberships" : [ ],
+      "modified_at" : "2021-04-27T18:08:50.351Z",
+      "name" : "zaopatrzenie",
+      "notes" : "",
+      "num_hearts" : 0,
+      "num_likes" : 0,
+      "parent" : {
+        "gid" : "1200255835352839",
+        "name" : "PROCESY CIĄGŁE - uruchomienie i monitorowanie ",
+        "resource_type" : "task"
+      },
+      "permalink_url" : "https://app.asana.com/0/1200255835352847/1200255835352847",
+      "projects" : [ ],
+      "resource_type" : "task",
+      "start_at" : null,
+      "start_on" : null,
+      "subtasks" : [ ],
+      "tags" : [ ],
+      "resource_subtype" : "default_task",
+      "workspace" : {
+        "gid" : "11757994458578",
+        "name" : "WTP",
+        "resource_type" : "workspace"
+      }
+    }, {
+      "gid" : "1200255924773051",
+      "assignee" : null,
+      "assignee_status" : "upcoming",
+      "completed" : false,
+      "completed_at" : null,
+      "created_at" : "2021-04-27T18:08:52.982Z",
+      "due_at" : null,
+      "due_on" : null,
+      "followers" : [ ],
+      "hearted" : false,
+      "hearts" : [ ],
+      "liked" : false,
+      "likes" : [ ],
+      "memberships" : [ ],
+      "modified_at" : "2021-04-27T18:08:52.982Z",
+      "name" : "wolo",
+      "notes" : "",
+      "num_hearts" : 0,
+      "num_likes" : 0,
+      "parent" : {
+        "gid" : "1200255835352839",
+        "name" : "PROCESY CIĄGŁE - uruchomienie i monitorowanie ",
+        "resource_type" : "task"
+      },
+      "permalink_url" : "https://app.asana.com/0/1200255924773051/1200255924773051",
+      "projects" : [ ],
+      "resource_type" : "task",
+      "start_at" : null,
+      "start_on" : null,
+      "subtasks" : [ ],
+      "tags" : [ ],
+      "resource_subtype" : "default_task",
+      "workspace" : {
+        "gid" : "11757994458578",
+        "name" : "WTP",
+        "resource_type" : "workspace"
+      }
+    } ],
+    "tags" : [ ],
+    "resource_subtype" : "default_task",
+    "workspace" : {
+      "gid" : "11757994458578",
+      "name" : "WTP",
+      "resource_type" : "workspace"
+    }
+  }, {
+    "gid" : "1200255895362822",
+    "assignee" : {
+      "gid" : "6120693648102",
+      "name" : "marek syntro.pl",
+      "resource_type" : "user"
+    },
+    "assignee_status" : "today",
+    "assignee_section" : {
+      "gid" : "1200341618517121",
+      "name" : "MOJE ODPOWIEDZIALNOŚCI",
+      "resource_type" : "section"
+    },
+    "completed" : false,
+    "completed_at" : null,
+    "created_at" : "2021-04-28T00:55:27.333Z",
+    "due_at" : null,
+    "due_on" : null,
+    "followers" : [ {
+      "gid" : "6120693648102",
+      "name" : "marek syntro.pl",
+      "resource_type" : "user"
+    } ],
+    "hearted" : false,
+    "hearts" : [ ],
+    "liked" : false,
+    "likes" : [ ],
+    "memberships" : [ {
+      "project" : {
+        "gid" : "1200255888947416",
+        "name" : "2021 TEAMS nurt",
+        "resource_type" : "project"
+      },
+      "section" : {
+        "gid" : "1200255838452011",
+        "name" : "OGAR OGÓLNY:",
+        "resource_type" : "section"
+      }
+    } ],
+    "modified_at" : "2021-07-05T18:39:09.639Z",
+    "name" : "DOKUMENTY PROJEKTOWE [stwórz, utrzymuj]",
+    "notes" : "",
+    "num_hearts" : 0,
+    "num_likes" : 0,
+    "parent" : null,
+    "permalink_url" : "https://app.asana.com/0/1200255888947416/1200255895362822",
+    "projects" : [ {
+      "gid" : "1200255888947416",
+      "name" : "2021 TEAMS nurt",
+      "resource_type" : "project"
+    } ],
+    "resource_type" : "task",
+    "start_at" : null,
+    "start_on" : null,
+    "subtasks" : [ {
+      "gid" : "1200255839739124",
+      "assignee" : null,
+      "assignee_status" : "upcoming",
+      "completed" : true,
+      "completed_at" : "2021-05-27T15:52:05.224Z",
+      "created_at" : "2021-04-27T18:09:19.064Z",
+      "due_at" : null,
+      "due_on" : "2021-05-17",
+      "followers" : [ {
+        "gid" : "6120693648102",
+        "name" : "marek syntro.pl",
+        "resource_type" : "user"
+      } ],
+      "hearted" : false,
+      "hearts" : [ ],
+      "liked" : false,
+      "likes" : [ ],
+      "memberships" : [ {
+        "project" : {
+          "gid" : "1200310121000030",
+          "name" : "syntro 2021",
+          "resource_type" : "project"
+        },
+        "section" : {
+          "gid" : "1200310121000031",
+          "name" : "Untitled section",
+          "resource_type" : "section"
+        }
+      } ],
+      "modified_at" : "2021-05-27T15:52:05.482Z",
+      "name" : "kompleksowy plan do monitorowania",
+      "notes" : "",
+      "num_hearts" : 0,
+      "num_likes" : 0,
+      "parent" : {
+        "gid" : "1200255895362822",
+        "name" : "DOKUMENTY PROJEKTOWE [stwórz, utrzymuj]",
+        "resource_type" : "task"
+      },
+      "permalink_url" : "https://app.asana.com/0/1200310121000030/1200255839739124",
+      "projects" : [ {
+        "gid" : "1200310121000030",
+        "name" : "syntro 2021",
+        "resource_type" : "project"
+      } ],
+      "resource_type" : "task",
+      "start_at" : null,
+      "start_on" : null,
+      "subtasks" : [ ],
+      "tags" : [ ],
+      "resource_subtype" : "default_task",
+      "workspace" : {
+        "gid" : "11757994458578",
+        "name" : "WTP",
+        "resource_type" : "workspace"
+      }
+    }, {
+      "gid" : "1200255839783894",
+      "assignee" : {
+        "gid" : "6120693648102",
+        "name" : "marek syntro.pl",
+        "resource_type" : "user"
+      },
+      "assignee_status" : "today",
+      "assignee_section" : {
+        "gid" : "1200341618530710",
+        "name" : "ONGOING",
+        "resource_type" : "section"
+      },
+      "completed" : true,
+      "completed_at" : "2021-06-08T13:23:45.068Z",
+      "created_at" : "2021-04-27T18:09:20.626Z",
+      "due_at" : null,
+      "due_on" : "2021-05-17",
+      "followers" : [ {
+        "gid" : "6120693648102",
+        "name" : "marek syntro.pl",
+        "resource_type" : "user"
+      } ],
+      "hearted" : false,
+      "hearts" : [ ],
+      "liked" : false,
+      "likes" : [ ],
+      "memberships" : [ ],
+      "modified_at" : "2021-06-08T13:23:45.306Z",
+      "name" : "arkusz budżetowy",
+      "notes" : "",
+      "num_hearts" : 0,
+      "num_likes" : 0,
+      "parent" : {
+        "gid" : "1200255895362822",
+        "name" : "DOKUMENTY PROJEKTOWE [stwórz, utrzymuj]",
+        "resource_type" : "task"
+      },
+      "permalink_url" : "https://app.asana.com/0/1200255839783894/1200255839783894",
+      "projects" : [ ],
+      "resource_type" : "task",
+      "start_at" : null,
+      "start_on" : null,
+      "subtasks" : [ ],
+      "tags" : [ ],
+      "resource_subtype" : "default_task",
+      "workspace" : {
+        "gid" : "11757994458578",
+        "name" : "WTP",
+        "resource_type" : "workspace"
+      }
+    }, {
+      "gid" : "1200255839869750",
+      "assignee" : {
+        "gid" : "6120693648102",
+        "name" : "marek syntro.pl",
+        "resource_type" : "user"
+      },
+      "assignee_status" : "today",
+      "assignee_section" : {
+        "gid" : "1200341618506735",
+        "name" : "TERAZ",
+        "resource_type" : "section"
+      },
+      "completed" : true,
+      "completed_at" : "2021-06-08T13:23:49.432Z",
+      "created_at" : "2021-04-27T18:09:23.023Z",
+      "due_at" : null,
+      "due_on" : "2021-05-31",
+      "followers" : [ {
+        "gid" : "6120693648102",
+        "name" : "marek syntro.pl",
+        "resource_type" : "user"
+      } ],
+      "hearted" : false,
+      "hearts" : [ ],
+      "liked" : false,
+      "likes" : [ ],
+      "memberships" : [ {
+        "project" : {
+          "gid" : "1200310120999978",
+          "name" : "2021 PRODUKCJA nurt ",
+          "resource_type" : "project"
+        },
+        "section" : {
+          "gid" : "1200310120999979",
+          "name" : "Untitled section",
+          "resource_type" : "section"
+        }
+      } ],
+      "modified_at" : "2021-06-08T13:23:49.672Z",
+      "name" : "projekty przestrzeni / arkusz zapotrzebowania (+mapa stref)",
+      "notes" : "",
+      "num_hearts" : 0,
+      "num_likes" : 0,
+      "parent" : {
+        "gid" : "1200255895362822",
+        "name" : "DOKUMENTY PROJEKTOWE [stwórz, utrzymuj]",
+        "resource_type" : "task"
+      },
+      "permalink_url" : "https://app.asana.com/0/1200310120999978/1200255839869750",
+      "projects" : [ {
+        "gid" : "1200310120999978",
+        "name" : "2021 PRODUKCJA nurt ",
+        "resource_type" : "project"
+      } ],
+      "resource_type" : "task",
+      "start_at" : null,
+      "start_on" : null,
+      "subtasks" : [ ],
+      "tags" : [ ],
+      "resource_subtype" : "default_task",
+      "workspace" : {
+        "gid" : "11757994458578",
+        "name" : "WTP",
+        "resource_type" : "workspace"
+      }
+    }, {
+      "gid" : "1200255839842306",
+      "assignee" : {
+        "gid" : "6120693648102",
+        "name" : "marek syntro.pl",
+        "resource_type" : "user"
+      },
+      "assignee_status" : "today",
+      "assignee_section" : {
+        "gid" : "1200341618522410",
+        "name" : "Generuj",
+        "resource_type" : "section"
+      },
+      "completed" : false,
+      "completed_at" : null,
+      "created_at" : "2021-04-27T18:09:22.107Z",
+      "due_at" : null,
+      "due_on" : "2021-07-26",
+      "followers" : [ {
+        "gid" : "6120693648102",
+        "name" : "marek syntro.pl",
+        "resource_type" : "user"
+      } ],
+      "hearted" : false,
+      "hearts" : [ ],
+      "liked" : false,
+      "likes" : [ ],
+      "memberships" : [ ],
+      "modified_at" : "2021-07-25T22:04:34.392Z",
+      "name" : "2021 baza kontaktów z zakresami odpowiedzialności",
+      "notes" : "",
+      "num_hearts" : 0,
+      "num_likes" : 0,
+      "parent" : {
+        "gid" : "1200255895362822",
+        "name" : "DOKUMENTY PROJEKTOWE [stwórz, utrzymuj]",
+        "resource_type" : "task"
+      },
+      "permalink_url" : "https://app.asana.com/0/1200255839842306/1200255839842306",
+      "projects" : [ ],
+      "resource_type" : "task",
+      "start_at" : null,
+      "start_on" : null,
+      "subtasks" : [ ],
+      "tags" : [ ],
+      "resource_subtype" : "default_task",
+      "workspace" : {
+        "gid" : "11757994458578",
+        "name" : "WTP",
+        "resource_type" : "workspace"
+      }
+    }, {
+      "gid" : "1200255892121799",
+      "assignee" : {
+        "gid" : "6120693648102",
+        "name" : "marek syntro.pl",
+        "resource_type" : "user"
+      },
+      "assignee_status" : "today",
+      "assignee_section" : {
+        "gid" : "1200341618522410",
+        "name" : "Generuj",
+        "resource_type" : "section"
+      },
+      "completed" : true,
+      "completed_at" : "2021-06-15T14:37:34.199Z",
+      "created_at" : "2021-04-27T18:09:25.042Z",
+      "due_at" : null,
+      "due_on" : "2021-06-10",
+      "followers" : [ {
+        "gid" : "6120693648102",
+        "name" : "marek syntro.pl",
+        "resource_type" : "user"
+      } ],
+      "hearted" : false,
+      "hearts" : [ ],
+      "liked" : false,
+      "likes" : [ ],
+      "memberships" : [ ],
+      "modified_at" : "2021-06-15T14:37:34.540Z",
+      "name" : "stage management i logistyka - arkusz",
+      "notes" : "",
+      "num_hearts" : 0,
+      "num_likes" : 0,
+      "parent" : {
+        "gid" : "1200255895362822",
+        "name" : "DOKUMENTY PROJEKTOWE [stwórz, utrzymuj]",
+        "resource_type" : "task"
+      },
+      "permalink_url" : "https://app.asana.com/0/1200255892121799/1200255892121799",
+      "projects" : [ ],
+      "resource_type" : "task",
+      "start_at" : null,
+      "start_on" : null,
+      "subtasks" : [ ],
+      "tags" : [ ],
+      "resource_subtype" : "default_task",
+      "workspace" : {
+        "gid" : "11757994458578",
+        "name" : "WTP",
+        "resource_type" : "workspace"
+      }
+    }, {
+      "gid" : "1200312713641499",
+      "assignee" : {
+        "gid" : "6120693648102",
+        "name" : "marek syntro.pl",
+        "resource_type" : "user"
+      },
+      "assignee_status" : "inbox",
+      "assignee_section" : {
+        "gid" : "1200341618506735",
+        "name" : "TERAZ",
+        "resource_type" : "section"
+      },
+      "completed" : false,
+      "completed_at" : null,
+      "created_at" : "2021-05-10T19:27:32.981Z",
+      "due_at" : null,
+      "due_on" : "2021-07-25",
+      "followers" : [ {
+        "gid" : "6120693648102",
+        "name" : "marek syntro.pl",
+        "resource_type" : "user"
+      } ],
+      "hearted" : false,
+      "hearts" : [ ],
+      "liked" : false,
+      "likes" : [ ],
+      "memberships" : [ {
+        "project" : {
+          "gid" : "1200310120999978",
+          "name" : "2021 PRODUKCJA nurt ",
+          "resource_type" : "project"
+        },
+        "section" : {
+          "gid" : "1200310120999979",
+          "name" : "Untitled section",
+          "resource_type" : "section"
+        }
+      } ],
+      "modified_at" : "2021-07-25T16:27:48.692Z",
+      "name" : "mapa prądowa i lista do zamówienia prądu",
+      "notes" : "",
+      "num_hearts" : 0,
+      "num_likes" : 0,
+      "parent" : {
+        "gid" : "1200255895362822",
+        "name" : "DOKUMENTY PROJEKTOWE [stwórz, utrzymuj]",
+        "resource_type" : "task"
+      },
+      "permalink_url" : "https://app.asana.com/0/1200310120999978/1200312713641499",
+      "projects" : [ {
+        "gid" : "1200310120999978",
+        "name" : "2021 PRODUKCJA nurt ",
+        "resource_type" : "project"
+      } ],
+      "resource_type" : "task",
+      "start_at" : null,
+      "start_on" : null,
+      "subtasks" : [ ],
+      "tags" : [ ],
+      "resource_subtype" : "default_task",
+      "workspace" : {
+        "gid" : "11757994458578",
+        "name" : "WTP",
+        "resource_type" : "workspace"
+      }
+    }, {
+      "gid" : "1200328578783273",
+      "assignee" : {
+        "gid" : "6120693648102",
+        "name" : "marek syntro.pl",
+        "resource_type" : "user"
+      },
+      "assignee_status" : "today",
+      "assignee_section" : {
+        "gid" : "1200341618522410",
+        "name" : "Generuj",
+        "resource_type" : "section"
+      },
+      "completed" : false,
+      "completed_at" : null,
+      "created_at" : "2021-05-16T00:51:08.092Z",
+      "due_at" : null,
+      "due_on" : "2021-07-26",
+      "followers" : [ {
+        "gid" : "6120693648102",
+        "name" : "marek syntro.pl",
+        "resource_type" : "user"
+      } ],
+      "hearted" : false,
+      "hearts" : [ ],
+      "liked" : false,
+      "likes" : [ ],
+      "memberships" : [ ],
+      "modified_at" : "2021-07-25T22:04:45.486Z",
+      "name" : "arkusz lista bramka (do obsługi na kompie)",
+      "notes" : "",
+      "num_hearts" : 0,
+      "num_likes" : 0,
+      "parent" : {
+        "gid" : "1200255895362822",
+        "name" : "DOKUMENTY PROJEKTOWE [stwórz, utrzymuj]",
+        "resource_type" : "task"
+      },
+      "permalink_url" : "https://app.asana.com/0/1200328578783273/1200328578783273",
+      "projects" : [ ],
+      "resource_type" : "task",
+      "start_at" : null,
+      "start_on" : null,
+      "subtasks" : [ ],
+      "tags" : [ ],
+      "resource_subtype" : "default_task",
+      "workspace" : {
+        "gid" : "11757994458578",
+        "name" : "WTP",
+        "resource_type" : "workspace"
+      }
+    } ],
+    "tags" : [ ],
+    "resource_subtype" : "default_task",
+    "workspace" : {
+      "gid" : "11757994458578",
+      "name" : "WTP",
+      "resource_type" : "workspace"
+    }
+  }, {
+    "gid" : "1200255835352825",
+    "assignee" : null,
+    "assignee_status" : "upcoming",
+    "completed" : false,
+    "completed_at" : null,
+    "created_at" : "2021-04-27T18:08:46.854Z",
+    "due_at" : null,
+    "due_on" : "2021-05-28",
+    "followers" : [ {
+      "gid" : "6120693648102",
+      "name" : "marek syntro.pl",
+      "resource_type" : "user"
+    } ],
+    "hearted" : false,
+    "hearts" : [ ],
+    "liked" : false,
+    "likes" : [ ],
+    "memberships" : [ {
+      "project" : {
+        "gid" : "1200255888947416",
+        "name" : "2021 TEAMS nurt",
+        "resource_type" : "project"
+      },
+      "section" : {
+        "gid" : "1200255838452011",
+        "name" : "OGAR OGÓLNY:",
+        "resource_type" : "section"
+      }
+    } ],
+    "modified_at" : "2021-04-28T00:48:31.247Z",
+    "name" : "tworzenie i podpisywanie umów z kontrahentami, formalności, rozliczenia",
+    "notes" : "",
+    "num_hearts" : 0,
+    "num_likes" : 0,
+    "parent" : null,
+    "permalink_url" : "https://app.asana.com/0/1200255888947416/1200255835352825",
+    "projects" : [ {
+      "gid" : "1200255888947416",
+      "name" : "2021 TEAMS nurt",
+      "resource_type" : "project"
+    } ],
+    "resource_type" : "task",
+    "start_at" : null,
+    "start_on" : null,
+    "subtasks" : [ ],
+    "tags" : [ ],
+    "resource_subtype" : "default_task",
+    "workspace" : {
+      "gid" : "11757994458578",
+      "name" : "WTP",
+      "resource_type" : "workspace"
+    }
+  }, {
+    "gid" : "1200255835352829",
+    "assignee" : null,
+    "assignee_status" : "upcoming",
+    "completed" : false,
+    "completed_at" : null,
+    "created_at" : "2021-04-27T18:08:47.330Z",
+    "due_at" : null,
+    "due_on" : null,
+    "followers" : [ {
+      "gid" : "6120693648102",
+      "name" : "marek syntro.pl",
+      "resource_type" : "user"
+    } ],
+    "hearted" : false,
+    "hearts" : [ ],
+    "liked" : false,
+    "likes" : [ ],
+    "memberships" : [ {
+      "project" : {
+        "gid" : "1200255888947416",
+        "name" : "2021 TEAMS nurt",
+        "resource_type" : "project"
+      },
+      "section" : {
+        "gid" : "1200255838452011",
+        "name" : "OGAR OGÓLNY:",
+        "resource_type" : "section"
+      }
+    } ],
+    "modified_at" : "2021-08-02T19:44:28.550Z",
+    "name" : "zamykanie budżetu [potwierdzanie kosztów]",
+    "notes" : "",
+    "num_hearts" : 0,
+    "num_likes" : 0,
+    "parent" : null,
+    "permalink_url" : "https://app.asana.com/0/1200255888947416/1200255835352829",
+    "projects" : [ {
+      "gid" : "1200255888947416",
+      "name" : "2021 TEAMS nurt",
+      "resource_type" : "project"
+    } ],
+    "resource_type" : "task",
+    "start_at" : null,
+    "start_on" : null,
+    "subtasks" : [ ],
+    "tags" : [ ],
+    "resource_subtype" : "default_task",
+    "workspace" : {
+      "gid" : "11757994458578",
+      "name" : "WTP",
+      "resource_type" : "workspace"
+    }
+  }, {
+    "gid" : "1200255925075564",
+    "assignee" : {
+      "gid" : "6120693648102",
+      "name" : "marek syntro.pl",
+      "resource_type" : "user"
+    },
+    "assignee_status" : "today",
+    "assignee_section" : {
+      "gid" : "1200341618517121",
+      "name" : "MOJE ODPOWIEDZIALNOŚCI",
+      "resource_type" : "section"
+    },
+    "completed" : false,
+    "completed_at" : null,
+    "created_at" : "2021-04-27T18:09:03.557Z",
+    "due_at" : null,
+    "due_on" : "2021-06-09",
+    "followers" : [ {
+      "gid" : "6120693648102",
+      "name" : "marek syntro.pl",
+      "resource_type" : "user"
+    } ],
+    "hearted" : false,
+    "hearts" : [ ],
+    "liked" : false,
+    "likes" : [ ],
+    "memberships" : [ {
+      "project" : {
+        "gid" : "1200255888947416",
+        "name" : "2021 TEAMS nurt",
+        "resource_type" : "project"
+      },
+      "section" : {
+        "gid" : "1200255838452011",
+        "name" : "OGAR OGÓLNY:",
+        "resource_type" : "section"
+      }
+    } ],
+    "modified_at" : "2021-06-08T22:05:06.164Z",
+    "name" : "kompleksowy kontakt z artystami (technika, logistyka, hospitality)",
+    "notes" : "",
+    "num_hearts" : 0,
+    "num_likes" : 0,
+    "parent" : null,
+    "permalink_url" : "https://app.asana.com/0/1200255888947416/1200255925075564",
+    "projects" : [ {
+      "gid" : "1200255888947416",
+      "name" : "2021 TEAMS nurt",
+      "resource_type" : "project"
+    } ],
+    "resource_type" : "task",
+    "start_at" : null,
+    "start_on" : null,
+    "subtasks" : [ ],
+    "tags" : [ ],
+    "resource_subtype" : "default_task",
+    "workspace" : {
+      "gid" : "11757994458578",
+      "name" : "WTP",
+      "resource_type" : "workspace"
+    }
+  }, {
+    "gid" : "1150052095757120",
+    "assignee" : {
+      "gid" : "11757994458592",
+      "name" : "Be MOzArt",
+      "resource_type" : "user"
+    },
+    "assignee_status" : "inbox",
+    "completed" : false,
+    "completed_at" : null,
+    "created_at" : "2021-06-27T16:01:31.632Z",
+    "due_at" : null,
+    "due_on" : "2021-07-05",
+    "followers" : [ {
+      "gid" : "6120693648102",
+      "name" : "marek syntro.pl",
+      "resource_type" : "user"
+    }, {
+      "gid" : "11757994458592",
+      "name" : "Be MOzArt",
+      "resource_type" : "user"
+    } ],
+    "hearted" : false,
+    "hearts" : [ ],
+    "liked" : false,
+    "likes" : [ ],
+    "memberships" : [ {
+      "project" : {
+        "gid" : "1200255888947416",
+        "name" : "2021 TEAMS nurt",
+        "resource_type" : "project"
+      },
+      "section" : {
+        "gid" : "1200255838459376",
+        "name" : "PRODUKCJA",
+        "resource_type" : "section"
+      }
+    } ],
+    "modified_at" : "2021-07-04T22:00:50.681Z",
+    "name" : "WYWÓZ ŚMIECI (zamówienie, dopilnowanie, płatność)",
+    "notes" : "",
+    "num_hearts" : 0,
+    "num_likes" : 0,
+    "parent" : null,
+    "permalink_url" : "https://app.asana.com/0/1200255888947416/1150052095757120",
+    "projects" : [ {
+      "gid" : "1200255888947416",
+      "name" : "2021 TEAMS nurt",
+      "resource_type" : "project"
+    } ],
+    "resource_type" : "task",
+    "start_at" : null,
+    "start_on" : null,
+    "subtasks" : [ ],
+    "tags" : [ ],
+    "resource_subtype" : "default_task",
+    "workspace" : {
+      "gid" : "11757994458578",
+      "name" : "WTP",
+      "resource_type" : "workspace"
+    }
+  }, {
+    "gid" : "1200255838746851",
+    "assignee" : null,
+    "assignee_status" : "upcoming",
+    "completed" : false,
+    "completed_at" : null,
+    "created_at" : "2021-04-27T18:08:40.153Z",
+    "due_at" : null,
+    "due_on" : null,
+    "followers" : [ {
+      "gid" : "6120693648102",
+      "name" : "marek syntro.pl",
+      "resource_type" : "user"
+    } ],
+    "hearted" : false,
+    "hearts" : [ ],
+    "liked" : false,
+    "likes" : [ ],
+    "memberships" : [ {
+      "project" : {
+        "gid" : "1200255888947416",
+        "name" : "2021 TEAMS nurt",
+        "resource_type" : "project"
+      },
+      "section" : {
+        "gid" : "1200255838459376",
+        "name" : "PRODUKCJA",
+        "resource_type" : "section"
+      }
+    } ],
+    "modified_at" : "2021-08-02T19:52:46.815Z",
+    "name" : "* PROCES ZAOPATRZENIOWY",
+    "notes" : "Gdzie i w jakiej strukturze będziesz zapisywać nowe rozpoznane potrzebne rzeczy / zdolności?\n\njak będziesz monitorować na jakim etapie jest zapewnienie każdej rozpoznanej rzeczy? ",
+    "num_hearts" : 0,
+    "num_likes" : 0,
+    "parent" : null,
+    "permalink_url" : "https://app.asana.com/0/1200255888947416/1200255838746851",
+    "projects" : [ {
+      "gid" : "1200255888947416",
+      "name" : "2021 TEAMS nurt",
+      "resource_type" : "project"
+    } ],
+    "resource_type" : "task",
+    "start_at" : null,
+    "start_on" : null,
+    "subtasks" : [ ],
+    "tags" : [ {
+      "gid" : "1156957651821582",
+      "name" : "proces ciągły",
+      "resource_type" : "tag"
+    } ],
+    "resource_subtype" : "default_task",
+    "workspace" : {
+      "gid" : "11757994458578",
+      "name" : "WTP",
+      "resource_type" : "workspace"
+    }
+  }, {
+    "gid" : "1200255838761615",
+    "assignee" : null,
+    "assignee_status" : "upcoming",
+    "completed" : false,
+    "completed_at" : null,
+    "created_at" : "2021-04-27T18:08:40.684Z",
+    "due_at" : null,
+    "due_on" : null,
+    "followers" : [ {
+      "gid" : "6120693648102",
+      "name" : "marek syntro.pl",
+      "resource_type" : "user"
+    } ],
+    "hearted" : false,
+    "hearts" : [ ],
+    "liked" : false,
+    "likes" : [ ],
+    "memberships" : [ {
+      "project" : {
+        "gid" : "1200255888947416",
+        "name" : "2021 TEAMS nurt",
+        "resource_type" : "project"
+      },
+      "section" : {
+        "gid" : "1200255838459376",
+        "name" : "PRODUKCJA",
+        "resource_type" : "section"
+      }
+    } ],
+    "modified_at" : "2021-05-25T12:46:45.041Z",
+    "name" : "* WOLONTARIAT (rekrutacja, ustalenia, umowy, opieka)",
+    "notes" : "",
+    "num_hearts" : 0,
+    "num_likes" : 0,
+    "parent" : null,
+    "permalink_url" : "https://app.asana.com/0/1200255888947416/1200255838761615",
+    "projects" : [ {
+      "gid" : "1200255888947416",
+      "name" : "2021 TEAMS nurt",
+      "resource_type" : "project"
+    } ],
+    "resource_type" : "task",
+    "start_at" : null,
+    "start_on" : null,
+    "subtasks" : [ ],
+    "tags" : [ {
+      "gid" : "1156957651821582",
+      "name" : "proces ciągły",
+      "resource_type" : "tag"
+    } ],
+    "resource_subtype" : "default_task",
+    "workspace" : {
+      "gid" : "11757994458578",
+      "name" : "WTP",
+      "resource_type" : "workspace"
+    }
+  }, {
+    "gid" : "1200255838776561",
+    "assignee" : null,
+    "assignee_status" : "upcoming",
+    "completed" : false,
+    "completed_at" : null,
+    "created_at" : "2021-04-27T18:08:41.173Z",
+    "due_at" : null,
+    "due_on" : null,
+    "followers" : [ {
+      "gid" : "6120693648102",
+      "name" : "marek syntro.pl",
+      "resource_type" : "user"
+    } ],
+    "hearted" : false,
+    "hearts" : [ ],
+    "liked" : false,
+    "likes" : [ ],
+    "memberships" : [ {
+      "project" : {
+        "gid" : "1200255888947416",
+        "name" : "2021 TEAMS nurt",
+        "resource_type" : "project"
+      },
+      "section" : {
+        "gid" : "1200255838459376",
+        "name" : "PRODUKCJA",
+        "resource_type" : "section"
+      }
+    } ],
+    "modified_at" : "2021-04-27T18:12:04.868Z",
+    "name" : "SPRZĄTNE TERENU",
+    "notes" : "",
+    "num_hearts" : 0,
+    "num_likes" : 0,
+    "parent" : null,
+    "permalink_url" : "https://app.asana.com/0/1200255888947416/1200255838776561",
+    "projects" : [ {
+      "gid" : "1200255888947416",
+      "name" : "2021 TEAMS nurt",
+      "resource_type" : "project"
+    } ],
+    "resource_type" : "task",
+    "start_at" : null,
+    "start_on" : null,
+    "subtasks" : [ ],
+    "tags" : [ ],
+    "resource_subtype" : "default_task",
+    "workspace" : {
+      "gid" : "11757994458578",
+      "name" : "WTP",
+      "resource_type" : "workspace"
+    }
+  }, {
+    "gid" : "1200255838788205",
+    "assignee" : {
+      "gid" : "6120693648102",
+      "name" : "marek syntro.pl",
+      "resource_type" : "user"
+    },
+    "assignee_status" : "inbox",
+    "assignee_section" : {
+      "gid" : "1200341618521373",
+      "name" : "Recently assigned",
+      "resource_type" : "section"
+    },
+    "completed" : true,
+    "completed_at" : "2021-05-31T19:37:23.807Z",
+    "created_at" : "2021-04-27T18:08:41.632Z",
+    "due_at" : null,
+    "due_on" : "2021-05-31",
+    "followers" : [ {
+      "gid" : "6120693648102",
+      "name" : "marek syntro.pl",
+      "resource_type" : "user"
+    } ],
+    "hearted" : false,
+    "hearts" : [ ],
+    "liked" : false,
+    "likes" : [ ],
+    "memberships" : [ {
+      "project" : {
+        "gid" : "1200255888947416",
+        "name" : "2021 TEAMS nurt",
+        "resource_type" : "project"
+      },
+      "section" : {
+        "gid" : "1200255838459376",
+        "name" : "PRODUKCJA",
+        "resource_type" : "section"
+      }
+    } ],
+    "modified_at" : "2021-05-31T19:37:23.983Z",
+    "name" : "KOSZENIE",
+    "notes" : "",
+    "num_hearts" : 0,
+    "num_likes" : 0,
+    "parent" : null,
+    "permalink_url" : "https://app.asana.com/0/1200255888947416/1200255838788205",
+    "projects" : [ {
+      "gid" : "1200255888947416",
+      "name" : "2021 TEAMS nurt",
+      "resource_type" : "project"
+    } ],
+    "resource_type" : "task",
+    "start_at" : null,
+    "start_on" : null,
+    "subtasks" : [ ],
+    "tags" : [ ],
+    "resource_subtype" : "default_task",
+    "workspace" : {
+      "gid" : "11757994458578",
+      "name" : "WTP",
+      "resource_type" : "workspace"
+    }
+  }, {
+    "gid" : "1200255838796792",
+    "assignee" : null,
+    "assignee_status" : "upcoming",
+    "completed" : false,
+    "completed_at" : null,
+    "created_at" : "2021-04-27T18:08:42.084Z",
+    "due_at" : null,
+    "due_on" : null,
+    "followers" : [ {
+      "gid" : "6120693648102",
+      "name" : "marek syntro.pl",
+      "resource_type" : "user"
+    } ],
+    "hearted" : false,
+    "hearts" : [ ],
+    "liked" : false,
+    "likes" : [ ],
+    "memberships" : [ {
+      "project" : {
+        "gid" : "1200255888947416",
+        "name" : "2021 TEAMS nurt",
+        "resource_type" : "project"
+      },
+      "section" : {
+        "gid" : "1200255838459376",
+        "name" : "PRODUKCJA",
+        "resource_type" : "section"
+      }
+    } ],
+    "modified_at" : "2021-04-27T18:12:05.567Z",
+    "name" : "STREFA: BAR (ustalenia / montaż / demontaż)",
+    "notes" : "",
+    "num_hearts" : 0,
+    "num_likes" : 0,
+    "parent" : null,
+    "permalink_url" : "https://app.asana.com/0/1200255888947416/1200255838796792",
+    "projects" : [ {
+      "gid" : "1200255888947416",
+      "name" : "2021 TEAMS nurt",
+      "resource_type" : "project"
+    } ],
+    "resource_type" : "task",
+    "start_at" : null,
+    "start_on" : null,
+    "subtasks" : [ ],
+    "tags" : [ ],
+    "resource_subtype" : "default_task",
+    "workspace" : {
+      "gid" : "11757994458578",
+      "name" : "WTP",
+      "resource_type" : "workspace"
+    }
+  }, {
+    "gid" : "1200328578783266",
+    "assignee" : null,
+    "assignee_status" : "upcoming",
+    "completed" : false,
+    "completed_at" : null,
+    "created_at" : "2021-05-16T00:49:13.874Z",
+    "due_at" : null,
+    "due_on" : null,
+    "followers" : [ {
+      "gid" : "6120693648102",
+      "name" : "marek syntro.pl",
+      "resource_type" : "user"
+    } ],
+    "hearted" : false,
+    "hearts" : [ ],
+    "liked" : false,
+    "likes" : [ ],
+    "memberships" : [ {
+      "project" : {
+        "gid" : "1200255888947416",
+        "name" : "2021 TEAMS nurt",
+        "resource_type" : "project"
+      },
+      "section" : {
+        "gid" : "1200255838459376",
+        "name" : "PRODUKCJA",
+        "resource_type" : "section"
+      }
+    } ],
+    "modified_at" : "2021-05-16T00:49:35.375Z",
+    "name" : "SREFA: MERCH ( warunki / montaż / obsługa / demontaż)",
+    "notes" : "",
+    "num_hearts" : 0,
+    "num_likes" : 0,
+    "parent" : null,
+    "permalink_url" : "https://app.asana.com/0/1200255888947416/1200328578783266",
+    "projects" : [ {
+      "gid" : "1200255888947416",
+      "name" : "2021 TEAMS nurt",
+      "resource_type" : "project"
+    } ],
+    "resource_type" : "task",
+    "start_at" : null,
+    "start_on" : null,
+    "subtasks" : [ ],
+    "tags" : [ ],
+    "resource_subtype" : "default_task",
+    "workspace" : {
+      "gid" : "11757994458578",
+      "name" : "WTP",
+      "resource_type" : "workspace"
+    }
+  }, {
+    "gid" : "1200255838808596",
+    "assignee" : null,
+    "assignee_status" : "upcoming",
+    "completed" : false,
+    "completed_at" : null,
+    "created_at" : "2021-04-27T18:08:42.662Z",
+    "due_at" : null,
+    "due_on" : null,
+    "followers" : [ {
+      "gid" : "6120693648102",
+      "name" : "marek syntro.pl",
+      "resource_type" : "user"
+    } ],
+    "hearted" : false,
+    "hearts" : [ ],
+    "liked" : false,
+    "likes" : [ ],
+    "memberships" : [ {
+      "project" : {
+        "gid" : "1200255888947416",
+        "name" : "2021 TEAMS nurt",
+        "resource_type" : "project"
+      },
+      "section" : {
+        "gid" : "1200255838459376",
+        "name" : "PRODUKCJA",
+        "resource_type" : "section"
+      }
+    } ],
+    "modified_at" : "2021-04-27T18:12:05.911Z",
+    "name" : "INFRASTRUKTURA: (montaż, demontaż)",
+    "notes" : "",
+    "num_hearts" : 0,
+    "num_likes" : 0,
+    "parent" : null,
+    "permalink_url" : "https://app.asana.com/0/1200255888947416/1200255838808596",
+    "projects" : [ {
+      "gid" : "1200255888947416",
+      "name" : "2021 TEAMS nurt",
+      "resource_type" : "project"
+    } ],
+    "resource_type" : "task",
+    "start_at" : null,
+    "start_on" : null,
+    "subtasks" : [ ],
+    "tags" : [ ],
+    "resource_subtype" : "default_task",
+    "workspace" : {
+      "gid" : "11757994458578",
+      "name" : "WTP",
+      "resource_type" : "workspace"
+    }
+  }, {
+    "gid" : "1200255838820212",
+    "assignee" : null,
+    "assignee_status" : "upcoming",
+    "completed" : false,
+    "completed_at" : null,
+    "created_at" : "2021-04-27T18:08:43.082Z",
+    "due_at" : null,
+    "due_on" : null,
+    "followers" : [ {
+      "gid" : "6120693648102",
+      "name" : "marek syntro.pl",
+      "resource_type" : "user"
+    } ],
+    "hearted" : false,
+    "hearts" : [ ],
+    "liked" : false,
+    "likes" : [ ],
+    "memberships" : [ {
+      "project" : {
+        "gid" : "1200255888947416",
+        "name" : "2021 TEAMS nurt",
+        "resource_type" : "project"
+      },
+      "section" : {
+        "gid" : "1200255838459376",
+        "name" : "PRODUKCJA",
+        "resource_type" : "section"
+      }
+    } ],
+    "modified_at" : "2021-06-18T13:05:10.809Z",
+    "name" : "STERFA: FOODCOURT (ustalenia, montaż, demontaż)",
+    "notes" : "",
+    "num_hearts" : 0,
+    "num_likes" : 0,
+    "parent" : null,
+    "permalink_url" : "https://app.asana.com/0/1200255888947416/1200255838820212",
+    "projects" : [ {
+      "gid" : "1200255888947416",
+      "name" : "2021 TEAMS nurt",
+      "resource_type" : "project"
+    } ],
+    "resource_type" : "task",
+    "start_at" : null,
+    "start_on" : null,
+    "subtasks" : [ ],
+    "tags" : [ ],
+    "resource_subtype" : "default_task",
+    "workspace" : {
+      "gid" : "11757994458578",
+      "name" : "WTP",
+      "resource_type" : "workspace"
+    }
+  }, {
+    "gid" : "1200255838826896",
+    "assignee" : null,
+    "assignee_status" : "upcoming",
+    "completed" : false,
+    "completed_at" : null,
+    "created_at" : "2021-04-27T18:08:43.475Z",
+    "due_at" : null,
+    "due_on" : null,
+    "followers" : [ {
+      "gid" : "6120693648102",
+      "name" : "marek syntro.pl",
+      "resource_type" : "user"
+    } ],
+    "hearted" : false,
+    "hearts" : [ ],
+    "liked" : false,
+    "likes" : [ ],
+    "memberships" : [ {
+      "project" : {
+        "gid" : "1200255888947416",
+        "name" : "2021 TEAMS nurt",
+        "resource_type" : "project"
+      },
+      "section" : {
+        "gid" : "1200255838459376",
+        "name" : "PRODUKCJA",
+        "resource_type" : "section"
+      }
+    } ],
+    "modified_at" : "2021-04-27T18:12:06.646Z",
+    "name" : "STREFA: BRAMKA (ustalenia, montaż, demontaż)",
+    "notes" : "",
+    "num_hearts" : 0,
+    "num_likes" : 0,
+    "parent" : null,
+    "permalink_url" : "https://app.asana.com/0/1200255888947416/1200255838826896",
+    "projects" : [ {
+      "gid" : "1200255888947416",
+      "name" : "2021 TEAMS nurt",
+      "resource_type" : "project"
+    } ],
+    "resource_type" : "task",
+    "start_at" : null,
+    "start_on" : null,
+    "subtasks" : [ ],
+    "tags" : [ ],
+    "resource_subtype" : "default_task",
+    "workspace" : {
+      "gid" : "11757994458578",
+      "name" : "WTP",
+      "resource_type" : "workspace"
+    }
+  }, {
+    "gid" : "1200255835352813",
+    "assignee" : null,
+    "assignee_status" : "upcoming",
+    "completed" : false,
+    "completed_at" : null,
+    "created_at" : "2021-04-27T18:08:45.367Z",
+    "due_at" : null,
+    "due_on" : null,
+    "followers" : [ {
+      "gid" : "6120693648102",
+      "name" : "marek syntro.pl",
+      "resource_type" : "user"
+    } ],
+    "hearted" : false,
+    "hearts" : [ ],
+    "liked" : false,
+    "likes" : [ ],
+    "memberships" : [ {
+      "project" : {
+        "gid" : "1200255888947416",
+        "name" : "2021 TEAMS nurt",
+        "resource_type" : "project"
+      },
+      "section" : {
+        "gid" : "1200255838459376",
+        "name" : "PRODUKCJA",
+        "resource_type" : "section"
+      }
+    } ],
+    "modified_at" : "2021-05-13T19:52:57.867Z",
+    "name" : "STREFA: OGNISKO (ustalenia, montaż, demontaż)",
+    "notes" : "",
+    "num_hearts" : 0,
+    "num_likes" : 0,
+    "parent" : null,
+    "permalink_url" : "https://app.asana.com/0/1200255888947416/1200255835352813",
+    "projects" : [ {
+      "gid" : "1200255888947416",
+      "name" : "2021 TEAMS nurt",
+      "resource_type" : "project"
+    } ],
+    "resource_type" : "task",
+    "start_at" : null,
+    "start_on" : null,
+    "subtasks" : [ ],
+    "tags" : [ ],
+    "resource_subtype" : "default_task",
+    "workspace" : {
+      "gid" : "11757994458578",
+      "name" : "WTP",
+      "resource_type" : "workspace"
+    }
+  }, {
+    "gid" : "1200255835352817",
+    "assignee" : null,
+    "assignee_status" : "upcoming",
+    "completed" : false,
+    "completed_at" : null,
+    "created_at" : "2021-04-27T18:08:45.983Z",
+    "due_at" : null,
+    "due_on" : null,
+    "followers" : [ {
+      "gid" : "6120693648102",
+      "name" : "marek syntro.pl",
+      "resource_type" : "user"
+    } ],
+    "hearted" : false,
+    "hearts" : [ ],
+    "liked" : false,
+    "likes" : [ ],
+    "memberships" : [ {
+      "project" : {
+        "gid" : "1200255888947416",
+        "name" : "2021 TEAMS nurt",
+        "resource_type" : "project"
+      },
+      "section" : {
+        "gid" : "1200255838459376",
+        "name" : "PRODUKCJA",
+        "resource_type" : "section"
+      }
+    } ],
+    "modified_at" : "2021-04-27T18:12:07.435Z",
+    "name" : "STREFY: OBIE SCENY (montaż, changeover, demontaż)",
+    "notes" : "",
+    "num_hearts" : 0,
+    "num_likes" : 0,
+    "parent" : null,
+    "permalink_url" : "https://app.asana.com/0/1200255888947416/1200255835352817",
+    "projects" : [ {
+      "gid" : "1200255888947416",
+      "name" : "2021 TEAMS nurt",
+      "resource_type" : "project"
+    } ],
+    "resource_type" : "task",
+    "start_at" : null,
+    "start_on" : null,
+    "subtasks" : [ ],
+    "tags" : [ ],
+    "resource_subtype" : "default_task",
+    "workspace" : {
+      "gid" : "11757994458578",
+      "name" : "WTP",
+      "resource_type" : "workspace"
+    }
+  }, {
+    "gid" : "1200255838464784",
+    "assignee" : null,
+    "assignee_status" : "upcoming",
+    "completed" : false,
+    "completed_at" : null,
+    "created_at" : "2021-04-27T18:08:29.865Z",
+    "due_at" : null,
+    "due_on" : null,
+    "followers" : [ {
+      "gid" : "6120693648102",
+      "name" : "marek syntro.pl",
+      "resource_type" : "user"
+    } ],
+    "hearted" : false,
+    "hearts" : [ ],
+    "liked" : false,
+    "likes" : [ ],
+    "memberships" : [ {
+      "project" : {
+        "gid" : "1200255888947416",
+        "name" : "2021 TEAMS nurt",
+        "resource_type" : "project"
+      },
+      "section" : {
+        "gid" : "1200255838459436",
+        "name" : "OBSŁUGA EVENTU (do ulepszenia ta sekcja)",
+        "resource_type" : "section"
+      }
+    }, {
+      "project" : {
+        "gid" : "1200328578783236",
+        "name" : "2021 OBSŁUGA nurt",
+        "resource_type" : "project"
+      },
+      "section" : {
+        "gid" : "1200328578783237",
+        "name" : "Untitled section",
+        "resource_type" : "section"
+      }
+    } ],
+    "modified_at" : "2021-05-16T01:27:53.667Z",
+    "name" : "OPIEKA NAD ARTYSTAMI",
+    "notes" : "",
+    "num_hearts" : 0,
+    "num_likes" : 0,
+    "parent" : null,
+    "permalink_url" : "https://app.asana.com/0/1200255888947416/1200255838464784",
+    "projects" : [ {
+      "gid" : "1200255888947416",
+      "name" : "2021 TEAMS nurt",
+      "resource_type" : "project"
+    }, {
+      "gid" : "1200328578783236",
+      "name" : "2021 OBSŁUGA nurt",
+      "resource_type" : "project"
+    } ],
+    "resource_type" : "task",
+    "start_at" : null,
+    "start_on" : null,
+    "subtasks" : [ {
+      "gid" : "1200328578783268",
+      "assignee" : null,
+      "assignee_status" : "upcoming",
+      "completed" : false,
+      "completed_at" : null,
+      "created_at" : "2021-05-16T00:50:09.793Z",
+      "due_at" : null,
+      "due_on" : null,
+      "followers" : [ {
+        "gid" : "6120693648102",
+        "name" : "marek syntro.pl",
+        "resource_type" : "user"
+      } ],
+      "hearted" : false,
+      "hearts" : [ ],
+      "liked" : false,
+      "likes" : [ ],
+      "memberships" : [ ],
+      "modified_at" : "2021-05-16T00:50:25.959Z",
+      "name" : "zapewnienie noclegów?",
+      "notes" : "",
+      "num_hearts" : 0,
+      "num_likes" : 0,
+      "parent" : {
+        "gid" : "1200255838464784",
+        "name" : "OPIEKA NAD ARTYSTAMI",
+        "resource_type" : "task"
+      },
+      "permalink_url" : "https://app.asana.com/0/1200328578783268/1200328578783268",
+      "projects" : [ ],
+      "resource_type" : "task",
+      "start_at" : null,
+      "start_on" : null,
+      "subtasks" : [ ],
+      "tags" : [ ],
+      "resource_subtype" : "default_task",
+      "workspace" : {
+        "gid" : "11757994458578",
+        "name" : "WTP",
+        "resource_type" : "workspace"
+      }
+    }, {
+      "gid" : "1200328578783270",
+      "assignee" : null,
+      "assignee_status" : "upcoming",
+      "completed" : false,
+      "completed_at" : null,
+      "created_at" : "2021-05-16T00:50:26.278Z",
+      "due_at" : null,
+      "due_on" : null,
+      "followers" : [ {
+        "gid" : "6120693648102",
+        "name" : "marek syntro.pl",
+        "resource_type" : "user"
+      } ],
+      "hearted" : false,
+      "hearts" : [ ],
+      "liked" : false,
+      "likes" : [ ],
+      "memberships" : [ ],
+      "modified_at" : "2021-05-16T00:50:30.785Z",
+      "name" : "zapewnienie transportów?",
+      "notes" : "",
+      "num_hearts" : 0,
+      "num_likes" : 0,
+      "parent" : {
+        "gid" : "1200255838464784",
+        "name" : "OPIEKA NAD ARTYSTAMI",
+        "resource_type" : "task"
+      },
+      "permalink_url" : "https://app.asana.com/0/1200328578783270/1200328578783270",
+      "projects" : [ ],
+      "resource_type" : "task",
+      "start_at" : null,
+      "start_on" : null,
+      "subtasks" : [ ],
+      "tags" : [ ],
+      "resource_subtype" : "default_task",
+      "workspace" : {
+        "gid" : "11757994458578",
+        "name" : "WTP",
+        "resource_type" : "workspace"
+      }
+    }, {
+      "gid" : "1200328578783272",
+      "assignee" : null,
+      "assignee_status" : "upcoming",
+      "completed" : false,
+      "completed_at" : null,
+      "created_at" : "2021-05-16T00:50:50.085Z",
+      "due_at" : null,
+      "due_on" : null,
+      "followers" : [ {
+        "gid" : "6120693648102",
+        "name" : "marek syntro.pl",
+        "resource_type" : "user"
+      } ],
+      "hearted" : false,
+      "hearts" : [ ],
+      "liked" : false,
+      "likes" : [ ],
+      "memberships" : [ ],
+      "modified_at" : "2021-05-16T00:50:54.614Z",
+      "name" : "zebranie plusjedynek",
+      "notes" : "",
+      "num_hearts" : 0,
+      "num_likes" : 0,
+      "parent" : {
+        "gid" : "1200255838464784",
+        "name" : "OPIEKA NAD ARTYSTAMI",
+        "resource_type" : "task"
+      },
+      "permalink_url" : "https://app.asana.com/0/1200328578783272/1200328578783272",
+      "projects" : [ ],
+      "resource_type" : "task",
+      "start_at" : null,
+      "start_on" : null,
+      "subtasks" : [ ],
+      "tags" : [ ],
+      "resource_subtype" : "default_task",
+      "workspace" : {
+        "gid" : "11757994458578",
+        "name" : "WTP",
+        "resource_type" : "workspace"
+      }
+    }, {
+      "gid" : "1200328578783271",
+      "assignee" : null,
+      "assignee_status" : "upcoming",
+      "completed" : false,
+      "completed_at" : null,
+      "created_at" : "2021-05-16T00:50:31.057Z",
+      "due_at" : null,
+      "due_on" : null,
+      "followers" : [ {
+        "gid" : "6120693648102",
+        "name" : "marek syntro.pl",
+        "resource_type" : "user"
+      } ],
+      "hearted" : false,
+      "hearts" : [ ],
+      "liked" : false,
+      "likes" : [ ],
+      "memberships" : [ ],
+      "modified_at" : "2021-05-16T00:50:48.869Z",
+      "name" : "info o hospitality",
+      "notes" : "",
+      "num_hearts" : 0,
+      "num_likes" : 0,
+      "parent" : {
+        "gid" : "1200255838464784",
+        "name" : "OPIEKA NAD ARTYSTAMI",
+        "resource_type" : "task"
+      },
+      "permalink_url" : "https://app.asana.com/0/1200328578783271/1200328578783271",
+      "projects" : [ ],
+      "resource_type" : "task",
+      "start_at" : null,
+      "start_on" : null,
+      "subtasks" : [ ],
+      "tags" : [ ],
+      "resource_subtype" : "default_task",
+      "workspace" : {
+        "gid" : "11757994458578",
+        "name" : "WTP",
+        "resource_type" : "workspace"
+      }
+    } ],
+    "tags" : [ ],
+    "resource_subtype" : "default_task",
+    "workspace" : {
+      "gid" : "11757994458578",
+      "name" : "WTP",
+      "resource_type" : "workspace"
+    }
+  }, {
+    "gid" : "1200255838479606",
+    "assignee" : null,
+    "assignee_status" : "upcoming",
+    "completed" : false,
+    "completed_at" : null,
+    "created_at" : "2021-04-27T18:08:30.322Z",
+    "due_at" : null,
+    "due_on" : null,
+    "followers" : [ {
+      "gid" : "6120693648102",
+      "name" : "marek syntro.pl",
+      "resource_type" : "user"
+    } ],
+    "hearted" : false,
+    "hearts" : [ ],
+    "liked" : false,
+    "likes" : [ ],
+    "memberships" : [ {
+      "project" : {
+        "gid" : "1200255888947416",
+        "name" : "2021 TEAMS nurt",
+        "resource_type" : "project"
+      },
+      "section" : {
+        "gid" : "1200255838459436",
+        "name" : "OBSŁUGA EVENTU (do ulepszenia ta sekcja)",
+        "resource_type" : "section"
+      }
+    }, {
+      "project" : {
+        "gid" : "1200328578783236",
+        "name" : "2021 OBSŁUGA nurt",
+        "resource_type" : "project"
+      },
+      "section" : {
+        "gid" : "1200328578783237",
+        "name" : "Untitled section",
+        "resource_type" : "section"
+      }
+    } ],
+    "modified_at" : "2021-05-16T01:28:26.629Z",
+    "name" : "STAGE MANAGMENT",
+    "notes" : "",
+    "num_hearts" : 0,
+    "num_likes" : 0,
+    "parent" : null,
+    "permalink_url" : "https://app.asana.com/0/1200255888947416/1200255838479606",
+    "projects" : [ {
+      "gid" : "1200255888947416",
+      "name" : "2021 TEAMS nurt",
+      "resource_type" : "project"
+    }, {
+      "gid" : "1200328578783236",
+      "name" : "2021 OBSŁUGA nurt",
+      "resource_type" : "project"
+    } ],
+    "resource_type" : "task",
+    "start_at" : null,
+    "start_on" : null,
+    "subtasks" : [ ],
+    "tags" : [ ],
+    "resource_subtype" : "default_task",
+    "workspace" : {
+      "gid" : "11757994458578",
+      "name" : "WTP",
+      "resource_type" : "workspace"
+    }
+  }, {
+    "gid" : "1200255838490344",
+    "assignee" : null,
+    "assignee_status" : "upcoming",
+    "completed" : false,
+    "completed_at" : null,
+    "created_at" : "2021-04-27T18:08:30.772Z",
+    "due_at" : null,
+    "due_on" : null,
+    "followers" : [ {
+      "gid" : "6120693648102",
+      "name" : "marek syntro.pl",
+      "resource_type" : "user"
+    } ],
+    "hearted" : false,
+    "hearts" : [ ],
+    "liked" : false,
+    "likes" : [ ],
+    "memberships" : [ {
+      "project" : {
+        "gid" : "1200255888947416",
+        "name" : "2021 TEAMS nurt",
+        "resource_type" : "project"
+      },
+      "section" : {
+        "gid" : "1200255838459436",
+        "name" : "OBSŁUGA EVENTU (do ulepszenia ta sekcja)",
+        "resource_type" : "section"
+      }
+    }, {
+      "project" : {
+        "gid" : "1200328578783236",
+        "name" : "2021 OBSŁUGA nurt",
+        "resource_type" : "project"
+      },
+      "section" : {
+        "gid" : "1200328578783237",
+        "name" : "Untitled section",
+        "resource_type" : "section"
+      }
+    } ],
+    "modified_at" : "2021-05-16T01:28:26.186Z",
+    "name" : "BRAMKA OBSŁUGA",
+    "notes" : "",
+    "num_hearts" : 0,
+    "num_likes" : 0,
+    "parent" : null,
+    "permalink_url" : "https://app.asana.com/0/1200255888947416/1200255838490344",
+    "projects" : [ {
+      "gid" : "1200255888947416",
+      "name" : "2021 TEAMS nurt",
+      "resource_type" : "project"
+    }, {
+      "gid" : "1200328578783236",
+      "name" : "2021 OBSŁUGA nurt",
+      "resource_type" : "project"
+    } ],
+    "resource_type" : "task",
+    "start_at" : null,
+    "start_on" : null,
+    "subtasks" : [ ],
+    "tags" : [ ],
+    "resource_subtype" : "default_task",
+    "workspace" : {
+      "gid" : "11757994458578",
+      "name" : "WTP",
+      "resource_type" : "workspace"
+    }
+  }, {
+    "gid" : "1200255924189922",
+    "assignee" : null,
+    "assignee_status" : "upcoming",
+    "completed" : false,
+    "completed_at" : null,
+    "created_at" : "2021-04-27T18:08:32.650Z",
+    "due_at" : null,
+    "due_on" : null,
+    "followers" : [ {
+      "gid" : "6120693648102",
+      "name" : "marek syntro.pl",
+      "resource_type" : "user"
+    } ],
+    "hearted" : false,
+    "hearts" : [ ],
+    "liked" : false,
+    "likes" : [ ],
+    "memberships" : [ {
+      "project" : {
+        "gid" : "1200255888947416",
+        "name" : "2021 TEAMS nurt",
+        "resource_type" : "project"
+      },
+      "section" : {
+        "gid" : "1200255838459436",
+        "name" : "OBSŁUGA EVENTU (do ulepszenia ta sekcja)",
+        "resource_type" : "section"
+      }
+    }, {
+      "project" : {
+        "gid" : "1200328578783236",
+        "name" : "2021 OBSŁUGA nurt",
+        "resource_type" : "project"
+      },
+      "section" : {
+        "gid" : "1200328578783237",
+        "name" : "Untitled section",
+        "resource_type" : "section"
+      }
+    } ],
+    "modified_at" : "2021-05-16T01:28:25.706Z",
+    "name" : "RUNNER",
+    "notes" : "",
+    "num_hearts" : 0,
+    "num_likes" : 0,
+    "parent" : null,
+    "permalink_url" : "https://app.asana.com/0/1200255888947416/1200255924189922",
+    "projects" : [ {
+      "gid" : "1200255888947416",
+      "name" : "2021 TEAMS nurt",
+      "resource_type" : "project"
+    }, {
+      "gid" : "1200328578783236",
+      "name" : "2021 OBSŁUGA nurt",
+      "resource_type" : "project"
+    } ],
+    "resource_type" : "task",
+    "start_at" : null,
+    "start_on" : null,
+    "subtasks" : [ ],
+    "tags" : [ ],
+    "resource_subtype" : "default_task",
+    "workspace" : {
+      "gid" : "11757994458578",
+      "name" : "WTP",
+      "resource_type" : "workspace"
+    }
+  }, {
+    "gid" : "1200255924217662",
+    "assignee" : null,
+    "assignee_status" : "upcoming",
+    "completed" : false,
+    "completed_at" : null,
+    "created_at" : "2021-04-27T18:08:33.693Z",
+    "due_at" : null,
+    "due_on" : null,
+    "followers" : [ {
+      "gid" : "6120693648102",
+      "name" : "marek syntro.pl",
+      "resource_type" : "user"
+    } ],
+    "hearted" : false,
+    "hearts" : [ ],
+    "liked" : false,
+    "likes" : [ ],
+    "memberships" : [ {
+      "project" : {
+        "gid" : "1200255888947416",
+        "name" : "2021 TEAMS nurt",
+        "resource_type" : "project"
+      },
+      "section" : {
+        "gid" : "1200255838459436",
+        "name" : "OBSŁUGA EVENTU (do ulepszenia ta sekcja)",
+        "resource_type" : "section"
+      }
+    }, {
+      "project" : {
+        "gid" : "1200328578783236",
+        "name" : "2021 OBSŁUGA nurt",
+        "resource_type" : "project"
+      },
+      "section" : {
+        "gid" : "1200328578783237",
+        "name" : "Untitled section",
+        "resource_type" : "section"
+      }
+    } ],
+    "modified_at" : "2021-05-16T01:28:25.254Z",
+    "name" : "RUNNER / SZOFER",
+    "notes" : "",
+    "num_hearts" : 0,
+    "num_likes" : 0,
+    "parent" : null,
+    "permalink_url" : "https://app.asana.com/0/1200255888947416/1200255924217662",
+    "projects" : [ {
+      "gid" : "1200255888947416",
+      "name" : "2021 TEAMS nurt",
+      "resource_type" : "project"
+    }, {
+      "gid" : "1200328578783236",
+      "name" : "2021 OBSŁUGA nurt",
+      "resource_type" : "project"
+    } ],
+    "resource_type" : "task",
+    "start_at" : null,
+    "start_on" : null,
+    "subtasks" : [ ],
+    "tags" : [ ],
+    "resource_subtype" : "default_task",
+    "workspace" : {
+      "gid" : "11757994458578",
+      "name" : "WTP",
+      "resource_type" : "workspace"
+    }
+  }, {
+    "gid" : "1200255924245459",
+    "assignee" : null,
+    "assignee_status" : "upcoming",
+    "completed" : false,
+    "completed_at" : null,
+    "created_at" : "2021-04-27T18:08:34.514Z",
+    "due_at" : null,
+    "due_on" : null,
+    "followers" : [ {
+      "gid" : "6120693648102",
+      "name" : "marek syntro.pl",
+      "resource_type" : "user"
+    } ],
+    "hearted" : false,
+    "hearts" : [ ],
+    "liked" : false,
+    "likes" : [ ],
+    "memberships" : [ {
+      "project" : {
+        "gid" : "1200255888947416",
+        "name" : "2021 TEAMS nurt",
+        "resource_type" : "project"
+      },
+      "section" : {
+        "gid" : "1200255838459436",
+        "name" : "OBSŁUGA EVENTU (do ulepszenia ta sekcja)",
+        "resource_type" : "section"
+      }
+    }, {
+      "project" : {
+        "gid" : "1200328578783236",
+        "name" : "2021 OBSŁUGA nurt",
+        "resource_type" : "project"
+      },
+      "section" : {
+        "gid" : "1200328578783237",
+        "name" : "Untitled section",
+        "resource_type" : "section"
+      }
+    } ],
+    "modified_at" : "2021-05-16T01:28:24.811Z",
+    "name" : "BAR OBSŁUGA",
+    "notes" : "",
+    "num_hearts" : 0,
+    "num_likes" : 0,
+    "parent" : null,
+    "permalink_url" : "https://app.asana.com/0/1200255888947416/1200255924245459",
+    "projects" : [ {
+      "gid" : "1200255888947416",
+      "name" : "2021 TEAMS nurt",
+      "resource_type" : "project"
+    }, {
+      "gid" : "1200328578783236",
+      "name" : "2021 OBSŁUGA nurt",
+      "resource_type" : "project"
+    } ],
+    "resource_type" : "task",
+    "start_at" : null,
+    "start_on" : null,
+    "subtasks" : [ ],
+    "tags" : [ ],
+    "resource_subtype" : "default_task",
+    "workspace" : {
+      "gid" : "11757994458578",
+      "name" : "WTP",
+      "resource_type" : "workspace"
+    }
+  }, {
+    "gid" : "1200255924260202",
+    "assignee" : null,
+    "assignee_status" : "upcoming",
+    "completed" : false,
+    "completed_at" : null,
+    "created_at" : "2021-04-27T18:08:34.969Z",
+    "due_at" : null,
+    "due_on" : null,
+    "followers" : [ {
+      "gid" : "6120693648102",
+      "name" : "marek syntro.pl",
+      "resource_type" : "user"
+    } ],
+    "hearted" : false,
+    "hearts" : [ ],
+    "liked" : false,
+    "likes" : [ ],
+    "memberships" : [ {
+      "project" : {
+        "gid" : "1200255888947416",
+        "name" : "2021 TEAMS nurt",
+        "resource_type" : "project"
+      },
+      "section" : {
+        "gid" : "1200255838459436",
+        "name" : "OBSŁUGA EVENTU (do ulepszenia ta sekcja)",
+        "resource_type" : "section"
+      }
+    }, {
+      "project" : {
+        "gid" : "1200328578783236",
+        "name" : "2021 OBSŁUGA nurt",
+        "resource_type" : "project"
+      },
+      "section" : {
+        "gid" : "1200328578783237",
+        "name" : "Untitled section",
+        "resource_type" : "section"
+      }
+    } ],
+    "modified_at" : "2021-05-16T01:28:24.196Z",
+    "name" : "MERCH OBSŁUGA",
+    "notes" : "",
+    "num_hearts" : 0,
+    "num_likes" : 0,
+    "parent" : null,
+    "permalink_url" : "https://app.asana.com/0/1200255888947416/1200255924260202",
+    "projects" : [ {
+      "gid" : "1200255888947416",
+      "name" : "2021 TEAMS nurt",
+      "resource_type" : "project"
+    }, {
+      "gid" : "1200328578783236",
+      "name" : "2021 OBSŁUGA nurt",
+      "resource_type" : "project"
+    } ],
+    "resource_type" : "task",
+    "start_at" : null,
+    "start_on" : null,
+    "subtasks" : [ ],
+    "tags" : [ ],
+    "resource_subtype" : "default_task",
+    "workspace" : {
+      "gid" : "11757994458578",
+      "name" : "WTP",
+      "resource_type" : "workspace"
+    }
+  }, {
+    "gid" : "1200255924276183",
+    "assignee" : null,
+    "assignee_status" : "upcoming",
+    "completed" : false,
+    "completed_at" : null,
+    "created_at" : "2021-04-27T18:08:35.510Z",
+    "due_at" : null,
+    "due_on" : null,
+    "followers" : [ {
+      "gid" : "6120693648102",
+      "name" : "marek syntro.pl",
+      "resource_type" : "user"
+    } ],
+    "hearted" : false,
+    "hearts" : [ ],
+    "liked" : false,
+    "likes" : [ ],
+    "memberships" : [ {
+      "project" : {
+        "gid" : "1200255888947416",
+        "name" : "2021 TEAMS nurt",
+        "resource_type" : "project"
+      },
+      "section" : {
+        "gid" : "1200255838459436",
+        "name" : "OBSŁUGA EVENTU (do ulepszenia ta sekcja)",
+        "resource_type" : "section"
+      }
+    }, {
+      "project" : {
+        "gid" : "1200328578783236",
+        "name" : "2021 OBSŁUGA nurt",
+        "resource_type" : "project"
+      },
+      "section" : {
+        "gid" : "1200328578783237",
+        "name" : "Untitled section",
+        "resource_type" : "section"
+      }
+    } ],
+    "modified_at" : "2021-05-16T01:28:23.711Z",
+    "name" : "PRĄD OBSŁUGA",
+    "notes" : "",
+    "num_hearts" : 0,
+    "num_likes" : 0,
+    "parent" : null,
+    "permalink_url" : "https://app.asana.com/0/1200255888947416/1200255924276183",
+    "projects" : [ {
+      "gid" : "1200255888947416",
+      "name" : "2021 TEAMS nurt",
+      "resource_type" : "project"
+    }, {
+      "gid" : "1200328578783236",
+      "name" : "2021 OBSŁUGA nurt",
+      "resource_type" : "project"
+    } ],
+    "resource_type" : "task",
+    "start_at" : null,
+    "start_on" : null,
+    "subtasks" : [ ],
+    "tags" : [ ],
+    "resource_subtype" : "default_task",
+    "workspace" : {
+      "gid" : "11757994458578",
+      "name" : "WTP",
+      "resource_type" : "workspace"
+    }
+  }, {
+    "gid" : "1200255924316228",
+    "assignee" : null,
+    "assignee_status" : "upcoming",
+    "completed" : false,
+    "completed_at" : null,
+    "created_at" : "2021-04-27T18:08:36.608Z",
+    "due_at" : null,
+    "due_on" : null,
+    "followers" : [ {
+      "gid" : "6120693648102",
+      "name" : "marek syntro.pl",
+      "resource_type" : "user"
+    } ],
+    "hearted" : false,
+    "hearts" : [ ],
+    "liked" : false,
+    "likes" : [ ],
+    "memberships" : [ {
+      "project" : {
+        "gid" : "1200255888947416",
+        "name" : "2021 TEAMS nurt",
+        "resource_type" : "project"
+      },
+      "section" : {
+        "gid" : "1200255838459436",
+        "name" : "OBSŁUGA EVENTU (do ulepszenia ta sekcja)",
+        "resource_type" : "section"
+      }
+    }, {
+      "project" : {
+        "gid" : "1200328578783236",
+        "name" : "2021 OBSŁUGA nurt",
+        "resource_type" : "project"
+      },
+      "section" : {
+        "gid" : "1200328578783237",
+        "name" : "Untitled section",
+        "resource_type" : "section"
+      }
+    } ],
+    "modified_at" : "2021-05-16T01:28:23.220Z",
+    "name" : "OCHRONA",
+    "notes" : "",
+    "num_hearts" : 0,
+    "num_likes" : 0,
+    "parent" : null,
+    "permalink_url" : "https://app.asana.com/0/1200255888947416/1200255924316228",
+    "projects" : [ {
+      "gid" : "1200255888947416",
+      "name" : "2021 TEAMS nurt",
+      "resource_type" : "project"
+    }, {
+      "gid" : "1200328578783236",
+      "name" : "2021 OBSŁUGA nurt",
+      "resource_type" : "project"
+    } ],
+    "resource_type" : "task",
+    "start_at" : null,
+    "start_on" : null,
+    "subtasks" : [ ],
+    "tags" : [ ],
+    "resource_subtype" : "default_task",
+    "workspace" : {
+      "gid" : "11757994458578",
+      "name" : "WTP",
+      "resource_type" : "workspace"
+    }
+  }, {
+    "gid" : "1200255838720340",
+    "assignee" : null,
+    "assignee_status" : "upcoming",
+    "completed" : false,
+    "completed_at" : null,
+    "created_at" : "2021-04-27T18:08:39.084Z",
+    "due_at" : null,
+    "due_on" : null,
+    "followers" : [ {
+      "gid" : "6120693648102",
+      "name" : "marek syntro.pl",
+      "resource_type" : "user"
+    } ],
+    "hearted" : false,
+    "hearts" : [ ],
+    "liked" : false,
+    "likes" : [ ],
+    "memberships" : [ {
+      "project" : {
+        "gid" : "1200255888947416",
+        "name" : "2021 TEAMS nurt",
+        "resource_type" : "project"
+      },
+      "section" : {
+        "gid" : "1200255838459436",
+        "name" : "OBSŁUGA EVENTU (do ulepszenia ta sekcja)",
+        "resource_type" : "section"
+      }
+    }, {
+      "project" : {
+        "gid" : "1200328578783236",
+        "name" : "2021 OBSŁUGA nurt",
+        "resource_type" : "project"
+      },
+      "section" : {
+        "gid" : "1200328578783237",
+        "name" : "Untitled section",
+        "resource_type" : "section"
+      }
+    } ],
+    "modified_at" : "2021-05-16T01:28:22.564Z",
+    "name" : "MEDYCY",
+    "notes" : "",
+    "num_hearts" : 0,
+    "num_likes" : 0,
+    "parent" : null,
+    "permalink_url" : "https://app.asana.com/0/1200255888947416/1200255838720340",
+    "projects" : [ {
+      "gid" : "1200255888947416",
+      "name" : "2021 TEAMS nurt",
+      "resource_type" : "project"
+    }, {
+      "gid" : "1200328578783236",
+      "name" : "2021 OBSŁUGA nurt",
+      "resource_type" : "project"
+    } ],
+    "resource_type" : "task",
+    "start_at" : null,
+    "start_on" : null,
+    "subtasks" : [ ],
+    "tags" : [ ],
+    "resource_subtype" : "default_task",
+    "workspace" : {
+      "gid" : "11757994458578",
+      "name" : "WTP",
+      "resource_type" : "workspace"
+    }
+  } ]
+}
