@@ -2,21 +2,146 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+
+//TODO TEST CASE idk what when task is in multiple projects
+
 public class ReadAsanaProject : MonoBehaviour
 {
     public TextAsset asanaProjectJson;
     public AsanaTask[] asanaTasks;
+    AsanaProjectMembership asanaProjectMembership;
     //public AsanaUser[] asanaUsers;
+
+    public Vector3 projectGlobalPosition;
 
     Graph graph;
 
     private void Start()
     {
-        Import();
+        ImportTasks();
+
+
+        //ConnectTasksToProjects();
+
+        foreach (AsanaTask task in asanaTasks)
+        {
+            ConnectTaskToProjectsAndSections(task);
+        }
+
+
+
+        RefreshListsHook();
     }
 
+
+
     [ExposeMethodInEditor]
-    public void Import()
+    public void ConnectTaskToProjectsAndSections(AsanaTask task)
+    {
+        List<NodeMono> sectionNodes = new List<NodeMono>();
+        foreach (AsanaMembership memberhsip in task.memberships)
+        {
+            if (memberhsip.project != null)
+            {
+
+                NodeList2D projectList = AddTaskToGroup(task.gid, memberhsip.project.gid, memberhsip.project.name, "project", 1);
+                projectList.LabelSize = 80;
+                //TODO copy type string from the list nodemono
+                // btw nodepanel position is wrong
+
+            }
+
+            if (memberhsip.section != null)
+                
+            {
+                NodeList2D sectionList = AddTaskToGroup(task.gid, memberhsip.section.gid, memberhsip.section.name, "section",1);
+                sectionList.LabelSize = 40;
+                //TODO copy type string from the list nodemono
+                // btw nodepanel position is wrong
+                sectionNodes.Add(graph.GetNodeByUID(memberhsip.section.gid));
+            }
+
+
+        }
+
+
+        
+    }
+
+   
+    NodeList2D AddTaskToGroup(string taskUID, string groupUID, string groupName, string groupType, int layout)
+    {
+
+        // TODO this method should be in graph
+
+        NodeMono taskNode = graph.GetNodeByUID(taskUID);
+        NodeData groupData = new NodeData(groupUID, groupName,groupType);
+        
+        NodeMono groupNode = graph.LinkToExistingNodeOrCreateNew(taskNode, "is in", groupData).pairMono[1];
+        groupNode.panelRect.transform.position = new Vector3(-100,0,0);
+        NodeList2D groupList;
+        if(groupNode.GetComponentInChildren<NodeList2D>() == null)
+        {
+            groupList = graph.CreateNewNodeList(groupData.name, projectGlobalPosition, null,layout, groupNode.transform, false);
+            groupList.transform.localPosition = Vector3.zero;
+            groupList.transform.localRotation = Quaternion.identity;
+            groupNode.visibleNode.gameObject.SetActive(false);
+        }
+        else
+        {
+            groupList = groupNode.GetComponentInChildren<NodeList2D>();
+        }
+
+        Debug.Log($"groupList.AdoptNode(taskNode){groupList.labelText.text} {taskNode}");
+        groupList.AdoptNode(taskNode);
+
+        return groupList;
+       
+    }
+
+    //THis WORKS
+    [ExposeMethodInEditor]
+    void ConnectTasksToProjects()
+    {
+        foreach (AsanaTask task in asanaTasks)
+        {
+            foreach (AsanaMembership memberhsip in task.memberships)
+            {
+                if (memberhsip.project != null)
+                {
+                    NodeData projectNodeData = new NodeData();
+                    projectNodeData.name = memberhsip.project.name;
+                    projectNodeData.uid = memberhsip.project.gid;
+                    NodeMono taskNode = graph.GetNodeByUID(task.gid);
+                    NodeMono projectNode = graph.LinkToExistingNodeOrCreateNew(taskNode, "is in", projectNodeData, true).pairMono[1];
+                    projectNode.panelRect.gameObject.SetActive(false);
+                    NodeList2D projectList;
+
+                    if (projectNode.GetComponentInChildren<NodeList2D>() == null)
+                    {
+                        projectList = graph.CreateNewNodeList(projectNodeData.name, projectGlobalPosition, null, 1, projectNode.transform, true);
+                        projectList.transform.localPosition = Vector3.zero;
+                        projectList.transform.localRotation = Quaternion.identity;
+                    }
+                    else
+                    {
+                        projectList = projectNode.GetComponentInChildren<NodeList2D>();
+                    }
+                    projectList.AdoptNode(taskNode);
+                    projectList.UpdatePositions();
+
+
+                }
+            }
+        }
+    }
+
+
+
+
+    // THIS WILL BE SOON OBSOLETE
+    [ExposeMethodInEditor]
+    public void ImportTasks() 
     {
         asanaTasks = JsonUtility.FromJson<AsanaData>(asanaProjectJson.text).data;
 
@@ -34,7 +159,6 @@ public class ReadAsanaProject : MonoBehaviour
             }
 
         }
-
 
     }
 
@@ -74,6 +198,17 @@ public class ReadAsanaProject : MonoBehaviour
         Debug.Log($"data created {data.name}  {data.uid}");
 
         return graph.CreateNode(data);
+    }
+
+    [ExposeMethodInEditor]
+    void RefreshListsHook()
+    {
+        Debug.Log("refreshing nodelists on events not implemented");
+
+        foreach (NodeList2D list in GetComponentsInChildren<NodeList2D>())
+        {
+            list.UpdatePositions();
+        }
     }
 
 }

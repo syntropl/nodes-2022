@@ -9,6 +9,7 @@ public class Graph : MonoBehaviour
     public List<NodeMono> createdNodes;
     public List<EdgeMono> createdEdges;
     public Transform edgesContainer;
+    public Transform nodesContainer;
     //public Plane newNodePlane; //TODO this should be a nodeList
     public NodeList2D newNodesList2D;
 
@@ -30,7 +31,7 @@ public class Graph : MonoBehaviour
     private void Awake()
     {
         createdNodes = new List<NodeMono>();
-        newNodesList2D = CreateNewNodeList("new nodes", new Vector3(-100, 200, 0), null, 1, this.transform);
+        newNodesList2D = CreateNewNodeList("new nodes", new Vector3(-100, 200, 0), null, 1, nodesContainer);
         newNodesList2D.transform.position = newNodesListPosition;
         newNodesList2D.transform.localEulerAngles = newNodesListRotation;
         nodeTemplate.gameObject.SetActive(false);
@@ -56,15 +57,21 @@ public class Graph : MonoBehaviour
         }
     }
 
-
     [ExposeMethodInEditor]
-    void RotateAllYTowardsCamera()
+    void PrintHiddenNodes()
     {
-        foreach(NodeMono node in createdNodes)
+        List<NodeMono> inactiveNodes = new List<NodeMono>();
+        foreach (NodeMono node in this.GetChildrenNodes(true))
         {
-            node.RotateYToFace(GameObject.Find("Main Camera").transform);
+            if (node.gameObject.activeSelf)
+            {
+                inactiveNodes.Add(node);
+            }
         }
+
+        inactiveNodes.Print();
     }
+
 
 
     [ExposeMethodInEditor]
@@ -95,19 +102,19 @@ public class Graph : MonoBehaviour
     }
 
 
-    public void LinkToExistingNodeOrCreateNew(NodeMono originNode, string verb, NodeData nodeDataTolink, bool isDirectional=false)
+    public EdgeMono LinkToExistingNodeOrCreateNew(NodeMono originNode, string verb, NodeData nodeDataTolink, bool isDirectional=false)
     {
 
         NodeMono destinationNode = GetNodeByUID(nodeDataTolink.uid);
-        Debug.Log($"Linking{originNode.data.name} - {nodeDataTolink.name}");
-        Debug.Log($"found {destinationNode.data.name}");
 
+  
         if (destinationNode == null)
         {
             destinationNode = CreateNode(nodeDataTolink);
         }
- 
-        EdgeMono edgeMono = LinkTwoNodes(originNode, verb, destinationNode, isDirectional);
+//        Debug.Log($"destination node found. Linking: {originNode.data.name} - {destinationNode.data.name}");
+
+        return LinkTwoNodes(originNode, verb, destinationNode, isDirectional);
         
     }
 

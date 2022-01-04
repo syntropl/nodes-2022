@@ -18,6 +18,15 @@ public class NodeData
     public DateTime due_on;
     public List<string> tags;
 
+    public NodeData(string Uid = null, string Name = null, string Type = null, long due_date_as_TICKS = -23, string Description=null, List<string> Tags = null)
+    {
+        uid = Uid;
+        name = Name;
+        type = Type;
+        description = Description;
+        tags = Tags;
+        if (due_date_as_TICKS >= 0) { due_on = new DateTime(due_date_as_TICKS); }
+    }
 
     public override string ToString()
     {
@@ -41,6 +50,7 @@ public class NodeMono : MonoBehaviour
     public Text dateText;
 
     public Collider nodeCollider;
+    public Transform visibleNode;
     public RectTransform panelRect;
 
     //Properties for easy access

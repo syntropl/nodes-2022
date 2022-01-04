@@ -36,17 +36,21 @@ public class Timeline : MonoBehaviour
 
     public void AdoptNodes(List<NodeMono> nodesToAdopt)
     {
-        RemoveUndatedNodes(nodesToAdopt);
-        NodeMono[] children = this.GetChildrenNodes();
-        if (children!= null) { nodesToAdopt.AddRange(children);}
-        UpdateTimeFrameToFit(nodesToAdopt);
-        UpdateDimensions();
+        if (nodesToAdopt != null)
+        {
+            RemoveUndatedNodes(nodesToAdopt);
+            NodeMono[] children = this.GetChildrenNodes();
+            if (children != null) { nodesToAdopt.AddRange(children); }
+            UpdateTimeFrameToFit(nodesToAdopt);
+            UpdateDimensions();
 
-        foreach(NodeMono node in nodesToAdopt)
-        { node.transform.SetParent(this.transform); }
+            foreach (NodeMono node in nodesToAdopt)
+            { node.transform.SetParent(this.transform); }
 
-        if (useDayLists) { CreateAndPopulateDayLists(); }
-        else { DistributeChildrenNodesOnZaxis(); }
+            if (useDayLists) { CreateAndPopulateDayLists(); }
+            else { DistributeChildrenNodesOnZaxis(); }
+        }
+
     }
 
 

@@ -6,6 +6,7 @@ using ExtentionMethods;
 public class Viewpoint : MonoBehaviour
 {
     public Transform focalPoint;
+    public Transform vantagePoint;
 
     [ExposeMethodInEditor]
     public void JumpCameraHere()

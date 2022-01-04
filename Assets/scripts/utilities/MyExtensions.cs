@@ -27,6 +27,7 @@ namespace ExtentionMethods
                 i++;
             }
             Debug.Log(" }");
+
         }
 
         public static void Print(this MonoBehaviour mono)
@@ -47,7 +48,7 @@ namespace ExtentionMethods
         //    mover.SetDestination(destination, smoothTime);
         //}
 
-        public static void MoveTowards(this MonoBehaviour thisMono, Vector3 destination, int frames=100)
+        public static void MoveTowards(this MonoBehaviour thisMono, Vector3 destination, int frames=50)
         {
             MoveSmooth mover = thisMono.AddOrGetComponent<MoveSmooth>();
             mover.SetDestination(destination, frames);
@@ -88,14 +89,23 @@ namespace ExtentionMethods
         }
 
 
+        //TODO searching for inactive children nodes. still not wo
 
-        public static NodeMono[] GetChildrenNodes(this MonoBehaviour mono)
+        public static NodeMono[] GetChildrenNodes(this MonoBehaviour thisMono, bool includeInactive=true)
         {
-            if (mono.GetComponentInChildren<NodeMono>())
+            if (thisMono.GetComponentInChildren<NodeMono>(includeInactive))
             {
-                return mono.GetComponentsInChildren<NodeMono>();
+                return thisMono.GetComponentsInChildren<NodeMono>(includeInactive);
             }
-            Debug.Log($"{mono.gameObject.name} : no children nodes found");
+            if (includeInactive)
+            {
+                Debug.Log($"{thisMono.gameObject.name} : no children nodes found");
+            }
+            else
+            {
+                Debug.Log($"{thisMono.gameObject.name} : no ACTIVE children nodes found");
+            }
+            
             return null;
         }
 

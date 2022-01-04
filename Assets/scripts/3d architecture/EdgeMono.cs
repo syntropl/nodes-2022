@@ -55,6 +55,8 @@ public class EdgeMono : MonoBehaviour
         set { UpdateData(value);}
     }
 
+    public bool isHidden;
+
     public Transform cylinder;
 
     public NodeMono[] pairMono;
@@ -107,11 +109,33 @@ public class EdgeMono : MonoBehaviour
 
     private void Update()
     {
-        
+        /// ALL THIS SHOULD BE DONE BY EVENTS ?
+        /// 
         if (pairMono != null && pairMono[0] != null && pairMono[1] != null)
         {
+            if (pairMono[0].gameObject.activeSelf && pairMono[1].gameObject.activeSelf)
+            {
+                isHidden = false;
+            }
+            else
+            {
+                isHidden = true;
+            }
+
+        }
+        // ///
+
+        if (isHidden)
+        {
+            cylinder.gameObject.SetActive(false);
+        }
+        else
+        {
+            cylinder.gameObject.SetActive(true);
             UpdateTransform();
         }
+
+  
         
     }
 

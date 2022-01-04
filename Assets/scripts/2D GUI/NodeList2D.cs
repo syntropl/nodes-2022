@@ -9,6 +9,18 @@ public class NodeList2D : MonoBehaviour
     public int layout = 1;
     public Text labelText;
 
+
+    public int LabelSize
+    {
+        get { return labelText.fontSize; }
+        set { labelText.fontSize = value; }
+    }
+
+    public float LabelWidth
+    {
+        get { return labelText.rectTransform.GetWidth(); }
+    }
+
     float labelXoffset = 0;
     private bool _isOnAxis;
     public bool isOnAxis
@@ -23,7 +35,6 @@ public class NodeList2D : MonoBehaviour
     }
 
     float marginBelowLabel = 0f;
-    
     
     float spacing = 20f;
 
@@ -52,6 +63,8 @@ public class NodeList2D : MonoBehaviour
     {
         node.transform.SetParent(this.transform);
         node.transform.localRotation = Quaternion.identity;
+
+        Debug.Log($"{node.name} is now child of {node.transform.parent}");
         UpdatePositions();
     }
 
@@ -60,7 +73,7 @@ public class NodeList2D : MonoBehaviour
     {
 
 
-        NodeMono[] nodes = this.GetChildrenNodes();
+        NodeMono[] activeNodes = this.GetChildrenNodes(false);
         float xPosRelative = 0;
         float yPosRelative = 0f;
         float labelYoffset = labelText.rectTransform.GetHeight() + marginBelowLabel;
@@ -75,23 +88,30 @@ public class NodeList2D : MonoBehaviour
             yPosRelative = -1 * labelYoffset;
         }
 
-
-        foreach (NodeMono node in nodes)
+        if (activeNodes != null)
         {
-            Vector3 localPos = new Vector3(xPosRelative, yPosRelative, 0);
-            Vector3 newGlobalPosition = transform.TransformPoint(localPos);
+            foreach (NodeMono node in activeNodes)
+            {
+                Vector3 localPos = new Vector3(xPosRelative, yPosRelative, 0);
+                Vector3 newGlobalPosition = transform.TransformPoint(localPos);
 
-            node.MoveTowards(newGlobalPosition, 50);
-            xPosRelative = xPosRelative + spacing + node.panelRect.GetWidth();
+                node.MoveTowards(newGlobalPosition, 50);
+                xPosRelative = xPosRelative + spacing + node.panelRect.GetWidth();
 
+            }
         }
+        //else
+        //{
+        //    Debug.Log($"{gameObject.name} has no active children nodes");
+        //}
+
     }
 
     void LineUpColumn()
     {
 
 
-        NodeMono[] nodes = this.GetChildrenNodes();
+        NodeMono[] activeNodes = this.GetChildrenNodes(false);
 
         float labelYoffset = labelText.rectTransform.GetHeight() + marginBelowLabel;
         float yPosRelative = 0f;
@@ -108,9 +128,9 @@ public class NodeList2D : MonoBehaviour
         }
         
 
-        if (nodes != null)
+        if (activeNodes != null)
         {
-            foreach (NodeMono node in nodes)
+            foreach (NodeMono node in activeNodes)
             {
                 Vector3 newGlobalPosition = transform.TransformPoint(new Vector3(0, yPosRelative, 0));
                 node.MoveTowards(newGlobalPosition);

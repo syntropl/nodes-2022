@@ -34,7 +34,7 @@ public class CameraContainer : MonoBehaviour
         lookAtGazePointer = true;
         //KeepLookingAtObject(viewpoint.focalPoint);
 
-        this.MoveTowards(viewpoint.transform.position);//, 0.3f, 0.15f);
+        this.MoveTowards(viewpoint.vantagePoint.transform.position);//, 0.3f, 0.15f);
         
         gazePointer.MoveTowards(viewpoint.focalPoint.transform.position);
     }
@@ -65,6 +65,7 @@ public class CameraContainer : MonoBehaviour
         ApplyViewpoint(testViewpoint2);
     }
 
+
     private void Update()
     {
         if (Input.GetKey(KeyCode.L))
@@ -78,6 +79,10 @@ public class CameraContainer : MonoBehaviour
             LookAtFocalPoint();
         }
 
+        if (Time.frameCount == 500)
+        {
+            lookAtGazePointer = false;
+        }
     }
 
     private void Start()
