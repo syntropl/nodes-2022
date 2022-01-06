@@ -4,11 +4,12 @@ using UnityEngine;
 using ExtentionMethods;
 using UnityEngine.UI;
 
-public class NodeList2D : MonoBehaviour
+public class NodeList2D : MonoBehaviour 
 {
+
+
     public int layout = 1;
     public Text labelText;
-
 
     public int LabelSize
     {
@@ -22,15 +23,15 @@ public class NodeList2D : MonoBehaviour
     }
 
     float labelXoffset = 0;
-    private bool _isOnAxis;
-    public bool isOnAxis
+    private bool _labelsShiftedLeft;
+    public bool labelsShiftedLeft
     {
-        get { return _isOnAxis; }
+        get { return _labelsShiftedLeft; }
         set
         {
             if (value==true) { labelXoffset = -100; }
             else { labelXoffset = 0; }
-            _isOnAxis = value;
+            _labelsShiftedLeft = value;
         }
     }
 
@@ -48,6 +49,7 @@ public class NodeList2D : MonoBehaviour
         foreach(NodeMono node in nodes)
         {
             AdoptNode(node);
+            //TODO hide edges with children
         }
         //UpdatePositions();
     }
@@ -64,7 +66,7 @@ public class NodeList2D : MonoBehaviour
         node.transform.SetParent(this.transform);
         node.transform.localRotation = Quaternion.identity;
 
-        Debug.Log($"{node.name} is now child of {node.transform.parent}");
+//        Debug.Log($"{node.name} is now child of {node.transform.parent}");
         UpdatePositions();
     }
 
@@ -96,7 +98,7 @@ public class NodeList2D : MonoBehaviour
                 Vector3 newGlobalPosition = transform.TransformPoint(localPos);
 
                 node.MoveTowards(newGlobalPosition, 50);
-                xPosRelative = xPosRelative + spacing + node.panelRect.GetWidth();
+                xPosRelative = xPosRelative + spacing + node.labelPanelRect.GetWidth();
 
             }
         }
@@ -134,7 +136,7 @@ public class NodeList2D : MonoBehaviour
             {
                 Vector3 newGlobalPosition = transform.TransformPoint(new Vector3(0, yPosRelative, 0));
                 node.MoveTowards(newGlobalPosition);
-                yPosRelative = yPosRelative - node.panelRect.GetHeight() + spacing;
+                yPosRelative = yPosRelative - node.labelPanelRect.GetHeight() + spacing;
 
                 //Debug.Log($"newGlobalPosition = {newGlobalPosition}");
             }

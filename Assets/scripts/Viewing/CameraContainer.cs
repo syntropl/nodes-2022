@@ -79,7 +79,7 @@ public class CameraContainer : MonoBehaviour
             LookAtFocalPoint();
         }
 
-        if (Time.frameCount == 500)
+        if (Time.frameCount == 100)
         {
             lookAtGazePointer = false;
         }

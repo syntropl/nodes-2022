@@ -1,7 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+using ExtentionMethods;
 
 //TODO TEST CASE idk what when task is in multiple projects
 
@@ -10,14 +10,15 @@ public class ReadAsanaProject : MonoBehaviour
     public TextAsset asanaProjectJson;
     public AsanaTask[] asanaTasks;
     AsanaProjectMembership asanaProjectMembership;
-    //public AsanaUser[] asanaUsers;
-
+    List<string[]> mentions;
     public Vector3 projectGlobalPosition;
 
     Graph graph;
 
     private void Start()
     {
+        
+
         ImportTasks();
 
 
@@ -38,28 +39,40 @@ public class ReadAsanaProject : MonoBehaviour
     [ExposeMethodInEditor]
     public void ConnectTaskToProjectsAndSections(AsanaTask task)
     {
+        string projectUID = "";
         List<NodeMono> sectionNodes = new List<NodeMono>();
         foreach (AsanaMembership memberhsip in task.memberships)
         {
+
+            // this if maybye later?
             if (memberhsip.project != null)
             {
-
-                NodeList2D projectList = AddTaskToGroup(task.gid, memberhsip.project.gid, memberhsip.project.name, "project", 1);
+                NodeList2D projectList = AddNodeToGroup2D(task.gid, memberhsip.project.gid, memberhsip.project.name, "project", 1);
                 projectList.LabelSize = 80;
+                projectList.labelText.rectTransform.sizeDelta = new Vector2(700, 300);
                 //TODO copy type string from the list nodemono
                 // btw nodepanel position is wrong
+                projectUID = memberhsip.project.gid;
 
             }
 
             if (memberhsip.section != null)
                 
             {
-                NodeList2D sectionList = AddTaskToGroup(task.gid, memberhsip.section.gid, memberhsip.section.name, "section",1);
+                NodeList2D sectionList = AddNodeToGroup2D(task.gid, memberhsip.section.gid, memberhsip.section.name, "section",1);
                 sectionList.LabelSize = 40;
+                sectionList.labelText.rectTransform.sizeDelta = new Vector2(300, 300);
                 //TODO copy type string from the list nodemono
                 // btw nodepanel position is wrong
                 sectionNodes.Add(graph.GetNodeByUID(memberhsip.section.gid));
+
+                NodeList2D projectList = AddNodeToGroup2D(memberhsip.section.gid, projectUID, "ERROR", "project", 0);
             }
+
+
+            // TODO if task is subtask, put it on column list
+
+            // TODO if task has tag, link to or create tag node
 
 
         }
@@ -69,16 +82,16 @@ public class ReadAsanaProject : MonoBehaviour
     }
 
    
-    NodeList2D AddTaskToGroup(string taskUID, string groupUID, string groupName, string groupType, int layout)
+    NodeList2D AddNodeToGroup2D(string nodeUID, string groupUID, string groupName, string groupType, int layout)
     {
 
         // TODO this method should be in graph
 
-        NodeMono taskNode = graph.GetNodeByUID(taskUID);
+        NodeMono taskNode = graph.GetNodeByUID(nodeUID);
         NodeData groupData = new NodeData(groupUID, groupName,groupType);
         
         NodeMono groupNode = graph.LinkToExistingNodeOrCreateNew(taskNode, "is in", groupData).pairMono[1];
-        groupNode.panelRect.transform.position = new Vector3(-100,0,0);
+        groupNode.labelPanelRect.transform.position = new Vector3(-100,0,0);
         NodeList2D groupList;
         if(groupNode.GetComponentInChildren<NodeList2D>() == null)
         {
@@ -92,7 +105,7 @@ public class ReadAsanaProject : MonoBehaviour
             groupList = groupNode.GetComponentInChildren<NodeList2D>();
         }
 
-        Debug.Log($"groupList.AdoptNode(taskNode){groupList.labelText.text} {taskNode}");
+//        Debug.Log($"groupList.AdoptNode(taskNode){groupList.labelText.text} {taskNode}");
         groupList.AdoptNode(taskNode);
 
         return groupList;
@@ -114,7 +127,7 @@ public class ReadAsanaProject : MonoBehaviour
                     projectNodeData.uid = memberhsip.project.gid;
                     NodeMono taskNode = graph.GetNodeByUID(task.gid);
                     NodeMono projectNode = graph.LinkToExistingNodeOrCreateNew(taskNode, "is in", projectNodeData, true).pairMono[1];
-                    projectNode.panelRect.gameObject.SetActive(false);
+                    projectNode.labelPanelRect.gameObject.SetActive(false);
                     NodeList2D projectList;
 
                     if (projectNode.GetComponentInChildren<NodeList2D>() == null)
@@ -143,11 +156,13 @@ public class ReadAsanaProject : MonoBehaviour
     [ExposeMethodInEditor]
     public void ImportTasks() 
     {
+
         asanaTasks = JsonUtility.FromJson<AsanaData>(asanaProjectJson.text).data;
+        mentions = new List<string[]>();
 
         if (!GetComponent<Graph>()) { Debug.Log("graph component not found"); }
         graph = GetComponent<Graph>();
-
+        
 
         foreach (AsanaTask task in asanaTasks)
         {
@@ -157,7 +172,69 @@ public class ReadAsanaProject : MonoBehaviour
                 NodeMono userNode = InstantiateUser(task.assignee);
                 graph.LinkTwoNodes(taskNode, "is assigned to:", userNode, true);
             }
+            if(task.tags != null)
+            {
+                foreach(AsanaTag tag in task.tags)
+                {
+                    NodeMono tagNode = InstantiateTag(tag);
+                    graph.LinkTwoNodes(taskNode, "is tagged", tagNode, true);
+                }
+                
+            }
+            if(task.notes != null)
+            {
+                // checking for mentions of other tasks inside task description
+                string asanaLinkRoot = "https://app.asana.com/0/0/";
+                if (task.notes.Contains(asanaLinkRoot))
+                {
+                    int start = task.notes.IndexOf(asanaLinkRoot) + asanaLinkRoot.Length;
+                    string mentionUID = task.notes.Substring(start, 16); // if asana ever changes length of gids this will break;
+                    string[] protoEdge = { mentionUID, "is referenced by", taskNode.data.uid };
+                    
+                    mentions.Add(protoEdge);
+                   
+                }
+            }
+        }
 
+        // manifesting mentions as edges
+        foreach(string[] mention in mentions)
+        {
+
+            NodeMono callerNode = graph.GetNodeByUID(mention[2]);
+            string verb = mention[1];
+            NodeMono mentionedNode = graph.GetNodeByUID(mention[0]);
+
+
+
+            if (mentionedNode == null) { Debug.Log($"while importing task: {callerNode.data.name} I extracted a mention of <color=red>{mention[2]}</color> but do not recognize anything with this UID. check parsing during import"); }
+            else
+            {
+
+                if (callerNode != null)
+                {
+                    string mentionURL = "https://app.asana.com/0/0/" + mention[2];
+
+                    Debug.Log("");
+                    Debug.Log(callerNode.data.description);
+                    Debug.Log($"replacing {mentionURL} with {mentionedNode.data.name}");
+
+                    string correctedDescription = callerNode.data.description.Replace(mentionURL, mentionedNode.data.name);
+                    callerNode.data.description = correctedDescription;
+                    Debug.Log(callerNode.data.description);
+
+                    //TODO  make it bold?
+                    callerNode.UpdateDisplays();
+
+
+                    graph.LinkTwoNodes(mentionedNode, "is referenced by", callerNode, true);
+                }
+                else
+                {
+                    Debug.Log($": node lost: node <color=red>{mention[2]}</color>  was supposed to mention {mention[0]}");
+                }
+
+            }
         }
 
     }
@@ -171,15 +248,19 @@ public class ReadAsanaProject : MonoBehaviour
         data.type = "task";
         data.uid = task.gid;
         data.description = task.notes;
+        data.status = task.completed ? "completed" : "incomplete";
         if (task.due_on.Length > 9)
             //data.due_on = System.DateTime.Parse(task.due_on.Substring(0, 10));
             data.due_on = System.DateTime.Parse(task.due_on, null, System.Globalization.DateTimeStyles.RoundtripKind);
-        NodeMono taskNode = graph.CreateNode(data);
+        NodeMono taskNode = graph.CreateOrGetNode(data);
+
+        if(data.status == "completed") { taskNode.SetVisibility(0.2f); }
         if (task.subtasks.Length > 0)
         {
             foreach (AsanaTask subtask in task.subtasks)
             {
                 NodeMono subtaskNode = InstantiateTask(subtask);
+                NodeList2D projectList = AddNodeToGroup2D(subtaskNode.data.uid, taskNode.data.uid, $"{taskNode.name} subtasks", "_", 0);
                 graph.LinkTwoNodes(subtaskNode, "is a subtask", taskNode, true);
             }
         }
@@ -195,9 +276,21 @@ public class ReadAsanaProject : MonoBehaviour
         data.type = "Person";
         data.uid = user.gid;
 
-        Debug.Log($"data created {data.name}  {data.uid}");
+        //Debug.Log($"data created {data.name}  {data.uid}");
 
-        return graph.CreateNode(data);
+        return graph.CreateOrGetNode(data);
+    }
+
+    NodeMono InstantiateTag(AsanaTag tag)
+    {
+        NodeData data = new NodeData();
+        data.name = tag.name;
+        data.type = "tag";
+        data.uid = tag.gid;
+
+        //Debug.Log($"data created {data.name}  {data.uid}");
+
+        return graph.CreateOrGetNode(data);
     }
 
     [ExposeMethodInEditor]

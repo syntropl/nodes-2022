@@ -12,7 +12,7 @@ public class Viewpoint : MonoBehaviour
     public void JumpCameraHere()
     {
         Graph graph = this.GetGraph();
-        graph.camera.transform.position = this.transform.position;
+        graph.camera.transform.position = vantagePoint.transform.position;
         graph.camera.gazePointer.transform.position = focalPoint.transform.position;
         graph.camera.transform.rotation = Quaternion.LookRotation(focalPoint.position, Vector3.up);
     }
@@ -42,9 +42,9 @@ public class Viewpoint : MonoBehaviour
         }
         //focalMesh.enabled = false;
 
-        if (this.GetComponent<MeshRenderer>() == null) { Debug.LogError("viewpoint mesh renderer not found"); }
-        MeshRenderer viewPosition = GetComponent<MeshRenderer>();
-        viewPosition.enabled = false;
+        //if (vantagePoint == null) { Debug.LogError("vantagePoint Transform not found"); }
+        //MeshRenderer viewPosition = GetComponent<MeshRenderer>();
+        //viewPosition.enabled = false;
 
 
 

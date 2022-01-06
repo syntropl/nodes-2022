@@ -14,9 +14,12 @@ public class NodeData
     public string uid;
     public string type;
     public string name;
+    public string status;
     public string description;
     public DateTime due_on;
     public List<string> tags;
+
+    public List<EdgeData> edgeDataList = new List<EdgeData>();
 
     public NodeData(string Uid = null, string Name = null, string Type = null, long due_date_as_TICKS = -23, string Description=null, List<string> Tags = null)
     {
@@ -35,6 +38,12 @@ public class NodeData
     public void Print()
     {
         Debug.Log(this.ToString());
+        List<string> linkedNodes = new List<string>();
+        foreach (EdgeData edge in edgeDataList)
+        {
+            linkedNodes.Add(edge.OtherThan(this).name);
+        }
+        linkedNodes.Print("linked nodes:");
     }
 }
 
@@ -42,6 +51,7 @@ public class NodeMono : MonoBehaviour
 {
 
     public NodeData data;
+    public List<EdgeMono> edgeMonos;
 
     public Text nameText;
     public Text tagsText;
@@ -49,9 +59,35 @@ public class NodeMono : MonoBehaviour
     public Text descriptionText;
     public Text dateText;
 
+    // panels for highlighting specific texts
+    public Image namePanel;
+    public Image typePanel;
+    // more panels ?
+
     public Collider nodeCollider;
     public Transform visibleNode;
-    public RectTransform panelRect;
+    public RectTransform labelPanelRect;
+
+    public Color defaultPanelColor;
+    public Color defaultTextColor;
+
+    public Color highlightedPanelColor;
+    public Color highlightedTextColor;
+
+    public Color discretePanelColor;
+    public Color discreteTextColor;
+
+    public float labelWidth
+    {
+        get { return labelPanelRect.GetWidth(); }
+        set { labelPanelRect.sizeDelta = new Vector2(value, labelHeight); }
+    }
+
+    public float labelHeight
+    {
+        get { return labelPanelRect.GetHeight(); }
+        set { labelPanelRect.sizeDelta = new Vector2(labelWidth, value); }
+    }
 
     //Properties for easy access
     private float posXlocal;
@@ -76,6 +112,57 @@ public class NodeMono : MonoBehaviour
     }
 
 
+    
+
+    [ExposeMethodInEditor]
+    void HighlightNamePanel()
+    {
+        HighlightPanel(namePanel);
+    }
+
+    [ExposeMethodInEditor]
+    void UnHighlightNamePanel()
+    {
+        ResetPanelColors(namePanel);
+    }
+
+    void DeEmphasizePanel(Image panel)
+    {
+        Text text = panel.GetComponentInChildren<Text>();
+        SetPanelColors(panel, discretePanelColor, text, discreteTextColor);
+    }
+    
+    void ResetPanelColors(Image panel)
+    {
+        Text text = panel.GetComponentInChildren<Text>();
+        SetPanelColors(panel, defaultPanelColor, text, defaultTextColor);
+
+    }
+
+    void HighlightPanel(Image panel)
+    {
+        Text text = panel.GetComponentInChildren<Text>();
+        SetPanelColors(panel, highlightedPanelColor, text, highlightedTextColor);
+    }
+
+
+    void SetPanelColors(Image panel, Color panelColor, Text text, Color textColor)
+    {
+        panel.color = panelColor;
+        text.color = textColor;
+        Debug.Log(panel.name + " " + panel.color);
+        Debug.Log(text.name + " " + text.color);
+    }
+
+
+    void Start()
+    {
+
+        edgeMonos = new List<EdgeMono>();
+    }
+
+
+
     public void UpdateDisplays()
     {
         typeText.text = data.type;
@@ -87,16 +174,36 @@ public class NodeMono : MonoBehaviour
         UpdateColliderSize();
     }
 
+
+    //TODO show incompleted tasks greyed out?
+    public void SetVisibility(float fraction = 1)
+    {
+        if(fraction == 0) { visibleNode.gameObject.SetActive(false);}
+        else
+        {
+            visibleNode.gameObject.SetActive(true);
+            Text[] texts = visibleNode.GetComponentsInChildren<Text>();
+            foreach(Text text in texts)
+            {
+                text.color = new Color(0, 0, 0, fraction);
+            }
+            // TODO alpha of renderer material?
+        }
+
+        
+    }
+
+
     [ExposeMethodInEditor]
     public void UpdateColliderSize()
     {
         
-        float width  = panelRect.GetWidth() + 40;
-        float height = panelRect.GetHeight();
+        float labelWidth  = labelPanelRect.GetWidth() + 40;
+        float labelHeight = labelPanelRect.GetHeight();
         float depth = 1f;
 
-        nodeCollider.transform.position = panelRect.position;
-        nodeCollider.transform.localScale = new Vector3(width, height, depth);
+        nodeCollider.transform.position = labelPanelRect.position;
+        nodeCollider.transform.localScale = new Vector3(labelWidth, labelHeight, depth);
         // not implemented
     }
 
@@ -151,61 +258,10 @@ public class NodeMono : MonoBehaviour
 
 
 
-
-    void Start()
-    {
-
-  
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
-
-    //internal void OrientToFace(GameObject gameObject)
-    //{
-    //    throw new NotImplementedException();
-    //}
-
-    //public void MoveTo(Vector3 destinationWorldPosition, float speed= 0.1f)
-    //{
-    //    //StartCoroutine(MoveTowards(destinationWorldPosition, speed));
-    //    StartCoroutine(MoveDamp(destinationWorldPosition, 0.3f));
-    //}
-
-    //IEnumerator MoveTowards(Vector3 destination, float step_size)
-    //{
-
-    //    Vector3 origin = transform.position;
-
-        
-    //    for (float pos = 0; pos < 1; pos += step_size)
-    //    {
-
-    //        transform.position = Vector3.Lerp(origin, destination, pos);
-    //        yield return null;
-    //    }
-          
-    //}
-
-    //IEnumerator MoveDamp(Vector3 destination, float smoothTime, float accuracy=0.1f)
-    //{
-    //    Vector3 vel = Vector3.zero;
-
-    //   while(Vector3.Distance(transform.position, destination) > accuracy)
-    //    {
-    //        transform.position = Vector3.SmoothDamp(transform.position, destination, ref vel, smoothTime);
-    //        yield return null;
-    //    }
-    //}
-
-
-
     [ExposeMethodInEditor]
     public void Print()
     {
-        Debug.Log($"{transform.position} {data.ToString()}");
+        Debug.Log($"{data.name} {transform.position} ");
+        data.Print();
     }
 }

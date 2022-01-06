@@ -1,44 +1,40 @@
 {
   "data" : [ {
-    "gid" : "1201607938180087",
+    "gid" : "1201622388468063",
     "assignee" : null,
-    "assignee_status" : "inbox",
+    "assignee_status" : "upcoming",
     "completed" : false,
     "completed_at" : null,
-    "created_at" : "2021-12-29T14:17:50.520Z",
+    "created_at" : "2022-01-06T00:37:12.233Z",
     "due_at" : null,
     "due_on" : "2022-01-01",
-    "followers" : [ {
-      "gid" : "6120693648102",
-      "name" : "marek syntro.pl",
-      "resource_type" : "user"
-    } ],
+    "followers" : [ ],
     "hearted" : false,
     "hearts" : [ ],
     "liked" : false,
     "likes" : [ ],
     "memberships" : [ {
       "project" : {
-        "gid" : "1201607938180071",
-        "name" : "NODES 2022",
+        "gid" : "1201622386926277",
+        "name" : "NODES 202",
         "resource_type" : "project"
       },
       "section" : {
-        "gid" : "1201607938499131",
+        "gid" : "1201622515692747",
         "name" : "Use cases",
         "resource_type" : "section"
       }
     } ],
-    "modified_at" : "2021-12-31T01:47:46.991Z",
+    "modified_at" : "2022-01-06T00:37:12.233Z",
     "name" : "new Node Creation workflow",
     "notes" : "    creating by drag/drop\n    creating by button\n    creator form\n    cancelling\n    leaving form hanging\n    adding connections on creation\n",
     "num_hearts" : 0,
     "num_likes" : 0,
     "parent" : null,
-    "permalink_url" : "https://app.asana.com/0/1201607938180071/1201607938180087",
+    "permalink_url" : "https://app.asana.com/0/1201622386926277/1201622388468063",
     "projects" : [ {
-      "gid" : "1201607938180071",
-      "name" : "NODES 2022",
+      "gid" : "1201622386926277",
+      "name" : "NODES 202",
       "resource_type" : "project"
     } ],
     "resource_type" : "task",
@@ -48,50 +44,46 @@
     "tags" : [ ],
     "resource_subtype" : "default_task",
     "workspace" : {
-      "gid" : "498346170860",
-      "name" : "Personal Projects",
+      "gid" : "1201616985016651",
+      "name" : "syntro.pl",
       "resource_type" : "workspace"
     }
   }, {
-    "gid" : "1201607938180112",
+    "gid" : "1201622388485043",
     "assignee" : null,
     "assignee_status" : "upcoming",
     "completed" : false,
     "completed_at" : null,
-    "created_at" : "2021-12-29T14:27:07.907Z",
+    "created_at" : "2022-01-06T00:37:13.284Z",
     "due_at" : null,
     "due_on" : "2022-01-01",
-    "followers" : [ {
-      "gid" : "6120693648102",
-      "name" : "marek syntro.pl",
-      "resource_type" : "user"
-    } ],
+    "followers" : [ ],
     "hearted" : false,
     "hearts" : [ ],
     "liked" : false,
     "likes" : [ ],
     "memberships" : [ {
       "project" : {
-        "gid" : "1201607938180071",
-        "name" : "NODES 2022",
+        "gid" : "1201622386926277",
+        "name" : "NODES 202",
         "resource_type" : "project"
       },
       "section" : {
-        "gid" : "1201607938499131",
+        "gid" : "1201622515692747",
         "name" : "Use cases",
         "resource_type" : "section"
       }
     } ],
-    "modified_at" : "2021-12-31T01:47:54.161Z",
+    "modified_at" : "2022-01-06T00:37:13.284Z",
     "name" : "editing existing node (and deleting)",
     "notes" : "",
     "num_hearts" : 0,
     "num_likes" : 0,
     "parent" : null,
-    "permalink_url" : "https://app.asana.com/0/1201607938180071/1201607938180112",
+    "permalink_url" : "https://app.asana.com/0/1201622386926277/1201622388485043",
     "projects" : [ {
-      "gid" : "1201607938180071",
-      "name" : "NODES 2022",
+      "gid" : "1201622386926277",
+      "name" : "NODES 202",
       "resource_type" : "project"
     } ],
     "resource_type" : "task",
@@ -101,50 +93,46 @@
     "tags" : [ ],
     "resource_subtype" : "default_task",
     "workspace" : {
-      "gid" : "498346170860",
-      "name" : "Personal Projects",
+      "gid" : "1201616985016651",
+      "name" : "syntro.pl",
       "resource_type" : "workspace"
     }
   }, {
-    "gid" : "1201607938180116",
+    "gid" : "1201622388493876",
     "assignee" : null,
-    "assignee_status" : "inbox",
+    "assignee_status" : "upcoming",
     "completed" : false,
     "completed_at" : null,
-    "created_at" : "2021-12-29T14:27:32.602Z",
+    "created_at" : "2022-01-06T00:37:14.013Z",
     "due_at" : null,
     "due_on" : "2022-01-05",
-    "followers" : [ {
-      "gid" : "6120693648102",
-      "name" : "marek syntro.pl",
-      "resource_type" : "user"
-    } ],
+    "followers" : [ ],
     "hearted" : false,
     "hearts" : [ ],
     "liked" : false,
     "likes" : [ ],
     "memberships" : [ {
       "project" : {
-        "gid" : "1201607938180071",
-        "name" : "NODES 2022",
+        "gid" : "1201622386926277",
+        "name" : "NODES 202",
         "resource_type" : "project"
       },
       "section" : {
-        "gid" : "1201607938499131",
+        "gid" : "1201622515692747",
         "name" : "Use cases",
         "resource_type" : "section"
       }
     } ],
-    "modified_at" : "2021-12-31T01:29:13.958Z",
+    "modified_at" : "2022-01-06T00:37:14.013Z",
     "name" : "adding editing and deleting a connection",
     "notes" : "",
     "num_hearts" : 0,
     "num_likes" : 0,
     "parent" : null,
-    "permalink_url" : "https://app.asana.com/0/1201607938180071/1201607938180116",
+    "permalink_url" : "https://app.asana.com/0/1201622386926277/1201622388493876",
     "projects" : [ {
-      "gid" : "1201607938180071",
-      "name" : "NODES 2022",
+      "gid" : "1201622386926277",
+      "name" : "NODES 202",
       "resource_type" : "project"
     } ],
     "resource_type" : "task",
@@ -154,50 +142,46 @@
     "tags" : [ ],
     "resource_subtype" : "default_task",
     "workspace" : {
-      "gid" : "498346170860",
-      "name" : "Personal Projects",
+      "gid" : "1201616985016651",
+      "name" : "syntro.pl",
       "resource_type" : "workspace"
     }
   }, {
-    "gid" : "1201607938180108",
+    "gid" : "1201622388507740",
     "assignee" : null,
     "assignee_status" : "upcoming",
     "completed" : false,
     "completed_at" : null,
-    "created_at" : "2021-12-29T14:21:21.045Z",
+    "created_at" : "2022-01-06T00:37:14.717Z",
     "due_at" : null,
     "due_on" : null,
-    "followers" : [ {
-      "gid" : "6120693648102",
-      "name" : "marek syntro.pl",
-      "resource_type" : "user"
-    } ],
+    "followers" : [ ],
     "hearted" : false,
     "hearts" : [ ],
     "liked" : false,
     "likes" : [ ],
     "memberships" : [ {
       "project" : {
-        "gid" : "1201607938180071",
-        "name" : "NODES 2022",
+        "gid" : "1201622386926277",
+        "name" : "NODES 202",
         "resource_type" : "project"
       },
       "section" : {
-        "gid" : "1201607938499131",
+        "gid" : "1201622515692747",
         "name" : "Use cases",
         "resource_type" : "section"
       }
     } ],
-    "modified_at" : "2021-12-30T00:36:49.819Z",
+    "modified_at" : "2022-01-06T00:37:14.717Z",
     "name" : "saving and opening project in json",
     "notes" : "",
     "num_hearts" : 0,
     "num_likes" : 0,
     "parent" : null,
-    "permalink_url" : "https://app.asana.com/0/1201607938180071/1201607938180108",
+    "permalink_url" : "https://app.asana.com/0/1201622386926277/1201622388507740",
     "projects" : [ {
-      "gid" : "1201607938180071",
-      "name" : "NODES 2022",
+      "gid" : "1201622386926277",
+      "name" : "NODES 202",
       "resource_type" : "project"
     } ],
     "resource_type" : "task",
@@ -207,50 +191,46 @@
     "tags" : [ ],
     "resource_subtype" : "default_task",
     "workspace" : {
-      "gid" : "498346170860",
-      "name" : "Personal Projects",
+      "gid" : "1201616985016651",
+      "name" : "syntro.pl",
       "resource_type" : "workspace"
     }
   }, {
-    "gid" : "1201607938499142",
+    "gid" : "1201622388535703",
     "assignee" : null,
     "assignee_status" : "upcoming",
     "completed" : false,
     "completed_at" : null,
-    "created_at" : "2021-12-31T01:30:25.711Z",
+    "created_at" : "2022-01-06T00:37:16.512Z",
     "due_at" : null,
     "due_on" : null,
-    "followers" : [ {
-      "gid" : "6120693648102",
-      "name" : "marek syntro.pl",
-      "resource_type" : "user"
-    } ],
+    "followers" : [ ],
     "hearted" : false,
     "hearts" : [ ],
     "liked" : false,
     "likes" : [ ],
     "memberships" : [ {
       "project" : {
-        "gid" : "1201607938180071",
-        "name" : "NODES 2022",
+        "gid" : "1201622386926277",
+        "name" : "NODES 202",
         "resource_type" : "project"
       },
       "section" : {
-        "gid" : "1201607938499131",
+        "gid" : "1201622515692747",
         "name" : "Use cases",
         "resource_type" : "section"
       }
     } ],
-    "modified_at" : "2021-12-31T01:30:34.303Z",
+    "modified_at" : "2022-01-06T00:37:16.512Z",
     "name" : "pinning node to hud",
     "notes" : "",
     "num_hearts" : 0,
     "num_likes" : 0,
     "parent" : null,
-    "permalink_url" : "https://app.asana.com/0/1201607938180071/1201607938499142",
+    "permalink_url" : "https://app.asana.com/0/1201622386926277/1201622388535703",
     "projects" : [ {
-      "gid" : "1201607938180071",
-      "name" : "NODES 2022",
+      "gid" : "1201622386926277",
+      "name" : "NODES 202",
       "resource_type" : "project"
     } ],
     "resource_type" : "task",
@@ -260,50 +240,46 @@
     "tags" : [ ],
     "resource_subtype" : "default_task",
     "workspace" : {
-      "gid" : "498346170860",
-      "name" : "Personal Projects",
+      "gid" : "1201616985016651",
+      "name" : "syntro.pl",
       "resource_type" : "workspace"
     }
   }, {
-    "gid" : "1201607938499144",
+    "gid" : "1201622388543337",
     "assignee" : null,
     "assignee_status" : "upcoming",
     "completed" : false,
     "completed_at" : null,
-    "created_at" : "2021-12-31T01:30:34.392Z",
+    "created_at" : "2022-01-06T00:37:17.442Z",
     "due_at" : null,
     "due_on" : null,
-    "followers" : [ {
-      "gid" : "6120693648102",
-      "name" : "marek syntro.pl",
-      "resource_type" : "user"
-    } ],
+    "followers" : [ ],
     "hearted" : false,
     "hearts" : [ ],
     "liked" : false,
     "likes" : [ ],
     "memberships" : [ {
       "project" : {
-        "gid" : "1201607938180071",
-        "name" : "NODES 2022",
+        "gid" : "1201622386926277",
+        "name" : "NODES 202",
         "resource_type" : "project"
       },
       "section" : {
-        "gid" : "1201607938499131",
+        "gid" : "1201622515692747",
         "name" : "Use cases",
         "resource_type" : "section"
       }
     } ],
-    "modified_at" : "2021-12-31T01:31:11.840Z",
+    "modified_at" : "2022-01-06T00:37:17.442Z",
     "name" : "pulling all  directly connected nodes into camera view",
     "notes" : "",
     "num_hearts" : 0,
     "num_likes" : 0,
     "parent" : null,
-    "permalink_url" : "https://app.asana.com/0/1201607938180071/1201607938499144",
+    "permalink_url" : "https://app.asana.com/0/1201622386926277/1201622388543337",
     "projects" : [ {
-      "gid" : "1201607938180071",
-      "name" : "NODES 2022",
+      "gid" : "1201622386926277",
+      "name" : "NODES 202",
       "resource_type" : "project"
     } ],
     "resource_type" : "task",
@@ -313,50 +289,46 @@
     "tags" : [ ],
     "resource_subtype" : "default_task",
     "workspace" : {
-      "gid" : "498346170860",
-      "name" : "Personal Projects",
+      "gid" : "1201616985016651",
+      "name" : "syntro.pl",
       "resource_type" : "workspace"
     }
   }, {
-    "gid" : "1201607938499113",
+    "gid" : "1201622388551203",
     "assignee" : null,
     "assignee_status" : "upcoming",
     "completed" : false,
     "completed_at" : null,
-    "created_at" : "2021-12-30T00:30:11.368Z",
+    "created_at" : "2022-01-06T00:37:18.544Z",
     "due_at" : null,
-    "due_on" : "2022-01-02",
-    "followers" : [ {
-      "gid" : "6120693648102",
-      "name" : "marek syntro.pl",
-      "resource_type" : "user"
-    } ],
+    "due_on" : null,
+    "followers" : [ ],
     "hearted" : false,
     "hearts" : [ ],
     "liked" : false,
     "likes" : [ ],
     "memberships" : [ {
       "project" : {
-        "gid" : "1201607938180071",
-        "name" : "NODES 2022",
+        "gid" : "1201622386926277",
+        "name" : "NODES 202",
         "resource_type" : "project"
       },
       "section" : {
-        "gid" : "1201607938499128",
-        "name" : "Classes",
+        "gid" : "1201622515692747",
+        "name" : "Use cases",
         "resource_type" : "section"
       }
     } ],
-    "modified_at" : "2021-12-31T01:41:54.708Z",
-    "name" : "mirror node",
+    "modified_at" : "2022-01-06T00:37:18.544Z",
+    "name" : "importing projects on separate and shared timelines",
     "notes" : "",
     "num_hearts" : 0,
     "num_likes" : 0,
     "parent" : null,
-    "permalink_url" : "https://app.asana.com/0/1201607938180071/1201607938499113",
+    "permalink_url" : "https://app.asana.com/0/1201622386926277/1201622388551203",
     "projects" : [ {
-      "gid" : "1201607938180071",
-      "name" : "NODES 2022",
+      "gid" : "1201622386926277",
+      "name" : "NODES 202",
       "resource_type" : "project"
     } ],
     "resource_type" : "task",
@@ -366,22 +338,22 @@
     "tags" : [ ],
     "resource_subtype" : "default_task",
     "workspace" : {
-      "gid" : "498346170860",
-      "name" : "Personal Projects",
+      "gid" : "1201616985016651",
+      "name" : "syntro.pl",
       "resource_type" : "workspace"
     }
   }, {
-    "gid" : "1201607938180091",
+    "gid" : "1201622515692756",
     "assignee" : null,
     "assignee_status" : "upcoming",
     "completed" : false,
     "completed_at" : null,
-    "created_at" : "2021-12-29T14:19:36.167Z",
+    "created_at" : "2022-01-06T18:26:27.118Z",
     "due_at" : null,
-    "due_on" : "2022-01-01",
+    "due_on" : null,
     "followers" : [ {
       "gid" : "6120693648102",
-      "name" : "marek syntro.pl",
+      "name" : "",
       "resource_type" : "user"
     } ],
     "hearted" : false,
@@ -390,242 +362,43 @@
     "likes" : [ ],
     "memberships" : [ {
       "project" : {
-        "gid" : "1201607938180071",
-        "name" : "NODES 2022",
+        "gid" : "1201622386926277",
+        "name" : "NODES 202",
         "resource_type" : "project"
       },
       "section" : {
-        "gid" : "1201607938499128",
-        "name" : "Classes",
+        "gid" : "1201622515692747",
+        "name" : "Use cases",
         "resource_type" : "section"
       }
     } ],
-    "modified_at" : "2021-12-31T01:47:49.818Z",
-    "name" : "input field with suggestions",
+    "modified_at" : "2022-01-06T18:26:49.757Z",
+    "name" : "search and highlight ",
     "notes" : "",
     "num_hearts" : 0,
     "num_likes" : 0,
     "parent" : null,
-    "permalink_url" : "https://app.asana.com/0/1201607938180071/1201607938180091",
+    "permalink_url" : "https://app.asana.com/0/1201622386926277/1201622515692756",
     "projects" : [ {
-      "gid" : "1201607938180071",
-      "name" : "NODES 2022",
-      "resource_type" : "project"
-    } ],
-    "resource_type" : "task",
-    "start_at" : null,
-    "start_on" : null,
-    "subtasks" : [ ],
-    "tags" : [ ],
-    "resource_subtype" : "default_task",
-    "workspace" : {
-      "gid" : "498346170860",
-      "name" : "Personal Projects",
-      "resource_type" : "workspace"
-    }
-  }, {
-    "gid" : "1201607938499126",
-    "assignee" : null,
-    "assignee_status" : "upcoming",
-    "completed" : false,
-    "completed_at" : null,
-    "created_at" : "2021-12-30T00:33:16.559Z",
-    "due_at" : null,
-    "due_on" : "2021-12-31",
-    "followers" : [ {
-      "gid" : "6120693648102",
-      "name" : "marek syntro.pl",
-      "resource_type" : "user"
-    } ],
-    "hearted" : false,
-    "hearts" : [ ],
-    "liked" : false,
-    "likes" : [ ],
-    "memberships" : [ {
-      "project" : {
-        "gid" : "1201607938180071",
-        "name" : "NODES 2022",
-        "resource_type" : "project"
-      },
-      "section" : {
-        "gid" : "1201607938499128",
-        "name" : "Classes",
-        "resource_type" : "section"
-      }
-    } ],
-    "modified_at" : "2021-12-31T01:41:25.935Z",
-    "name" : "NodeList (insteadOf DayList)",
-    "notes" : "",
-    "num_hearts" : 0,
-    "num_likes" : 0,
-    "parent" : null,
-    "permalink_url" : "https://app.asana.com/0/1201607938180071/1201607938499126",
-    "projects" : [ {
-      "gid" : "1201607938180071",
-      "name" : "NODES 2022",
-      "resource_type" : "project"
-    } ],
-    "resource_type" : "task",
-    "start_at" : null,
-    "start_on" : null,
-    "subtasks" : [ ],
-    "tags" : [ ],
-    "resource_subtype" : "default_task",
-    "workspace" : {
-      "gid" : "498346170860",
-      "name" : "Personal Projects",
-      "resource_type" : "workspace"
-    }
-  }, {
-    "gid" : "1201607938180074",
-    "assignee" : {
-      "gid" : "6120693648102",
-      "name" : "marek syntro.pl",
-      "resource_type" : "user"
-    },
-    "assignee_status" : "inbox",
-    "assignee_section" : {
-      "gid" : "1200306596952465",
-      "name" : "Recently assigned",
-      "resource_type" : "section"
-    },
-    "completed" : false,
-    "completed_at" : null,
-    "created_at" : "2021-12-29T14:15:12.225Z",
-    "due_at" : null,
-    "due_on" : "2021-12-30",
-    "followers" : [ {
-      "gid" : "6120693648102",
-      "name" : "marek syntro.pl",
-      "resource_type" : "user"
-    } ],
-    "hearted" : false,
-    "hearts" : [ ],
-    "liked" : false,
-    "likes" : [ ],
-    "memberships" : [ {
-      "project" : {
-        "gid" : "1201607938180071",
-        "name" : "NODES 2022",
-        "resource_type" : "project"
-      },
-      "section" : {
-        "gid" : "1201607938499128",
-        "name" : "Classes",
-        "resource_type" : "section"
-      }
-    } ],
-    "modified_at" : "2021-12-31T01:38:12.576Z",
-    "name" : "Asana project json importer ",
-    "notes" : "include\n    due dates\n    descriptions\n    tags\n    people\n    task status\n",
-    "num_hearts" : 0,
-    "num_likes" : 0,
-    "parent" : null,
-    "permalink_url" : "https://app.asana.com/0/1201607938180071/1201607938180074",
-    "projects" : [ {
-      "gid" : "1201607938180071",
-      "name" : "NODES 2022",
+      "gid" : "1201622386926277",
+      "name" : "NODES 202",
       "resource_type" : "project"
     } ],
     "resource_type" : "task",
     "start_at" : null,
     "start_on" : null,
     "subtasks" : [ {
-      "gid" : "1201607938180082",
-      "assignee" : null,
-      "assignee_status" : "upcoming",
-      "completed" : true,
-      "completed_at" : "2021-12-29T14:17:44.262Z",
-      "created_at" : "2021-12-29T14:17:37.563Z",
-      "due_at" : null,
-      "due_on" : null,
-      "followers" : [ {
-        "gid" : "6120693648102",
-        "name" : "marek syntro.pl",
-        "resource_type" : "user"
-      } ],
-      "hearted" : false,
-      "hearts" : [ ],
-      "liked" : false,
-      "likes" : [ ],
-      "memberships" : [ ],
-      "modified_at" : "2021-12-31T01:28:08.729Z",
-      "name" : "importing due dates",
-      "notes" : "",
-      "num_hearts" : 0,
-      "num_likes" : 0,
-      "parent" : {
-        "gid" : "1201607938180074",
-        "name" : "Asana project json importer ",
-        "resource_type" : "task"
-      },
-      "permalink_url" : "https://app.asana.com/0/1201607938180082/1201607938180082",
-      "projects" : [ ],
-      "resource_type" : "task",
-      "start_at" : null,
-      "start_on" : null,
-      "subtasks" : [ ],
-      "tags" : [ ],
-      "resource_subtype" : "default_task",
-      "workspace" : {
-        "gid" : "498346170860",
-        "name" : "Personal Projects",
-        "resource_type" : "workspace"
-      }
-    }, {
-      "gid" : "1201607938180083",
-      "assignee" : null,
-      "assignee_status" : "upcoming",
-      "completed" : true,
-      "completed_at" : "2021-12-29T14:17:48.295Z",
-      "created_at" : "2021-12-29T14:17:37.928Z",
-      "due_at" : null,
-      "due_on" : null,
-      "followers" : [ {
-        "gid" : "6120693648102",
-        "name" : "marek syntro.pl",
-        "resource_type" : "user"
-      } ],
-      "hearted" : false,
-      "hearts" : [ ],
-      "liked" : false,
-      "likes" : [ ],
-      "memberships" : [ ],
-      "modified_at" : "2021-12-31T01:28:04.647Z",
-      "name" : "importing descriptions",
-      "notes" : "",
-      "num_hearts" : 0,
-      "num_likes" : 0,
-      "parent" : {
-        "gid" : "1201607938180074",
-        "name" : "Asana project json importer ",
-        "resource_type" : "task"
-      },
-      "permalink_url" : "https://app.asana.com/0/1201607938180083/1201607938180083",
-      "projects" : [ ],
-      "resource_type" : "task",
-      "start_at" : null,
-      "start_on" : null,
-      "subtasks" : [ ],
-      "tags" : [ ],
-      "resource_subtype" : "default_task",
-      "workspace" : {
-        "gid" : "498346170860",
-        "name" : "Personal Projects",
-        "resource_type" : "workspace"
-      }
-    }, {
-      "gid" : "1201607938180084",
+      "gid" : "1201622515692758",
       "assignee" : null,
       "assignee_status" : "upcoming",
       "completed" : false,
       "completed_at" : null,
-      "created_at" : "2021-12-29T14:17:38.284Z",
+      "created_at" : "2022-01-06T18:26:41.956Z",
       "due_at" : null,
-      "due_on" : "2021-12-31",
+      "due_on" : null,
       "followers" : [ {
         "gid" : "6120693648102",
-        "name" : "marek syntro.pl",
+        "name" : "",
         "resource_type" : "user"
       } ],
       "hearted" : false,
@@ -633,17 +406,332 @@
       "liked" : false,
       "likes" : [ ],
       "memberships" : [ ],
-      "modified_at" : "2021-12-31T01:37:00.753Z",
+      "modified_at" : "2022-01-06T18:26:48.800Z",
+      "name" : "search and highlight Node",
+      "notes" : "",
+      "num_hearts" : 0,
+      "num_likes" : 0,
+      "parent" : {
+        "gid" : "1201622515692756",
+        "name" : "search and highlight ",
+        "resource_type" : "task"
+      },
+      "permalink_url" : "https://app.asana.com/0/1201622515692758/1201622515692758",
+      "projects" : [ ],
+      "resource_type" : "task",
+      "start_at" : null,
+      "start_on" : null,
+      "subtasks" : [ ],
+      "tags" : [ ],
+      "resource_subtype" : "default_task",
+      "workspace" : {
+        "gid" : "1201616985016651",
+        "name" : "syntro.pl",
+        "resource_type" : "workspace"
+      }
+    }, {
+      "gid" : "1201622515692759",
+      "assignee" : null,
+      "assignee_status" : "upcoming",
+      "completed" : false,
+      "completed_at" : null,
+      "created_at" : "2022-01-06T18:26:48.967Z",
+      "due_at" : null,
+      "due_on" : null,
+      "followers" : [ {
+        "gid" : "6120693648102",
+        "name" : "",
+        "resource_type" : "user"
+      } ],
+      "hearted" : false,
+      "hearts" : [ ],
+      "liked" : false,
+      "likes" : [ ],
+      "memberships" : [ ],
+      "modified_at" : "2022-01-06T18:27:16.861Z",
+      "name" : "search and highlight Pattern (cypher style?)",
+      "notes" : "",
+      "num_hearts" : 0,
+      "num_likes" : 0,
+      "parent" : {
+        "gid" : "1201622515692756",
+        "name" : "search and highlight ",
+        "resource_type" : "task"
+      },
+      "permalink_url" : "https://app.asana.com/0/1201622515692759/1201622515692759",
+      "projects" : [ ],
+      "resource_type" : "task",
+      "start_at" : null,
+      "start_on" : null,
+      "subtasks" : [ ],
+      "tags" : [ ],
+      "resource_subtype" : "default_task",
+      "workspace" : {
+        "gid" : "1201616985016651",
+        "name" : "syntro.pl",
+        "resource_type" : "workspace"
+      }
+    } ],
+    "tags" : [ ],
+    "resource_subtype" : "default_task",
+    "workspace" : {
+      "gid" : "1201616985016651",
+      "name" : "syntro.pl",
+      "resource_type" : "workspace"
+    }
+  }, {
+    "gid" : "1201622457564560",
+    "assignee" : null,
+    "assignee_status" : "upcoming",
+    "completed" : false,
+    "completed_at" : null,
+    "created_at" : "2022-01-06T00:37:20.293Z",
+    "due_at" : null,
+    "due_on" : "2022-01-06",
+    "followers" : [ ],
+    "hearted" : false,
+    "hearts" : [ ],
+    "liked" : false,
+    "likes" : [ ],
+    "memberships" : [ {
+      "project" : {
+        "gid" : "1201622386926277",
+        "name" : "NODES 202",
+        "resource_type" : "project"
+      },
+      "section" : {
+        "gid" : "1201622515692748",
+        "name" : "Classes",
+        "resource_type" : "section"
+      }
+    } ],
+    "modified_at" : "2022-01-06T00:37:20.293Z",
+    "name" : "NodeList (insteadOf DayList)",
+    "notes" : "",
+    "num_hearts" : 0,
+    "num_likes" : 0,
+    "parent" : null,
+    "permalink_url" : "https://app.asana.com/0/1201622386926277/1201622457564560",
+    "projects" : [ {
+      "gid" : "1201622386926277",
+      "name" : "NODES 202",
+      "resource_type" : "project"
+    } ],
+    "resource_type" : "task",
+    "start_at" : null,
+    "start_on" : null,
+    "subtasks" : [ ],
+    "tags" : [ ],
+    "resource_subtype" : "default_task",
+    "workspace" : {
+      "gid" : "1201616985016651",
+      "name" : "syntro.pl",
+      "resource_type" : "workspace"
+    }
+  }, {
+    "gid" : "1201622457585672",
+    "assignee" : {
+      "gid" : "6120693648102",
+      "name" : "",
+      "resource_type" : "user"
+    },
+    "assignee_status" : "inbox",
+    "assignee_section" : {
+      "gid" : "1201622386868023",
+      "name" : "Recently assigned",
+      "resource_type" : "section"
+    },
+    "completed" : false,
+    "completed_at" : null,
+    "created_at" : "2022-01-06T00:37:21.980Z",
+    "due_at" : null,
+    "due_on" : "2022-01-09",
+    "followers" : [ {
+      "gid" : "6120693648102",
+      "name" : "",
+      "resource_type" : "user"
+    } ],
+    "hearted" : false,
+    "hearts" : [ ],
+    "liked" : false,
+    "likes" : [ ],
+    "memberships" : [ {
+      "project" : {
+        "gid" : "1201622386926277",
+        "name" : "NODES 202",
+        "resource_type" : "project"
+      },
+      "section" : {
+        "gid" : "1201622515692748",
+        "name" : "Classes",
+        "resource_type" : "section"
+      }
+    } ],
+    "modified_at" : "2022-01-06T00:37:21.980Z",
+    "name" : "mirror node",
+    "notes" : "",
+    "num_hearts" : 0,
+    "num_likes" : 0,
+    "parent" : null,
+    "permalink_url" : "https://app.asana.com/0/1201622386926277/1201622457585672",
+    "projects" : [ {
+      "gid" : "1201622386926277",
+      "name" : "NODES 202",
+      "resource_type" : "project"
+    } ],
+    "resource_type" : "task",
+    "start_at" : null,
+    "start_on" : null,
+    "subtasks" : [ ],
+    "tags" : [ ],
+    "resource_subtype" : "default_task",
+    "workspace" : {
+      "gid" : "1201616985016651",
+      "name" : "syntro.pl",
+      "resource_type" : "workspace"
+    }
+  }, {
+    "gid" : "1201622388604525",
+    "assignee" : {
+      "gid" : "6120693648102",
+      "name" : "",
+      "resource_type" : "user"
+    },
+    "assignee_status" : "inbox",
+    "assignee_section" : {
+      "gid" : "1201622386868023",
+      "name" : "Recently assigned",
+      "resource_type" : "section"
+    },
+    "completed" : false,
+    "completed_at" : null,
+    "created_at" : "2022-01-06T00:37:24.421Z",
+    "due_at" : null,
+    "due_on" : "2022-01-11",
+    "followers" : [ {
+      "gid" : "6120693648102",
+      "name" : "",
+      "resource_type" : "user"
+    } ],
+    "hearted" : false,
+    "hearts" : [ ],
+    "liked" : false,
+    "likes" : [ ],
+    "memberships" : [ {
+      "project" : {
+        "gid" : "1201622386926277",
+        "name" : "NODES 202",
+        "resource_type" : "project"
+      },
+      "section" : {
+        "gid" : "1201622515692748",
+        "name" : "Classes",
+        "resource_type" : "section"
+      }
+    } ],
+    "modified_at" : "2022-01-06T00:37:24.421Z",
+    "name" : "input field with suggestions",
+    "notes" : "",
+    "num_hearts" : 0,
+    "num_likes" : 0,
+    "parent" : null,
+    "permalink_url" : "https://app.asana.com/0/1201622386926277/1201622388604525",
+    "projects" : [ {
+      "gid" : "1201622386926277",
+      "name" : "NODES 202",
+      "resource_type" : "project"
+    } ],
+    "resource_type" : "task",
+    "start_at" : null,
+    "start_on" : null,
+    "subtasks" : [ ],
+    "tags" : [ ],
+    "resource_subtype" : "default_task",
+    "workspace" : {
+      "gid" : "1201616985016651",
+      "name" : "syntro.pl",
+      "resource_type" : "workspace"
+    }
+  }, {
+    "gid" : "1201622388616676",
+    "assignee" : {
+      "gid" : "6120693648102",
+      "name" : "",
+      "resource_type" : "user"
+    },
+    "assignee_status" : "inbox",
+    "assignee_section" : {
+      "gid" : "1201622386868023",
+      "name" : "Recently assigned",
+      "resource_type" : "section"
+    },
+    "completed" : false,
+    "completed_at" : null,
+    "created_at" : "2022-01-06T00:37:25.877Z",
+    "due_at" : null,
+    "due_on" : "2021-12-30",
+    "followers" : [ {
+      "gid" : "6120693648102",
+      "name" : "",
+      "resource_type" : "user"
+    } ],
+    "hearted" : false,
+    "hearts" : [ ],
+    "liked" : false,
+    "likes" : [ ],
+    "memberships" : [ {
+      "project" : {
+        "gid" : "1201622386926277",
+        "name" : "NODES 202",
+        "resource_type" : "project"
+      },
+      "section" : {
+        "gid" : "1201622515692748",
+        "name" : "Classes",
+        "resource_type" : "section"
+      }
+    } ],
+    "modified_at" : "2022-01-06T00:37:34.649Z",
+    "name" : "Asana project json importer ",
+    "notes" : "",
+    "num_hearts" : 0,
+    "num_likes" : 0,
+    "parent" : null,
+    "permalink_url" : "https://app.asana.com/0/1201622386926277/1201622388616676",
+    "projects" : [ {
+      "gid" : "1201622386926277",
+      "name" : "NODES 202",
+      "resource_type" : "project"
+    } ],
+    "resource_type" : "task",
+    "start_at" : null,
+    "start_on" : null,
+    "subtasks" : [ {
+      "gid" : "1201622516643292",
+      "assignee" : null,
+      "assignee_status" : "upcoming",
+      "completed" : false,
+      "completed_at" : null,
+      "created_at" : "2022-01-06T00:37:28.412Z",
+      "due_at" : null,
+      "due_on" : "2021-12-31",
+      "followers" : [ ],
+      "hearted" : false,
+      "hearts" : [ ],
+      "liked" : false,
+      "likes" : [ ],
+      "memberships" : [ ],
+      "modified_at" : "2022-01-06T00:37:28.412Z",
       "name" : "importing tags",
       "notes" : "",
       "num_hearts" : 0,
       "num_likes" : 0,
       "parent" : {
-        "gid" : "1201607938180074",
+        "gid" : "1201622388616676",
         "name" : "Asana project json importer ",
         "resource_type" : "task"
       },
-      "permalink_url" : "https://app.asana.com/0/1201607938180084/1201607938180084",
+      "permalink_url" : "https://app.asana.com/0/1201622516643292/1201622516643292",
       "projects" : [ ],
       "resource_type" : "task",
       "start_at" : null,
@@ -652,40 +740,36 @@
       "tags" : [ ],
       "resource_subtype" : "default_task",
       "workspace" : {
-        "gid" : "498346170860",
-        "name" : "Personal Projects",
+        "gid" : "1201616985016651",
+        "name" : "syntro.pl",
         "resource_type" : "workspace"
       }
     }, {
-      "gid" : "1201607938180085",
+      "gid" : "1201622516655918",
       "assignee" : null,
       "assignee_status" : "upcoming",
-      "completed" : true,
-      "completed_at" : "2021-12-31T01:27:57.167Z",
-      "created_at" : "2021-12-29T14:17:38.779Z",
+      "completed" : false,
+      "completed_at" : null,
+      "created_at" : "2022-01-06T00:37:29.076Z",
       "due_at" : null,
       "due_on" : null,
-      "followers" : [ {
-        "gid" : "6120693648102",
-        "name" : "marek syntro.pl",
-        "resource_type" : "user"
-      } ],
+      "followers" : [ ],
       "hearted" : false,
       "hearts" : [ ],
       "liked" : false,
       "likes" : [ ],
       "memberships" : [ ],
-      "modified_at" : "2021-12-31T01:27:57.310Z",
-      "name" : "importing people (and task relationships with them)",
+      "modified_at" : "2022-01-06T00:37:29.076Z",
+      "name" : "importing task status",
       "notes" : "",
       "num_hearts" : 0,
       "num_likes" : 0,
       "parent" : {
-        "gid" : "1201607938180074",
+        "gid" : "1201622388616676",
         "name" : "Asana project json importer ",
         "resource_type" : "task"
       },
-      "permalink_url" : "https://app.asana.com/0/1201607938180085/1201607938180085",
+      "permalink_url" : "https://app.asana.com/0/1201622516655918/1201622516655918",
       "projects" : [ ],
       "resource_type" : "task",
       "start_at" : null,
@@ -694,166 +778,36 @@
       "tags" : [ ],
       "resource_subtype" : "default_task",
       "workspace" : {
-        "gid" : "498346170860",
-        "name" : "Personal Projects",
+        "gid" : "1201616985016651",
+        "name" : "syntro.pl",
         "resource_type" : "workspace"
       }
     }, {
-      "gid" : "1201607938180086",
+      "gid" : "1201622516661327",
       "assignee" : null,
       "assignee_status" : "upcoming",
       "completed" : false,
       "completed_at" : null,
-      "created_at" : "2021-12-29T14:17:39.163Z",
+      "created_at" : "2022-01-06T00:37:29.477Z",
       "due_at" : null,
       "due_on" : null,
-      "followers" : [ {
-        "gid" : "6120693648102",
-        "name" : "marek syntro.pl",
-        "resource_type" : "user"
-      } ],
+      "followers" : [ ],
       "hearted" : false,
       "hearts" : [ ],
       "liked" : false,
       "likes" : [ ],
       "memberships" : [ ],
-      "modified_at" : "2021-12-31T01:38:48.837Z",
-      "name" : "importing task status (and representing as checkbox)",
-      "notes" : "",
-      "num_hearts" : 0,
-      "num_likes" : 0,
-      "parent" : {
-        "gid" : "1201607938180074",
-        "name" : "Asana project json importer ",
-        "resource_type" : "task"
-      },
-      "permalink_url" : "https://app.asana.com/0/1201607938180086/1201607938180086",
-      "projects" : [ ],
-      "resource_type" : "task",
-      "start_at" : null,
-      "start_on" : null,
-      "subtasks" : [ ],
-      "tags" : [ ],
-      "resource_subtype" : "default_task",
-      "workspace" : {
-        "gid" : "498346170860",
-        "name" : "Personal Projects",
-        "resource_type" : "workspace"
-      }
-    }, {
-      "gid" : "1201607938499110",
-      "assignee" : null,
-      "assignee_status" : "upcoming",
-      "completed" : false,
-      "completed_at" : null,
-      "created_at" : "2021-12-30T00:29:34.729Z",
-      "due_at" : null,
-      "due_on" : "2021-12-31",
-      "followers" : [ {
-        "gid" : "6120693648102",
-        "name" : "marek syntro.pl",
-        "resource_type" : "user"
-      } ],
-      "hearted" : false,
-      "hearts" : [ ],
-      "liked" : false,
-      "likes" : [ ],
-      "memberships" : [ ],
-      "modified_at" : "2021-12-31T01:44:57.402Z",
-      "name" : "importing project node (and task  relationships to it)",
-      "notes" : "project is a hidden node + nodeList\neach section in project is a hiiden node + nodeList\n\n",
-      "num_hearts" : 0,
-      "num_likes" : 0,
-      "parent" : {
-        "gid" : "1201607938180074",
-        "name" : "Asana project json importer ",
-        "resource_type" : "task"
-      },
-      "permalink_url" : "https://app.asana.com/0/1201607938499110/1201607938499110",
-      "projects" : [ ],
-      "resource_type" : "task",
-      "start_at" : null,
-      "start_on" : null,
-      "subtasks" : [ ],
-      "tags" : [ ],
-      "resource_subtype" : "default_task",
-      "workspace" : {
-        "gid" : "498346170860",
-        "name" : "Personal Projects",
-        "resource_type" : "workspace"
-      }
-    }, {
-      "gid" : "1201607938499111",
-      "assignee" : null,
-      "assignee_status" : "upcoming",
-      "completed" : false,
-      "completed_at" : null,
-      "created_at" : "2021-12-30T00:29:37.281Z",
-      "due_at" : null,
-      "due_on" : "2021-12-31",
-      "followers" : [ {
-        "gid" : "6120693648102",
-        "name" : "marek syntro.pl",
-        "resource_type" : "user"
-      } ],
-      "hearted" : false,
-      "hearts" : [ ],
-      "liked" : false,
-      "likes" : [ ],
-      "memberships" : [ ],
-      "modified_at" : "2021-12-31T01:42:45.304Z",
-      "name" : "importing sections  (and task relationships to it)",
-      "notes" : "new NodeList for each section\nlabel on top\n\n",
-      "num_hearts" : 0,
-      "num_likes" : 0,
-      "parent" : {
-        "gid" : "1201607938180074",
-        "name" : "Asana project json importer ",
-        "resource_type" : "task"
-      },
-      "permalink_url" : "https://app.asana.com/0/1201607938499111/1201607938499111",
-      "projects" : [ ],
-      "resource_type" : "task",
-      "start_at" : null,
-      "start_on" : null,
-      "subtasks" : [ ],
-      "tags" : [ ],
-      "resource_subtype" : "default_task",
-      "workspace" : {
-        "gid" : "498346170860",
-        "name" : "Personal Projects",
-        "resource_type" : "workspace"
-      }
-    }, {
-      "gid" : "1201607938499150",
-      "assignee" : null,
-      "assignee_status" : "upcoming",
-      "completed" : false,
-      "completed_at" : null,
-      "created_at" : "2021-12-31T01:38:12.280Z",
-      "due_at" : null,
-      "due_on" : null,
-      "followers" : [ {
-        "gid" : "6120693648102",
-        "name" : "marek syntro.pl",
-        "resource_type" : "user"
-      } ],
-      "hearted" : false,
-      "hearts" : [ ],
-      "liked" : false,
-      "likes" : [ ],
-      "memberships" : [ ],
-      "modified_at" : "2021-12-31T01:38:21.195Z",
+      "modified_at" : "2022-01-06T00:37:29.477Z",
       "name" : "importing mentions in task descriptions",
       "notes" : "",
       "num_hearts" : 0,
       "num_likes" : 0,
       "parent" : {
-        "gid" : "1201607938180074",
+        "gid" : "1201622388616676",
         "name" : "Asana project json importer ",
         "resource_type" : "task"
       },
-      "permalink_url" : "https://app.asana.com/0/1201607938499150/1201607938499150",
+      "permalink_url" : "https://app.asana.com/0/1201622516661327/1201622516661327",
       "projects" : [ ],
       "resource_type" : "task",
       "start_at" : null,
@@ -862,58 +816,244 @@
       "tags" : [ ],
       "resource_subtype" : "default_task",
       "workspace" : {
-        "gid" : "498346170860",
-        "name" : "Personal Projects",
+        "gid" : "1201616985016651",
+        "name" : "syntro.pl",
+        "resource_type" : "workspace"
+      }
+    }, {
+      "gid" : "1201622516664568",
+      "assignee" : null,
+      "assignee_status" : "upcoming",
+      "completed" : false,
+      "completed_at" : null,
+      "created_at" : "2022-01-06T00:37:29.841Z",
+      "due_at" : null,
+      "due_on" : null,
+      "followers" : [ ],
+      "hearted" : false,
+      "hearts" : [ ],
+      "liked" : false,
+      "likes" : [ ],
+      "memberships" : [ ],
+      "modified_at" : "2022-01-06T00:37:29.841Z",
+      "name" : "importing due dates",
+      "notes" : "",
+      "num_hearts" : 0,
+      "num_likes" : 0,
+      "parent" : {
+        "gid" : "1201622388616676",
+        "name" : "Asana project json importer ",
+        "resource_type" : "task"
+      },
+      "permalink_url" : "https://app.asana.com/0/1201622516664568/1201622516664568",
+      "projects" : [ ],
+      "resource_type" : "task",
+      "start_at" : null,
+      "start_on" : null,
+      "subtasks" : [ ],
+      "tags" : [ ],
+      "resource_subtype" : "default_task",
+      "workspace" : {
+        "gid" : "1201616985016651",
+        "name" : "syntro.pl",
+        "resource_type" : "workspace"
+      }
+    }, {
+      "gid" : "1201622516670920",
+      "assignee" : null,
+      "assignee_status" : "upcoming",
+      "completed" : false,
+      "completed_at" : null,
+      "created_at" : "2022-01-06T00:37:30.283Z",
+      "due_at" : null,
+      "due_on" : null,
+      "followers" : [ ],
+      "hearted" : false,
+      "hearts" : [ ],
+      "liked" : false,
+      "likes" : [ ],
+      "memberships" : [ ],
+      "modified_at" : "2022-01-06T00:37:30.283Z",
+      "name" : "importing descriptions",
+      "notes" : "",
+      "num_hearts" : 0,
+      "num_likes" : 0,
+      "parent" : {
+        "gid" : "1201622388616676",
+        "name" : "Asana project json importer ",
+        "resource_type" : "task"
+      },
+      "permalink_url" : "https://app.asana.com/0/1201622516670920/1201622516670920",
+      "projects" : [ ],
+      "resource_type" : "task",
+      "start_at" : null,
+      "start_on" : null,
+      "subtasks" : [ ],
+      "tags" : [ ],
+      "resource_subtype" : "default_task",
+      "workspace" : {
+        "gid" : "1201616985016651",
+        "name" : "syntro.pl",
+        "resource_type" : "workspace"
+      }
+    }, {
+      "gid" : "1201622516676168",
+      "assignee" : null,
+      "assignee_status" : "upcoming",
+      "completed" : false,
+      "completed_at" : null,
+      "created_at" : "2022-01-06T00:37:30.710Z",
+      "due_at" : null,
+      "due_on" : null,
+      "followers" : [ ],
+      "hearted" : false,
+      "hearts" : [ ],
+      "liked" : false,
+      "likes" : [ ],
+      "memberships" : [ ],
+      "modified_at" : "2022-01-06T00:37:30.710Z",
+      "name" : "importing people (and task relationships with them)",
+      "notes" : "",
+      "num_hearts" : 0,
+      "num_likes" : 0,
+      "parent" : {
+        "gid" : "1201622388616676",
+        "name" : "Asana project json importer ",
+        "resource_type" : "task"
+      },
+      "permalink_url" : "https://app.asana.com/0/1201622516676168/1201622516676168",
+      "projects" : [ ],
+      "resource_type" : "task",
+      "start_at" : null,
+      "start_on" : null,
+      "subtasks" : [ ],
+      "tags" : [ ],
+      "resource_subtype" : "default_task",
+      "workspace" : {
+        "gid" : "1201616985016651",
+        "name" : "syntro.pl",
+        "resource_type" : "workspace"
+      }
+    }, {
+      "gid" : "1201622516700280",
+      "assignee" : null,
+      "assignee_status" : "upcoming",
+      "completed" : false,
+      "completed_at" : null,
+      "created_at" : "2022-01-06T00:37:31.937Z",
+      "due_at" : null,
+      "due_on" : "2021-12-31",
+      "followers" : [ ],
+      "hearted" : false,
+      "hearts" : [ ],
+      "liked" : false,
+      "likes" : [ ],
+      "memberships" : [ ],
+      "modified_at" : "2022-01-06T00:37:31.937Z",
+      "name" : "importing project node (and task  relationships to it)",
+      "notes" : "project is a hidden node + nodeList\neach section in project is a hiiden node + nodeList\n\n",
+      "num_hearts" : 0,
+      "num_likes" : 0,
+      "parent" : {
+        "gid" : "1201622388616676",
+        "name" : "Asana project json importer ",
+        "resource_type" : "task"
+      },
+      "permalink_url" : "https://app.asana.com/0/1201622516700280/1201622516700280",
+      "projects" : [ ],
+      "resource_type" : "task",
+      "start_at" : null,
+      "start_on" : null,
+      "subtasks" : [ ],
+      "tags" : [ ],
+      "resource_subtype" : "default_task",
+      "workspace" : {
+        "gid" : "1201616985016651",
+        "name" : "syntro.pl",
+        "resource_type" : "workspace"
+      }
+    }, {
+      "gid" : "1201622516709893",
+      "assignee" : null,
+      "assignee_status" : "upcoming",
+      "completed" : false,
+      "completed_at" : null,
+      "created_at" : "2022-01-06T00:37:32.536Z",
+      "due_at" : null,
+      "due_on" : "2021-12-31",
+      "followers" : [ ],
+      "hearted" : false,
+      "hearts" : [ ],
+      "liked" : false,
+      "likes" : [ ],
+      "memberships" : [ ],
+      "modified_at" : "2022-01-06T00:37:32.536Z",
+      "name" : "importing sections  (and task relationships to it)",
+      "notes" : "new NodeList for each section\nlabel on top\n\n",
+      "num_hearts" : 0,
+      "num_likes" : 0,
+      "parent" : {
+        "gid" : "1201622388616676",
+        "name" : "Asana project json importer ",
+        "resource_type" : "task"
+      },
+      "permalink_url" : "https://app.asana.com/0/1201622516709893/1201622516709893",
+      "projects" : [ ],
+      "resource_type" : "task",
+      "start_at" : null,
+      "start_on" : null,
+      "subtasks" : [ ],
+      "tags" : [ ],
+      "resource_subtype" : "default_task",
+      "workspace" : {
+        "gid" : "1201616985016651",
+        "name" : "syntro.pl",
         "resource_type" : "workspace"
       }
     } ],
     "tags" : [ ],
     "resource_subtype" : "default_task",
     "workspace" : {
-      "gid" : "498346170860",
-      "name" : "Personal Projects",
+      "gid" : "1201616985016651",
+      "name" : "syntro.pl",
       "resource_type" : "workspace"
     }
   }, {
-    "gid" : "1201607938499122",
+    "gid" : "1201622516715099",
     "assignee" : null,
     "assignee_status" : "upcoming",
     "completed" : false,
     "completed_at" : null,
-    "created_at" : "2021-12-30T00:31:29.497Z",
+    "created_at" : "2022-01-06T00:37:32.922Z",
     "due_at" : null,
     "due_on" : null,
-    "followers" : [ {
-      "gid" : "6120693648102",
-      "name" : "marek syntro.pl",
-      "resource_type" : "user"
-    } ],
+    "followers" : [ ],
     "hearted" : false,
     "hearts" : [ ],
     "liked" : false,
     "likes" : [ ],
     "memberships" : [ {
       "project" : {
-        "gid" : "1201607938180071",
-        "name" : "NODES 2022",
+        "gid" : "1201622386926277",
+        "name" : "NODES 202",
         "resource_type" : "project"
       },
       "section" : {
-        "gid" : "1201607938499128",
+        "gid" : "1201622515692748",
         "name" : "Classes",
         "resource_type" : "section"
       }
     } ],
-    "modified_at" : "2021-12-30T00:38:44.732Z",
-    "name" : "Abstract for Forms?",
-    "notes" : "",
+    "modified_at" : "2022-01-06T18:12:24.015Z",
+    "name" : "class Form",
+    "notes" : "class FormField\n   \n    InputField inputField https://app.asana.com/0/0/1201622388604525\n    string name\n    string placeholderText\n    bool isRequred\n\n    // validation.... ?\n\nclass Form\n    List<FormField> formFields \n    Button submitButton;\n    Button cancelButton;\n    \n    \n    ",
     "num_hearts" : 0,
     "num_likes" : 0,
     "parent" : null,
-    "permalink_url" : "https://app.asana.com/0/1201607938180071/1201607938499122",
+    "permalink_url" : "https://app.asana.com/0/1201622386926277/1201622516715099",
     "projects" : [ {
-      "gid" : "1201607938180071",
-      "name" : "NODES 2022",
+      "gid" : "1201622386926277",
+      "name" : "NODES 202",
       "resource_type" : "project"
     } ],
     "resource_type" : "task",
@@ -923,50 +1063,144 @@
     "tags" : [ ],
     "resource_subtype" : "default_task",
     "workspace" : {
-      "gid" : "498346170860",
-      "name" : "Personal Projects",
+      "gid" : "1201616985016651",
+      "name" : "syntro.pl",
       "resource_type" : "workspace"
     }
   }, {
-    "gid" : "1201607938499151",
+    "gid" : "1201622516718402",
     "assignee" : null,
     "assignee_status" : "upcoming",
     "completed" : false,
     "completed_at" : null,
-    "created_at" : "2021-12-31T01:39:06.221Z",
+    "created_at" : "2022-01-06T00:37:33.400Z",
     "due_at" : null,
     "due_on" : null,
-    "followers" : [ {
-      "gid" : "6120693648102",
-      "name" : "marek syntro.pl",
-      "resource_type" : "user"
-    } ],
+    "followers" : [ ],
     "hearted" : false,
     "hearts" : [ ],
     "liked" : false,
     "likes" : [ ],
     "memberships" : [ {
       "project" : {
-        "gid" : "1201607938180071",
-        "name" : "NODES 2022",
+        "gid" : "1201622386926277",
+        "name" : "NODES 202",
         "resource_type" : "project"
       },
       "section" : {
-        "gid" : "1201607938180103",
+        "gid" : "1201622515692748",
+        "name" : "Classes",
+        "resource_type" : "section"
+      }
+    } ],
+    "modified_at" : "2022-01-06T18:30:14.890Z",
+    "name" : "TextPanel",
+    "notes" : "color styles (references  to https://app.asana.com/0/0/1201622516724894\n\nclass TextPanelStyle\n    text and panel colors for\n    default (others can be null)\n    highlighted\n    discrete\n\n    text size\n    panel height\n    panel min. width\n\n\nclass TextPanel : MonoBehaviour\n    ApplyStyle(?)\n    UpdatePanelSize // to fit content\n\n ",
+    "num_hearts" : 0,
+    "num_likes" : 0,
+    "parent" : null,
+    "permalink_url" : "https://app.asana.com/0/1201622386926277/1201622516718402",
+    "projects" : [ {
+      "gid" : "1201622386926277",
+      "name" : "NODES 202",
+      "resource_type" : "project"
+    } ],
+    "resource_type" : "task",
+    "start_at" : null,
+    "start_on" : null,
+    "subtasks" : [ ],
+    "tags" : [ ],
+    "resource_subtype" : "default_task",
+    "workspace" : {
+      "gid" : "1201616985016651",
+      "name" : "syntro.pl",
+      "resource_type" : "workspace"
+    }
+  }, {
+    "gid" : "1201622516724894",
+    "assignee" : null,
+    "assignee_status" : "upcoming",
+    "completed" : false,
+    "completed_at" : null,
+    "created_at" : "2022-01-06T00:37:33.967Z",
+    "due_at" : null,
+    "due_on" : null,
+    "followers" : [ ],
+    "hearted" : false,
+    "hearts" : [ ],
+    "liked" : false,
+    "likes" : [ ],
+    "memberships" : [ {
+      "project" : {
+        "gid" : "1201622386926277",
+        "name" : "NODES 202",
+        "resource_type" : "project"
+      },
+      "section" : {
+        "gid" : "1201622515692748",
+        "name" : "Classes",
+        "resource_type" : "section"
+      }
+    } ],
+    "modified_at" : "2022-01-06T00:37:33.967Z",
+    "name" : "colors.json file and gameobject for editing",
+    "notes" : "l",
+    "num_hearts" : 0,
+    "num_likes" : 0,
+    "parent" : null,
+    "permalink_url" : "https://app.asana.com/0/1201622386926277/1201622516724894",
+    "projects" : [ {
+      "gid" : "1201622386926277",
+      "name" : "NODES 202",
+      "resource_type" : "project"
+    } ],
+    "resource_type" : "task",
+    "start_at" : null,
+    "start_on" : null,
+    "subtasks" : [ ],
+    "tags" : [ ],
+    "resource_subtype" : "default_task",
+    "workspace" : {
+      "gid" : "1201616985016651",
+      "name" : "syntro.pl",
+      "resource_type" : "workspace"
+    }
+  }, {
+    "gid" : "1201622457746909",
+    "assignee" : null,
+    "assignee_status" : "upcoming",
+    "completed" : false,
+    "completed_at" : null,
+    "created_at" : "2022-01-06T00:37:35.484Z",
+    "due_at" : null,
+    "due_on" : null,
+    "followers" : [ ],
+    "hearted" : false,
+    "hearts" : [ ],
+    "liked" : false,
+    "likes" : [ ],
+    "memberships" : [ {
+      "project" : {
+        "gid" : "1201622386926277",
+        "name" : "NODES 202",
+        "resource_type" : "project"
+      },
+      "section" : {
+        "gid" : "1201622515692749",
         "name" : "ideas",
         "resource_type" : "section"
       }
     } ],
-    "modified_at" : "2021-12-31T01:39:14.551Z",
+    "modified_at" : "2022-01-06T00:37:35.484Z",
     "name" : "hiding completed tasks",
     "notes" : "",
     "num_hearts" : 0,
     "num_likes" : 0,
     "parent" : null,
-    "permalink_url" : "https://app.asana.com/0/1201607938180071/1201607938499151",
+    "permalink_url" : "https://app.asana.com/0/1201622386926277/1201622457746909",
     "projects" : [ {
-      "gid" : "1201607938180071",
-      "name" : "NODES 2022",
+      "gid" : "1201622386926277",
+      "name" : "NODES 202",
       "resource_type" : "project"
     } ],
     "resource_type" : "task",
@@ -976,50 +1210,46 @@
     "tags" : [ ],
     "resource_subtype" : "default_task",
     "workspace" : {
-      "gid" : "498346170860",
-      "name" : "Personal Projects",
+      "gid" : "1201616985016651",
+      "name" : "syntro.pl",
       "resource_type" : "workspace"
     }
   }, {
-    "gid" : "1201607938499153",
+    "gid" : "1201622457753553",
     "assignee" : null,
     "assignee_status" : "upcoming",
     "completed" : false,
     "completed_at" : null,
-    "created_at" : "2021-12-31T01:39:14.638Z",
+    "created_at" : "2022-01-06T00:37:36.464Z",
     "due_at" : null,
     "due_on" : null,
-    "followers" : [ {
-      "gid" : "6120693648102",
-      "name" : "marek syntro.pl",
-      "resource_type" : "user"
-    } ],
+    "followers" : [ ],
     "hearted" : false,
     "hearts" : [ ],
     "liked" : false,
     "likes" : [ ],
     "memberships" : [ {
       "project" : {
-        "gid" : "1201607938180071",
-        "name" : "NODES 2022",
+        "gid" : "1201622386926277",
+        "name" : "NODES 202",
         "resource_type" : "project"
       },
       "section" : {
-        "gid" : "1201607938180103",
+        "gid" : "1201622515692749",
         "name" : "ideas",
         "resource_type" : "section"
       }
     } ],
-    "modified_at" : "2021-12-31T01:40:44.739Z",
+    "modified_at" : "2022-01-06T00:37:36.464Z",
     "name" : "hiding links (EdgeMono.IsVisible=false)",
     "notes" : "",
     "num_hearts" : 0,
     "num_likes" : 0,
     "parent" : null,
-    "permalink_url" : "https://app.asana.com/0/1201607938180071/1201607938499153",
+    "permalink_url" : "https://app.asana.com/0/1201622386926277/1201622457753553",
     "projects" : [ {
-      "gid" : "1201607938180071",
-      "name" : "NODES 2022",
+      "gid" : "1201622386926277",
+      "name" : "NODES 202",
       "resource_type" : "project"
     } ],
     "resource_type" : "task",
@@ -1029,50 +1259,46 @@
     "tags" : [ ],
     "resource_subtype" : "default_task",
     "workspace" : {
-      "gid" : "498346170860",
-      "name" : "Personal Projects",
+      "gid" : "1201616985016651",
+      "name" : "syntro.pl",
       "resource_type" : "workspace"
     }
   }, {
-    "gid" : "1201607938180097",
+    "gid" : "1201622457763129",
     "assignee" : null,
     "assignee_status" : "upcoming",
     "completed" : false,
     "completed_at" : null,
-    "created_at" : "2021-12-29T14:19:56.410Z",
+    "created_at" : "2022-01-06T00:37:37.288Z",
     "due_at" : null,
     "due_on" : "2022-01-17",
-    "followers" : [ {
-      "gid" : "6120693648102",
-      "name" : "marek syntro.pl",
-      "resource_type" : "user"
-    } ],
+    "followers" : [ ],
     "hearted" : false,
     "hearts" : [ ],
     "liked" : false,
     "likes" : [ ],
     "memberships" : [ {
       "project" : {
-        "gid" : "1201607938180071",
-        "name" : "NODES 2022",
+        "gid" : "1201622386926277",
+        "name" : "NODES 202",
         "resource_type" : "project"
       },
       "section" : {
-        "gid" : "1201607938180103",
+        "gid" : "1201622515692749",
         "name" : "ideas",
         "resource_type" : "section"
       }
     } ],
-    "modified_at" : "2021-12-30T00:36:30.414Z",
+    "modified_at" : "2022-01-06T00:37:37.288Z",
     "name" : "manual graph forming (3d drag)",
     "notes" : "",
     "num_hearts" : 0,
     "num_likes" : 0,
     "parent" : null,
-    "permalink_url" : "https://app.asana.com/0/1201607938180071/1201607938180097",
+    "permalink_url" : "https://app.asana.com/0/1201622386926277/1201622457763129",
     "projects" : [ {
-      "gid" : "1201607938180071",
-      "name" : "NODES 2022",
+      "gid" : "1201622386926277",
+      "name" : "NODES 202",
       "resource_type" : "project"
     } ],
     "resource_type" : "task",
@@ -1082,50 +1308,46 @@
     "tags" : [ ],
     "resource_subtype" : "default_task",
     "workspace" : {
-      "gid" : "498346170860",
-      "name" : "Personal Projects",
+      "gid" : "1201616985016651",
+      "name" : "syntro.pl",
       "resource_type" : "workspace"
     }
   }, {
-    "gid" : "1201607938180118",
+    "gid" : "1201622457790765",
     "assignee" : null,
     "assignee_status" : "upcoming",
     "completed" : false,
     "completed_at" : null,
-    "created_at" : "2021-12-29T14:28:30.449Z",
+    "created_at" : "2022-01-06T00:37:39.215Z",
     "due_at" : null,
     "due_on" : "2022-01-11",
-    "followers" : [ {
-      "gid" : "6120693648102",
-      "name" : "marek syntro.pl",
-      "resource_type" : "user"
-    } ],
+    "followers" : [ ],
     "hearted" : false,
     "hearts" : [ ],
     "liked" : false,
     "likes" : [ ],
     "memberships" : [ {
       "project" : {
-        "gid" : "1201607938180071",
-        "name" : "NODES 2022",
+        "gid" : "1201622386926277",
+        "name" : "NODES 202",
         "resource_type" : "project"
       },
       "section" : {
-        "gid" : "1201607938180103",
+        "gid" : "1201622515692749",
         "name" : "ideas",
         "resource_type" : "section"
       }
     } ],
-    "modified_at" : "2021-12-30T00:36:14.994Z",
+    "modified_at" : "2022-01-06T00:37:39.215Z",
     "name" : "automatic graph forming (polygons on planes)",
     "notes" : "",
     "num_hearts" : 0,
     "num_likes" : 0,
     "parent" : null,
-    "permalink_url" : "https://app.asana.com/0/1201607938180071/1201607938180118",
+    "permalink_url" : "https://app.asana.com/0/1201622386926277/1201622457790765",
     "projects" : [ {
-      "gid" : "1201607938180071",
-      "name" : "NODES 2022",
+      "gid" : "1201622386926277",
+      "name" : "NODES 202",
       "resource_type" : "project"
     } ],
     "resource_type" : "task",
@@ -1135,50 +1357,46 @@
     "tags" : [ ],
     "resource_subtype" : "default_task",
     "workspace" : {
-      "gid" : "498346170860",
-      "name" : "Personal Projects",
+      "gid" : "1201616985016651",
+      "name" : "syntro.pl",
       "resource_type" : "workspace"
     }
   }, {
-    "gid" : "1201607938180104",
+    "gid" : "1201622457818531",
     "assignee" : null,
     "assignee_status" : "upcoming",
     "completed" : false,
     "completed_at" : null,
-    "created_at" : "2021-12-29T14:21:09.594Z",
+    "created_at" : "2022-01-06T00:37:40.305Z",
     "due_at" : null,
     "due_on" : null,
-    "followers" : [ {
-      "gid" : "6120693648102",
-      "name" : "marek syntro.pl",
-      "resource_type" : "user"
-    } ],
+    "followers" : [ ],
     "hearted" : false,
     "hearts" : [ ],
     "liked" : false,
     "likes" : [ ],
     "memberships" : [ {
       "project" : {
-        "gid" : "1201607938180071",
-        "name" : "NODES 2022",
+        "gid" : "1201622386926277",
+        "name" : "NODES 202",
         "resource_type" : "project"
       },
       "section" : {
-        "gid" : "1201607938180103",
+        "gid" : "1201622515692749",
         "name" : "ideas",
         "resource_type" : "section"
       }
     } ],
-    "modified_at" : "2021-12-29T14:21:15.572Z",
+    "modified_at" : "2022-01-06T00:37:40.305Z",
     "name" : "saving viewpoints",
     "notes" : "",
     "num_hearts" : 0,
     "num_likes" : 0,
     "parent" : null,
-    "permalink_url" : "https://app.asana.com/0/1201607938180071/1201607938180104",
+    "permalink_url" : "https://app.asana.com/0/1201622386926277/1201622457818531",
     "projects" : [ {
-      "gid" : "1201607938180071",
-      "name" : "NODES 2022",
+      "gid" : "1201622386926277",
+      "name" : "NODES 202",
       "resource_type" : "project"
     } ],
     "resource_type" : "task",
@@ -1188,50 +1406,46 @@
     "tags" : [ ],
     "resource_subtype" : "default_task",
     "workspace" : {
-      "gid" : "498346170860",
-      "name" : "Personal Projects",
+      "gid" : "1201616985016651",
+      "name" : "syntro.pl",
       "resource_type" : "workspace"
     }
   }, {
-    "gid" : "1201607938180099",
+    "gid" : "1201622457829135",
     "assignee" : null,
     "assignee_status" : "upcoming",
     "completed" : false,
     "completed_at" : null,
-    "created_at" : "2021-12-29T14:20:11.938Z",
+    "created_at" : "2022-01-06T00:37:41.070Z",
     "due_at" : null,
     "due_on" : null,
-    "followers" : [ {
-      "gid" : "6120693648102",
-      "name" : "marek syntro.pl",
-      "resource_type" : "user"
-    } ],
+    "followers" : [ ],
     "hearted" : false,
     "hearts" : [ ],
     "liked" : false,
     "likes" : [ ],
     "memberships" : [ {
       "project" : {
-        "gid" : "1201607938180071",
-        "name" : "NODES 2022",
+        "gid" : "1201622386926277",
+        "name" : "NODES 202",
         "resource_type" : "project"
       },
       "section" : {
-        "gid" : "1201607938180103",
+        "gid" : "1201622515692749",
         "name" : "ideas",
         "resource_type" : "section"
       }
     } ],
-    "modified_at" : "2021-12-30T00:36:44.098Z",
+    "modified_at" : "2022-01-06T00:37:41.070Z",
     "name" : "context editing (including viewpoint creation)",
     "notes" : "",
     "num_hearts" : 0,
     "num_likes" : 0,
     "parent" : null,
-    "permalink_url" : "https://app.asana.com/0/1201607938180071/1201607938180099",
+    "permalink_url" : "https://app.asana.com/0/1201622386926277/1201622457829135",
     "projects" : [ {
-      "gid" : "1201607938180071",
-      "name" : "NODES 2022",
+      "gid" : "1201622386926277",
+      "name" : "NODES 202",
       "resource_type" : "project"
     } ],
     "resource_type" : "task",
@@ -1241,22 +1455,31 @@
     "tags" : [ ],
     "resource_subtype" : "default_task",
     "workspace" : {
-      "gid" : "498346170860",
-      "name" : "Personal Projects",
+      "gid" : "1201616985016651",
+      "name" : "syntro.pl",
       "resource_type" : "workspace"
     }
   }, {
-    "gid" : "1201607938499103",
-    "assignee" : null,
-    "assignee_status" : "upcoming",
+    "gid" : "1201622457848503",
+    "assignee" : {
+      "gid" : "6120693648102",
+      "name" : "",
+      "resource_type" : "user"
+    },
+    "assignee_status" : "inbox",
+    "assignee_section" : {
+      "gid" : "1201622386868023",
+      "name" : "Recently assigned",
+      "resource_type" : "section"
+    },
     "completed" : false,
     "completed_at" : null,
-    "created_at" : "2021-12-30T00:28:22.397Z",
+    "created_at" : "2022-01-06T00:37:42.943Z",
     "due_at" : null,
-    "due_on" : null,
+    "due_on" : "2022-01-06",
     "followers" : [ {
       "gid" : "6120693648102",
-      "name" : "marek syntro.pl",
+      "name" : "",
       "resource_type" : "user"
     } ],
     "hearted" : false,
@@ -1265,26 +1488,75 @@
     "likes" : [ ],
     "memberships" : [ {
       "project" : {
-        "gid" : "1201607938180071",
-        "name" : "NODES 2022",
+        "gid" : "1201622386926277",
+        "name" : "NODES 202",
         "resource_type" : "project"
       },
       "section" : {
-        "gid" : "1201607938180122",
+        "gid" : "1201622515692750",
         "name" : "BUGS",
         "resource_type" : "section"
       }
     } ],
-    "modified_at" : "2021-12-30T00:28:58.734Z",
+    "modified_at" : "2022-01-06T00:37:42.943Z",
+    "name" : "node name panel and text do not resize when multiline",
+    "notes" : "",
+    "num_hearts" : 0,
+    "num_likes" : 0,
+    "parent" : null,
+    "permalink_url" : "https://app.asana.com/0/1201622386926277/1201622457848503",
+    "projects" : [ {
+      "gid" : "1201622386926277",
+      "name" : "NODES 202",
+      "resource_type" : "project"
+    } ],
+    "resource_type" : "task",
+    "start_at" : null,
+    "start_on" : null,
+    "subtasks" : [ ],
+    "tags" : [ ],
+    "resource_subtype" : "default_task",
+    "workspace" : {
+      "gid" : "1201616985016651",
+      "name" : "syntro.pl",
+      "resource_type" : "workspace"
+    }
+  }, {
+    "gid" : "1201622457865519",
+    "assignee" : null,
+    "assignee_status" : "upcoming",
+    "completed" : false,
+    "completed_at" : null,
+    "created_at" : "2022-01-06T00:37:44.123Z",
+    "due_at" : null,
+    "due_on" : null,
+    "followers" : [ ],
+    "hearted" : false,
+    "hearts" : [ ],
+    "liked" : false,
+    "likes" : [ ],
+    "memberships" : [ {
+      "project" : {
+        "gid" : "1201622386926277",
+        "name" : "NODES 202",
+        "resource_type" : "project"
+      },
+      "section" : {
+        "gid" : "1201622515692750",
+        "name" : "BUGS",
+        "resource_type" : "section"
+      }
+    } ],
+    "modified_at" : "2022-01-06T00:37:44.123Z",
     "name" : "node.move while node is moving creates oscillation",
     "notes" : "",
     "num_hearts" : 0,
     "num_likes" : 0,
     "parent" : null,
-    "permalink_url" : "https://app.asana.com/0/1201607938180071/1201607938499103",
+    "permalink_url" : "https://app.asana.com/0/1201622386926277/1201622457865519",
     "projects" : [ {
-      "gid" : "1201607938180071",
-      "name" : "NODES 2022",
+      "gid" : "1201622386926277",
+      "name" : "NODES 202",
       "resource_type" : "project"
     } ],
     "resource_type" : "task",
@@ -1294,50 +1566,95 @@
     "tags" : [ ],
     "resource_subtype" : "default_task",
     "workspace" : {
-      "gid" : "498346170860",
-      "name" : "Personal Projects",
+      "gid" : "1201616985016651",
+      "name" : "syntro.pl",
       "resource_type" : "workspace"
     }
   }, {
-    "gid" : "1201607938499118",
+    "gid" : "1201622457879427",
     "assignee" : null,
     "assignee_status" : "upcoming",
     "completed" : false,
     "completed_at" : null,
-    "created_at" : "2021-12-30T00:30:49.845Z",
+    "created_at" : "2022-01-06T00:37:44.894Z",
     "due_at" : null,
     "due_on" : null,
-    "followers" : [ {
-      "gid" : "6120693648102",
-      "name" : "marek syntro.pl",
-      "resource_type" : "user"
-    } ],
+    "followers" : [ ],
     "hearted" : false,
     "hearts" : [ ],
     "liked" : false,
     "likes" : [ ],
     "memberships" : [ {
       "project" : {
-        "gid" : "1201607938180071",
-        "name" : "NODES 2022",
+        "gid" : "1201622386926277",
+        "name" : "NODES 202",
         "resource_type" : "project"
       },
       "section" : {
-        "gid" : "1201607938499107",
+        "gid" : "1201622515692750",
+        "name" : "BUGS",
+        "resource_type" : "section"
+      }
+    } ],
+    "modified_at" : "2022-01-06T00:37:44.894Z",
+    "name" : "what happens if there is a section in subtasks?",
+    "notes" : "subtasks are members of section\nsection is how related to task?",
+    "num_hearts" : 0,
+    "num_likes" : 0,
+    "parent" : null,
+    "permalink_url" : "https://app.asana.com/0/1201622386926277/1201622457879427",
+    "projects" : [ {
+      "gid" : "1201622386926277",
+      "name" : "NODES 202",
+      "resource_type" : "project"
+    } ],
+    "resource_type" : "task",
+    "start_at" : null,
+    "start_on" : null,
+    "subtasks" : [ ],
+    "tags" : [ ],
+    "resource_subtype" : "default_task",
+    "workspace" : {
+      "gid" : "1201616985016651",
+      "name" : "syntro.pl",
+      "resource_type" : "workspace"
+    }
+  }, {
+    "gid" : "1201622457890163",
+    "assignee" : null,
+    "assignee_status" : "upcoming",
+    "completed" : false,
+    "completed_at" : null,
+    "created_at" : "2022-01-06T00:37:45.465Z",
+    "due_at" : null,
+    "due_on" : null,
+    "followers" : [ ],
+    "hearted" : false,
+    "hearts" : [ ],
+    "liked" : false,
+    "likes" : [ ],
+    "memberships" : [ {
+      "project" : {
+        "gid" : "1201622386926277",
+        "name" : "NODES 202",
+        "resource_type" : "project"
+      },
+      "section" : {
+        "gid" : "1201622515692751",
         "name" : "DESIGN Decisions",
         "resource_type" : "section"
       }
     } ],
-    "modified_at" : "2021-12-30T00:31:22.146Z",
+    "modified_at" : "2022-01-06T00:37:45.465Z",
     "name" : "Object Affordances  and their Signifiers(clickability, draggability)",
     "notes" : "",
     "num_hearts" : 0,
     "num_likes" : 0,
     "parent" : null,
-    "permalink_url" : "https://app.asana.com/0/1201607938180071/1201607938499118",
+    "permalink_url" : "https://app.asana.com/0/1201622386926277/1201622457890163",
     "projects" : [ {
-      "gid" : "1201607938180071",
-      "name" : "NODES 2022",
+      "gid" : "1201622386926277",
+      "name" : "NODES 202",
       "resource_type" : "project"
     } ],
     "resource_type" : "task",
@@ -1347,50 +1664,46 @@
     "tags" : [ ],
     "resource_subtype" : "default_task",
     "workspace" : {
-      "gid" : "498346170860",
-      "name" : "Personal Projects",
+      "gid" : "1201616985016651",
+      "name" : "syntro.pl",
       "resource_type" : "workspace"
     }
   }, {
-    "gid" : "1201607938499120",
+    "gid" : "1201622457903126",
     "assignee" : null,
     "assignee_status" : "upcoming",
     "completed" : false,
     "completed_at" : null,
-    "created_at" : "2021-12-30T00:31:22.224Z",
+    "created_at" : "2022-01-06T00:37:46.732Z",
     "due_at" : null,
     "due_on" : null,
-    "followers" : [ {
-      "gid" : "6120693648102",
-      "name" : "marek syntro.pl",
-      "resource_type" : "user"
-    } ],
+    "followers" : [ ],
     "hearted" : false,
     "hearts" : [ ],
     "liked" : false,
     "likes" : [ ],
     "memberships" : [ {
       "project" : {
-        "gid" : "1201607938180071",
-        "name" : "NODES 2022",
+        "gid" : "1201622386926277",
+        "name" : "NODES 202",
         "resource_type" : "project"
       },
       "section" : {
-        "gid" : "1201607938499107",
+        "gid" : "1201622515692751",
         "name" : "DESIGN Decisions",
         "resource_type" : "section"
       }
     } ],
-    "modified_at" : "2021-12-30T00:31:30.954Z",
+    "modified_at" : "2022-01-06T00:37:46.732Z",
     "name" : "Window system?",
     "notes" : "",
     "num_hearts" : 0,
     "num_likes" : 0,
     "parent" : null,
-    "permalink_url" : "https://app.asana.com/0/1201607938180071/1201607938499120",
+    "permalink_url" : "https://app.asana.com/0/1201622386926277/1201622457903126",
     "projects" : [ {
-      "gid" : "1201607938180071",
-      "name" : "NODES 2022",
+      "gid" : "1201622386926277",
+      "name" : "NODES 202",
       "resource_type" : "project"
     } ],
     "resource_type" : "task",
@@ -1400,50 +1713,46 @@
     "tags" : [ ],
     "resource_subtype" : "default_task",
     "workspace" : {
-      "gid" : "498346170860",
-      "name" : "Personal Projects",
+      "gid" : "1201616985016651",
+      "name" : "syntro.pl",
       "resource_type" : "workspace"
     }
   }, {
-    "gid" : "1201607938499124",
+    "gid" : "1201622457914878",
     "assignee" : null,
     "assignee_status" : "upcoming",
     "completed" : false,
     "completed_at" : null,
-    "created_at" : "2021-12-30T00:31:40.627Z",
+    "created_at" : "2022-01-06T00:37:47.407Z",
     "due_at" : null,
     "due_on" : null,
-    "followers" : [ {
-      "gid" : "6120693648102",
-      "name" : "marek syntro.pl",
-      "resource_type" : "user"
-    } ],
+    "followers" : [ ],
     "hearted" : false,
     "hearts" : [ ],
     "liked" : false,
     "likes" : [ ],
     "memberships" : [ {
       "project" : {
-        "gid" : "1201607938180071",
-        "name" : "NODES 2022",
+        "gid" : "1201622386926277",
+        "name" : "NODES 202",
         "resource_type" : "project"
       },
       "section" : {
-        "gid" : "1201607938499107",
+        "gid" : "1201622515692751",
         "name" : "DESIGN Decisions",
         "resource_type" : "section"
       }
     } ],
-    "modified_at" : "2021-12-30T00:32:01.704Z",
+    "modified_at" : "2022-01-06T00:37:47.407Z",
     "name" : "Visual context menu (like circular menu in games?)",
     "notes" : "",
     "num_hearts" : 0,
     "num_likes" : 0,
     "parent" : null,
-    "permalink_url" : "https://app.asana.com/0/1201607938180071/1201607938499124",
+    "permalink_url" : "https://app.asana.com/0/1201622386926277/1201622457914878",
     "projects" : [ {
-      "gid" : "1201607938180071",
-      "name" : "NODES 2022",
+      "gid" : "1201622386926277",
+      "name" : "NODES 202",
       "resource_type" : "project"
     } ],
     "resource_type" : "task",
@@ -1453,50 +1762,46 @@
     "tags" : [ ],
     "resource_subtype" : "default_task",
     "workspace" : {
-      "gid" : "498346170860",
-      "name" : "Personal Projects",
+      "gid" : "1201616985016651",
+      "name" : "syntro.pl",
       "resource_type" : "workspace"
     }
   }, {
-    "gid" : "1201607938499136",
+    "gid" : "1201622457920412",
     "assignee" : null,
     "assignee_status" : "upcoming",
     "completed" : false,
     "completed_at" : null,
-    "created_at" : "2021-12-30T00:37:40.822Z",
+    "created_at" : "2022-01-06T00:37:47.831Z",
     "due_at" : null,
     "due_on" : null,
-    "followers" : [ {
-      "gid" : "6120693648102",
-      "name" : "marek syntro.pl",
-      "resource_type" : "user"
-    } ],
+    "followers" : [ ],
     "hearted" : false,
     "hearts" : [ ],
     "liked" : false,
     "likes" : [ ],
     "memberships" : [ {
       "project" : {
-        "gid" : "1201607938180071",
-        "name" : "NODES 2022",
+        "gid" : "1201622386926277",
+        "name" : "NODES 202",
         "resource_type" : "project"
       },
       "section" : {
-        "gid" : "1201607938499107",
+        "gid" : "1201622515692751",
         "name" : "DESIGN Decisions",
         "resource_type" : "section"
       }
     } ],
-    "modified_at" : "2021-12-30T00:38:15.925Z",
+    "modified_at" : "2022-01-06T00:37:47.831Z",
     "name" : "PNGs for windows, tabs, buttons etc",
     "notes" : "",
     "num_hearts" : 0,
     "num_likes" : 0,
     "parent" : null,
-    "permalink_url" : "https://app.asana.com/0/1201607938180071/1201607938499136",
+    "permalink_url" : "https://app.asana.com/0/1201622386926277/1201622457920412",
     "projects" : [ {
-      "gid" : "1201607938180071",
-      "name" : "NODES 2022",
+      "gid" : "1201622386926277",
+      "name" : "NODES 202",
       "resource_type" : "project"
     } ],
     "resource_type" : "task",
@@ -1506,50 +1811,46 @@
     "tags" : [ ],
     "resource_subtype" : "default_task",
     "workspace" : {
-      "gid" : "498346170860",
-      "name" : "Personal Projects",
+      "gid" : "1201616985016651",
+      "name" : "syntro.pl",
       "resource_type" : "workspace"
     }
   }, {
-    "gid" : "1201607938499138",
+    "gid" : "1201622457930605",
     "assignee" : null,
     "assignee_status" : "upcoming",
     "completed" : false,
     "completed_at" : null,
-    "created_at" : "2021-12-30T00:38:16.028Z",
+    "created_at" : "2022-01-06T00:37:48.288Z",
     "due_at" : null,
     "due_on" : null,
-    "followers" : [ {
-      "gid" : "6120693648102",
-      "name" : "marek syntro.pl",
-      "resource_type" : "user"
-    } ],
+    "followers" : [ ],
     "hearted" : false,
     "hearts" : [ ],
     "liked" : false,
     "likes" : [ ],
     "memberships" : [ {
       "project" : {
-        "gid" : "1201607938180071",
-        "name" : "NODES 2022",
+        "gid" : "1201622386926277",
+        "name" : "NODES 202",
         "resource_type" : "project"
       },
       "section" : {
-        "gid" : "1201607938499107",
+        "gid" : "1201622515692751",
         "name" : "DESIGN Decisions",
         "resource_type" : "section"
       }
     } ],
-    "modified_at" : "2021-12-30T00:38:31.409Z",
+    "modified_at" : "2022-01-06T00:37:48.288Z",
     "name" : "Colors for each type of element",
     "notes" : "",
     "num_hearts" : 0,
     "num_likes" : 0,
     "parent" : null,
-    "permalink_url" : "https://app.asana.com/0/1201607938180071/1201607938499138",
+    "permalink_url" : "https://app.asana.com/0/1201622386926277/1201622457930605",
     "projects" : [ {
-      "gid" : "1201607938180071",
-      "name" : "NODES 2022",
+      "gid" : "1201622386926277",
+      "name" : "NODES 202",
       "resource_type" : "project"
     } ],
     "resource_type" : "task",
@@ -1559,8 +1860,8 @@
     "tags" : [ ],
     "resource_subtype" : "default_task",
     "workspace" : {
-      "gid" : "498346170860",
-      "name" : "Personal Projects",
+      "gid" : "1201616985016651",
+      "name" : "syntro.pl",
       "resource_type" : "workspace"
     }
   } ]

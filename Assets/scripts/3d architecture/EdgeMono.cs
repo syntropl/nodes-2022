@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using ExtentionMethods;
 
 [System.Serializable]
 public class EdgeData
@@ -10,16 +11,27 @@ public class EdgeData
     public NodeData[] pair;
     public bool isDirectional;
 
-    public EdgeData(NodeData[] nodeDataPair, string verbDescription, bool isDirectionalBool = false, string id = null)
+    public EdgeData(NodeData[] nodeDataPair, string verbDescription, bool isDirectionalBool = false, string UID = null)
     {
         verb = verbDescription;
         pair= nodeDataPair;
         isDirectional = isDirectionalBool;
 
-        if (id == null)
+        if (UID == null)
         {
             Debug.Log("you forgot to generate uid:  (on mono) GetGraph().MakeNewUID()");
         }
+        else
+        {
+            uid = UID;
+        }
+    }
+
+    public NodeData OtherThan(NodeData thisNodeData)
+    {
+        if (thisNodeData.uid == pair[0].uid) { return pair[1]; }
+        if (thisNodeData.uid == pair[1].uid) { return pair[0]; }
+        return null;
     }
 
     public override string ToString()
@@ -48,18 +60,28 @@ public class EdgeData
 
 public class EdgeMono : MonoBehaviour
 {
-    public EdgeData data;
-    public EdgeData Data
-    {
-        get { return data; }
-        set { UpdateData(value);}
-    }
+    public  EdgeData data;
+
 
     public bool isHidden;
 
     public Transform cylinder;
 
     public NodeMono[] pairMono;
+    //public NodeMono[] pairMono;
+
+
+    public void Set(NodeMono pairMono0, string verb, NodeMono pairMono1, bool isDirectional, string uid)
+    {
+        this.NullCheckLog("pairMono0", pairMono0 );
+        this.NullCheckLog("pairMono1", pairMono1);
+
+        pairMono = new NodeMono[] { pairMono0, pairMono1 };
+        data.pair = new NodeData[] { pairMono0.data, pairMono1.data };
+        data.verb = verb;
+        data.uid = uid;
+        data.isDirectional = isDirectional;
+    }
 
     public float thickness = 0.2f;
 
@@ -85,6 +107,7 @@ public class EdgeMono : MonoBehaviour
     }
 
 
+
     public NodeMono getOtherNode(NodeMono thisNode)
     {
         if (thisNode == pairMono[0]) { return pairMono[1]; }
@@ -94,18 +117,21 @@ public class EdgeMono : MonoBehaviour
             return null;
     }
 
-    public void UpdateData(EdgeData newData)
+    public void UpdateLabel()
     {
-        data = newData;
         string dataString = data.ToString();
         if(dataString != null)
         {
             gameObject.name = data.verb;
-//            Print();
+            //TODO world space label
+
+            //            Print();
         }
 
         
     }
+
+
 
     private void Update()
     {

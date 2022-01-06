@@ -34,6 +34,8 @@ public class Graph : MonoBehaviour
         newNodesList2D = CreateNewNodeList("new nodes", new Vector3(-100, 200, 0), null, 1, nodesContainer);
         newNodesList2D.transform.position = newNodesListPosition;
         newNodesList2D.transform.localEulerAngles = newNodesListRotation;
+
+        Debug.Log(newNodesList2D);
         nodeTemplate.gameObject.SetActive(false);
         nodeFormTemplate.gameObject.SetActive(false);
         //
@@ -81,13 +83,34 @@ public class Graph : MonoBehaviour
         newNodesList2D.UpdatePositions();
     }
 
+    public EdgeMono LinkToExistingNodeOrCreateNew(NodeMono originNode, string verb, NodeData nodeDataTolink, bool isDirectional = false)
+    {
 
+        NodeMono destinationNode = GetNodeByUID(nodeDataTolink.uid);
+
+
+        if (destinationNode == null)
+        {
+            destinationNode = CreateOrGetNode(nodeDataTolink);
+        }
+        //        Debug.Log($"destination node found. Linking: {originNode.data.name} - {destinationNode.data.name}");
+
+        return LinkTwoNodes(originNode, verb, destinationNode, isDirectional);
+
+    }
 
     public EdgeMono LinkTwoNodes(NodeMono node0, string verb, NodeMono node1, bool isDirectional = false)
     {
-        EdgeMono edgeMono = CreateEmptyEdge(node0, node1);
-        string uid = MakeNewUID();
-        EdgeData edgeData = new EdgeData(new NodeData[]{ node0.data, node1.data}, verb, isDirectional,uid);
+        GameObject newGo = Instantiate(edgeTemplate, edgesContainer);
+        newGo.SetActive(true);
+        newGo.name = $"-[{verb}]-";
+        if (newGo.GetComponent<EdgeMono>() == null) { Debug.Log("New Edge is missing an EdgeMono component"); }
+        EdgeMono edgeMono = newGo.GetComponent<EdgeMono>();
+
+        //EdgeMono edgeMono = CreateEmptyEdge(node0, node1);
+        string uid = MakeNewUID($"({verb})");
+        edgeMono.Set(node0, verb, node1, isDirectional, uid); 
+        edgeMono.data = new EdgeData(new NodeData[]{ node0.data, node1.data}, verb, isDirectional,uid);
 
         // TODO check for existing edge like this
         // at node0 looka at every edge and for each
@@ -95,62 +118,48 @@ public class Graph : MonoBehaviour
         //              if verb is the same
         //                  show warning, compare two verbs, ask for confirmation;
 
-        
-        edgeMono.UpdateData(edgeData);
 
         return edgeMono;
     }
 
 
-    public EdgeMono LinkToExistingNodeOrCreateNew(NodeMono originNode, string verb, NodeData nodeDataTolink, bool isDirectional=false)
-    {
-
-        NodeMono destinationNode = GetNodeByUID(nodeDataTolink.uid);
-
-  
-        if (destinationNode == null)
-        {
-            destinationNode = CreateNode(nodeDataTolink);
-        }
-//        Debug.Log($"destination node found. Linking: {originNode.data.name} - {destinationNode.data.name}");
-
-        return LinkTwoNodes(originNode, verb, destinationNode, isDirectional);
-        
-    }
-
-
-    public EdgeMono CreateEmptyEdge(NodeMono node0, NodeMono node1)
-    {
-        GameObject newGo = Instantiate(edgeTemplate, edgesContainer);
-        newGo.SetActive(true);
-        newGo.name = "emtpy edge";
-        if(newGo.GetComponent<EdgeMono>()== null) { Debug.Log("New Edge is missing an EdgeMono component"); }
-        EdgeMono edge = newGo.GetComponent<EdgeMono>();
-        edge.pairMono = new NodeMono[] { node0, node1 };
-
-        return edge;
-    }
+    //public EdgeMono CreateEmptyEdge(NodeMono node0, NodeMono node1)
+    //{
+    //    GameObject newGo = Instantiate(edgeTemplate, edgesContainer);
+    //    newGo.SetActive(true);
+    //    newGo.name = "emtpy edge";
+    //    if(newGo.GetComponent<EdgeMono>()== null) { Debug.Log("New Edge is missing an EdgeMono component"); }
+    //    EdgeMono edge = newGo.GetComponent<EdgeMono>();
+    //    edge.pairMono = new NodeMono[] { node0, node1 };
+    //    return edge;
+    //}
 
     public void CreateNewNodeFromForm(NodeForm form)
     {
 
-        NodeMono newNode = CreateNode(form.NodeDataFromForm());
+        NodeMono newNode = CreateOrGetNode(form.NodeDataFromForm());
         Debug.Log(newNode.ToString());
         Destroy(form.gameObject);
     }
 
 
-    public NodeMono CreateNode(NodeData data)
+    public NodeMono CreateOrGetNode(NodeData data, NodeList2D location = null) // rename to CreateOrGet
     {
+
+        
         NodeMono match = GetNodeByUID(data.uid);
         if (match)
         {
+            //TODO alert user, perhaps ask.
+            //if i get uid from asana or generate and it matches an existing node it wont be created
+
             return match;
         }
         
 
         // instantiate and position new empty node
-        GameObject newGo = Instantiate(nodeTemplate, newNodesList2D.transform);
+        if(location == null) { location = newNodesList2D; }
+        GameObject newGo = Instantiate(nodeTemplate, location.transform);
         newGo.name = "○ " + data.name;
         newGo.SetActive(true);
 
@@ -160,7 +169,7 @@ public class Graph : MonoBehaviour
 
         //newGo.transform.localPosition = newNodePlane.offerVacantLocalPosition(newNode);
         //newGo.transform.localRotation = Quaternion.identity;
-        newNodesList2D.AdoptNode(newNode);
+        location.AdoptNode(newNode);
         createdNodes.Add(newNode);
 
         return newNode;
@@ -170,7 +179,7 @@ public class Graph : MonoBehaviour
 
     public Timeline CreateTimeline(TimeFrame timeframe, Vector3 position, List<NodeMono> nodesToAdopt = null)
     {
-        GameObject newGO = Instantiate(timelineTemplate, this.transform);
+        GameObject newGO = Instantiate(timelineTemplate, nodesContainer);
         newGO.transform.position = position;
 
         //TODO how to decide timeline orientation?
@@ -189,7 +198,7 @@ public class Graph : MonoBehaviour
     }
 
 
-    public NodeList2D CreateNewNodeList(string label, Vector3 globalPosition, List<NodeMono> nodes=null, int layout = 1, Transform parent = null, bool isOnAxis = false)
+    public NodeList2D CreateNewNodeList(string label, Vector3 globalPosition, List<NodeMono> nodes=null, int layout = 1, Transform parent = null, bool labelsShiftedLeft = false)
     {
         if (parent == null) { parent = this.transform; }
         GameObject newGO = Instantiate(nodeListTemplate, parent);
@@ -202,7 +211,7 @@ public class Graph : MonoBehaviour
         NodeList2D nodeList = newGO.GetComponent<NodeList2D>();
         nodeList.labelText.text = label;
         nodeList.layout = layout;
-        nodeList.isOnAxis = isOnAxis;
+        nodeList.labelsShiftedLeft = labelsShiftedLeft;
 
         if (nodes != null)
         {
@@ -290,14 +299,14 @@ public class Graph : MonoBehaviour
 
     }
 
-    public string MakeNewUID()
+    public string MakeNewUID(string readablePart = "")
     {
         string proposition = null;
         bool uniquenessConfirmed = false;
 
         while (!uniquenessConfirmed)
         {
-            proposition = GenrateRandomNumberString(15);
+            proposition =  GenrateRandomNumberString(15) + readablePart;
             uniquenessConfirmed = isThisIDunique(proposition);            
         }
         return proposition;

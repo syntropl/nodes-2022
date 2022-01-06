@@ -33,13 +33,21 @@ namespace ExtentionMethods
         public static void Print(this MonoBehaviour mono)
         {
 
-            if(mono.GetComponentInChildren<Text>()!= null)
+            if (mono.GetComponentInChildren<Text>() != null)
             {
                 Debug.Log($"{mono.transform.position}   {mono.GetComponentInChildren<Text>().text}");
             }
             Debug.Log($"{mono.transform.position} { mono.name}  is on gamoebject: {mono.gameObject.name}");
         }
 
+
+        public static void NullCheckLog(this MonoBehaviour thisMono, string varName, MonoBehaviour checkedMono)
+        {
+            if(checkedMono== null)
+            {
+                Debug.Log($"{thisMono.GetType()} NullReference:<color=red> {varName} is null</color>");
+            }
+        }
 
 
         //public static void MoveTowards(this MonoBehaviour thisMono, Vector3 destination, float smoothTime = 0.5f, float accuracy = 0.3f)
@@ -48,7 +56,7 @@ namespace ExtentionMethods
         //    mover.SetDestination(destination, smoothTime);
         //}
 
-        public static void MoveTowards(this MonoBehaviour thisMono, Vector3 destination, int frames=50)
+        public static void MoveTowards(this MonoBehaviour thisMono, Vector3 destination, int frames = 50)
         {
             MoveSmooth mover = thisMono.AddOrGetComponent<MoveSmooth>();
             mover.SetDestination(destination, frames);
@@ -75,7 +83,7 @@ namespace ExtentionMethods
 
         static IEnumerator RotateLerp(this MonoBehaviour thisMono, Vector3 lookatPosition, float frames)
         {
-            
+
             Quaternion startRotation = thisMono.transform.rotation;
             Quaternion targetRotation = Quaternion.LookRotation(-lookatPosition);
 
@@ -89,9 +97,8 @@ namespace ExtentionMethods
         }
 
 
-        //TODO searching for inactive children nodes. still not wo
-
-        public static NodeMono[] GetChildrenNodes(this MonoBehaviour thisMono, bool includeInactive=true)
+        //TODO searching for inactive children nodes. still not working
+        public static NodeMono[] GetChildrenNodes(this MonoBehaviour thisMono, bool includeInactive = true)
         {
             if (thisMono.GetComponentInChildren<NodeMono>(includeInactive))
             {
@@ -105,14 +112,32 @@ namespace ExtentionMethods
             {
                 Debug.Log($"{thisMono.gameObject.name} : no ACTIVE children nodes found");
             }
-            
+
             return null;
         }
 
+        public static NodeMono GetParentNode(this MonoBehaviour thisMono)
+        {
+            Transform candidate = thisMono.transform;
+
+            while (candidate != null)
+            {
+                if (candidate.GetComponent<NodeMono>() == null)
+                {
+                    candidate = candidate.parent;
+                }
+                else
+                {
+                    return candidate.GetComponent<NodeMono>();
+                }
+            }
+            return null;
+            
+        }
 
         public static Graph GetGraph(this MonoBehaviour thisMono)
         {
-       
+
             Transform candidate = thisMono.transform; ;
 
             while (candidate != null)
@@ -124,7 +149,7 @@ namespace ExtentionMethods
                 }
                 else
                 {
-                   // Debug.Log($"graph found on{candidate.gameObject.name}");
+                    // Debug.Log($"graph found on{candidate.gameObject.name}");
                     return candidate.GetComponent<Graph>();
                 }
             }
@@ -132,12 +157,46 @@ namespace ExtentionMethods
             return null;
         }
 
-        
 
 
 
+        public static void AddUnique(this List<NodeMono> thisList, NodeMono objectToAdd)
+        {
+            if (!thisList.Contains(objectToAdd)) { thisList.Add(objectToAdd); }
+        }
 
+        public static void AddUniqueRange(this List<NodeMono> thisList, IEnumerable<NodeMono> enumerable)
+        {
+            foreach(NodeMono objectToAdd in enumerable)
+            {
+                thisList.AddUnique(objectToAdd);
+            }
 
+        }
+
+        public static void AddUnique(this List<string> thisList, string objectToAdd)
+        {
+            if (!thisList.Contains(objectToAdd)) { thisList.Add(objectToAdd); }
+        }
+
+        public static void AddUniqueRange(this List<string> thisList, IEnumerable<string> enumerable)
+        {
+            foreach (string objectToAdd in enumerable)
+            {
+                thisList.AddUnique(objectToAdd);
+            }
+
+        }
+
+        public static Color RGBA(this Color input)
+        {
+            float r = input.r / 255;
+            float g = input.g / 255;
+            float b = input.b / 255;
+            float a = input.a / 255;
+
+            return new Color(r, g, b, a);
+        }
     }
 }
 

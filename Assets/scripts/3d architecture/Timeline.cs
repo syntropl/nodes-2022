@@ -100,7 +100,7 @@ public class Timeline : MonoBehaviour
             if (dayNodes.Count > 0)
             {
                 NodeList2D dayList = AddOrGetDayList(dayFrame, dayNodes);
-                dayList.isOnAxis = true;    // this will offset label to the left
+                dayList.labelsShiftedLeft = true;    // this will offset label to the left
 
             }
 

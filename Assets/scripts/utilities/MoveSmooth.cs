@@ -53,7 +53,7 @@ public class MoveSmooth : MonoBehaviour
 
     }
 
-    //IEnumerator GoToGlobaPosition(Vector3 newDestination, float time)
+    //IEnumerator GoToGlobaPosition(Vector3 newDestination, float frames)
     //{
     //    // TODO use time as smoothtime
     //    continueMoving = true;
@@ -62,7 +62,7 @@ public class MoveSmooth : MonoBehaviour
     //    {
     //        if (continueMoving)
     //        {
-    //            transform.position = Vector3.SmoothDamp(transform.position, newDestination, ref vel, 0.6f);
+    //            transform.position = Vector3.SmoothDamp(transform.position, newDestination, ref vel, 0.1f);
     //            yield return null;
     //        }
     //    }
