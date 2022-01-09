@@ -9,7 +9,7 @@ public class MoveSmooth : MonoBehaviour
     public float smoothTime = 0.2f;
     public float errorMargin = 0.1f;
 
-    public bool continueMoving = false;
+  
 
     public static Vector3 vel;// = Vector3.zero;
 
@@ -20,6 +20,9 @@ public class MoveSmooth : MonoBehaviour
        
     }
 
+
+    bool useLerp = true;
+
     [ExposeMethodInEditor]
     public void NewRandomMove()
     {
@@ -29,47 +32,82 @@ public class MoveSmooth : MonoBehaviour
 
     public void SetDestination(Vector3 newDestination, int frames = 40)
     {
-        continueMoving = false;
-        StartCoroutine(GoToGlobaPosition(newDestination, frames));
+
+            if (useLerp)
+            {
+
+                StartCoroutine(GoToGlobaPositionLerp(newDestination,frames));
+            }
+            else
+            {
+
+                StartCoroutine(GoToGlobaPosition(newDestination, frames));
+
+
+            }
 
     }
 
-    IEnumerator GoToGlobaPosition(Vector3 newDestination, int frames)
+
+
+
+    //IEnumerator GoToGlobaPositionLerp(Vector3 newDestination, int frames)
+    //{
+
+    //    isMoving = true;
+    //    Vector3 origin = transform.position;
+
+    //    float stepSize = 1f / frames;
+    //    for (float interpolation = 0f; interpolation <= 1; interpolation += stepSize)
+    //    {
+    //        if (isMoving)
+    //        {
+
+    //            transform.position = Vector3.Lerp(origin, newDestination, Mathf.SmoothStep(0,1,interpolation));
+    //            yield return null;
+    //        }
+    //    }
+
+    //}
+
+    IEnumerator GoToGlobaPositionLerp(Vector3 newDestination, int frames)
     {
 
-        continueMoving = true;
+
         Vector3 origin = transform.position;
 
         float stepSize = 1f / frames;
         for (float interpolation = 0f; interpolation <= 1; interpolation += stepSize)
         {
-            if (continueMoving)
-            {
 
-                transform.position = Vector3.Lerp(origin, newDestination, interpolation);
-                yield return null;
-            }
+            transform.position = Vector3.Lerp(origin, newDestination, Mathf.SmoothStep(0,1,interpolation));
+            yield return null;
+            
         }
 
     }
 
-    //IEnumerator GoToGlobaPosition(Vector3 newDestination, float frames)
-    //{
-    //    // TODO use time as smoothtime
-    //    continueMoving = true;
 
-    //    while (Vector3.Distance(transform.position, newDestination) > errorMargin)
-    //    {
-    //        if (continueMoving)
-    //        {
-    //            transform.position = Vector3.SmoothDamp(transform.position, newDestination, ref vel, 0.1f);
-    //            yield return null;
-    //        }
-    //    }
+    IEnumerator GoToGlobaPosition(Vector3 newDestination, float frames)
+    {
 
-    //    Debug.Log(Vector3.Distance(transform.position, newDestination));
+        float time = frames / 200;
+        // TODO use time as smoothtime
 
-    //}
+
+
+        while (Vector3.Distance(transform.position, newDestination) > errorMargin)
+        {
+           
+            transform.position = Vector3.SmoothDamp(transform.position, newDestination, ref vel, time);
+            yield return null;
+            
+        }
+
+
+        Debug.Log(Vector3.Distance(transform.position, newDestination));
+
+    }
 
 
 
@@ -77,7 +115,7 @@ public class MoveSmooth : MonoBehaviour
     //private void Update()
     //{
 
-    //    if (continueMoving && Vector3.Distance(transform.position, rememberedDestination) > accuracy)
+    //    if (isMoving && Vector3.Distance(transform.position, rememberedDestination) > accuracy)
     //    {
     //        transform.position = Vector3.SmoothDamp(transform.position, rememberedDestination, ref vel, smoothTime);
     //    }

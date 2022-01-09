@@ -2,12 +2,20 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using ExtentionMethods;
+using System.Linq;
+
 public class Graph : MonoBehaviour
 {
 
     public GraphMetadata metadata;
+
+
     public List<NodeMono> createdNodes;
     public List<EdgeMono> createdEdges;
+
+    public Dictionary<string, NodeMono> nodesByUID;
+    public Dictionary<string, EdgeMono> edgesByUID;
+
     public Transform edgesContainer;
     public Transform nodesContainer;
     //public Plane newNodePlane; //TODO this should be a nodeList
@@ -30,8 +38,11 @@ public class Graph : MonoBehaviour
 
     private void Awake()
     {
+        nodesByUID = new Dictionary<string, NodeMono>();
+        edgesByUID = new Dictionary<string, EdgeMono>();
+
         createdNodes = new List<NodeMono>();
-        newNodesList2D = CreateNewNodeList("new nodes", new Vector3(-100, 200, 0), null, 1, nodesContainer);
+        newNodesList2D = CreateNewNodeList("new nodes", new Vector3(-100, -200, 200), null, 1, nodesContainer);
         newNodesList2D.transform.position = newNodesListPosition;
         newNodesList2D.transform.localEulerAngles = newNodesListRotation;
 
@@ -53,7 +64,7 @@ public class Graph : MonoBehaviour
             // LATE START DEBUG
 
 
-            //TimelineTest();
+            TimelineTest();
 
 
         }
@@ -79,7 +90,8 @@ public class Graph : MonoBehaviour
     [ExposeMethodInEditor]
     public void TimelineTest()
     {
-        CreateTimeline(null, new Vector3(0, 0, 0), createdNodes);
+        List<NodeMono> allNodes = nodesByUID.Values.ToList<NodeMono>();
+        CreateTimeline(null, new Vector3(0, 0, 0), allNodes);
         newNodesList2D.UpdatePositions();
     }
 
@@ -107,8 +119,8 @@ public class Graph : MonoBehaviour
         if (newGo.GetComponent<EdgeMono>() == null) { Debug.Log("New Edge is missing an EdgeMono component"); }
         EdgeMono edgeMono = newGo.GetComponent<EdgeMono>();
 
-        //EdgeMono edgeMono = CreateEmptyEdge(node0, node1);
         string uid = MakeNewUID($"({verb})");
+
         edgeMono.Set(node0, verb, node1, isDirectional, uid); 
         edgeMono.data = new EdgeData(new NodeData[]{ node0.data, node1.data}, verb, isDirectional,uid);
 
@@ -118,6 +130,8 @@ public class Graph : MonoBehaviour
         //              if verb is the same
         //                  show warning, compare two verbs, ask for confirmation;
 
+
+        edgesByUID.Add(uid, edgeMono);
 
         return edgeMono;
     }
@@ -155,6 +169,11 @@ public class Graph : MonoBehaviour
 
             return match;
         }
+
+        if(data.uid == null)
+        {
+            data.uid = MakeNewUID();
+        }
         
 
         // instantiate and position new empty node
@@ -162,7 +181,6 @@ public class Graph : MonoBehaviour
         GameObject newGo = Instantiate(nodeTemplate, location.transform);
         newGo.name = "○ " + data.name;
         newGo.SetActive(true);
-
         NodeMono newNode = newGo.AddOrGetComponent<NodeMono>();
         newNode.data = data;
         newNode.UpdateDisplays();
@@ -170,7 +188,12 @@ public class Graph : MonoBehaviour
         //newGo.transform.localPosition = newNodePlane.offerVacantLocalPosition(newNode);
         //newGo.transform.localRotation = Quaternion.identity;
         location.AdoptNode(newNode);
-        createdNodes.Add(newNode);
+
+        //TODO created nodes should be completely substituted by nodesByUID
+      //  createdNodes.Add(newNode);
+
+
+        nodesByUID.Add(newNode.data.uid, newNode);
 
         return newNode;
         // position the node on timeline
@@ -250,54 +273,99 @@ public class Graph : MonoBehaviour
 
     public NodeMono GetNodeByUID(string uid)
     {
-        List<NodeMono> matches = new List<NodeMono>();
+     
 
-        foreach(NodeMono node in createdNodes)
-        {
-            if(node.data.uid == uid)
-            {
-                matches.Add(node);             
-            }
-        }
 
-        if (matches.Count == 0)
+        if (nodesByUID.ContainsKey(uid))
         {
-            return null;
+            return nodesByUID[uid];
         }
-        if (matches.Count > 1)
-        {
-            Debug.LogError($"somehow ... id {uid} appears in {matches.Count} nodes");
-            matches.Print();
-            
-        }
-        return matches[0];   
-    }
+        else { return null; }
 
+
+        //List<NodeMono> matches = new List<NodeMono>();
+
+        //    //foreach(NodeMono node in createdNodes)
+        //    //{
+        //    //    if(node.data.uid == uid)
+        //    //    {
+        //    //        matches.Add(node);             
+        //    //    }
+        //    //}
+
+        //    if (matches.Count == 0)
+        //    {
+        //        return null;
+        //    }
+        //    if (matches.Count > 1)
+        //    {
+        //        Debug.LogError($"somehow ... id {uid} appears in {matches.Count} nodes");
+        //        matches.Print();
+
+        //    }
+        //    return matches[0];   
+     }
 
     public EdgeMono GetEdgeByUID(string uid)
     {
-        List<EdgeMono> matches = new List<EdgeMono>();
-
-        foreach(EdgeMono edge in createdEdges)
-        {
-            if(edge.data.uid == uid)
+            if (edgesByUID.ContainsKey(uid))
             {
-                matches.Add(edge);
+                return edgesByUID[uid];
+            }
+            else { return null; }
+        }
+
+
+    public NodeMono[] GetNodesByName(string name, string type=null)
+    {
+        List<NodeMono> matches = new List<NodeMono>();
+
+        foreach (var kvp in nodesByUID)
+        {
+            NodeMono node = kvp.Value;
+            if(node.data.name == name)
+            {
+                if (type !=null)
+                {
+                    if(node.data.type == type)
+                    {
+                        matches.Add(node);
+                    }
+                }
+                else
+                {
+                    matches.Add(node);
+                }      
             }
         }
-        if (matches.Count == 0)
-        {
-            return null;
-        }
-        if (matches.Count > 1)
-        {
-            Debug.LogError($"somehow ... id {uid} appears in {matches.Count} edges");
-            matches.Print();
-        }
-
-        return matches[0];
-
+        return matches.ToArray();
     }
+
+
+    //public EdgeMono GetEdgeByUID(string uid)
+    //{
+    //    List<EdgeMono> matches = new List<EdgeMono>();
+
+    //    foreach(EdgeMono edge in createdEdges)
+    //    {
+    //        if(edge.data.uid == uid)
+    //        {
+    //            matches.Add(edge);
+    //        }
+    //    }
+    //    if (matches.Count == 0)
+    //    {
+    //        return null;
+    //    }
+    //    if (matches.Count > 1)
+    //    {
+    //        Debug.LogError($"somehow ... id {uid} appears in {matches.Count} edges");
+    //        matches.Print();
+    //    }
+
+    //    return matches[0];
+
+    //}
 
     public string MakeNewUID(string readablePart = "")
     {
@@ -354,21 +422,33 @@ public class Graph : MonoBehaviour
     [ExposeMethodInEditor]
     public void minimizeAll()
     {
-        foreach(NodeMono node in createdNodes)
+
+        foreach (var kvp in nodesByUID)
         {
-            node.Minimize();
-            node.UpdateColliderSize();
+            kvp.Value.Minimize();
         }
+
+        //        foreach(NodeMono node in createdNodes)
+        //        {
+        //            node.Minimize();
+        ////            node.UpdateColliderSize();
+        //        }
     }
 
     [ExposeMethodInEditor]
     public void maximizeAll()
     {
-        foreach(NodeMono node in createdNodes)
+
+        foreach(var kvp in nodesByUID)
         {
-            node.Maximize();
-            node.UpdateColliderSize();
+            kvp.Value.Maximize();
         }
+
+ //       foreach(NodeMono node in createdNodes)
+ //       {
+ //           node.Maximize();
+ ////           node.UpdateColliderSize();
+ //       }
     }
 
 

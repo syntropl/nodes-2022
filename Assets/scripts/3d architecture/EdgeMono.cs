@@ -19,7 +19,7 @@ public class EdgeData
 
         if (UID == null)
         {
-            Debug.Log("you forgot to generate uid:  (on mono) GetGraph().MakeNewUID()");
+            Debug.Log("new node has no uid //  (on mono) GetGraph().MakeNewUID()");
         }
         else
         {
@@ -33,6 +33,7 @@ public class EdgeData
         if (thisNodeData.uid == pair[1].uid) { return pair[0]; }
         return null;
     }
+
 
     public override string ToString()
     {
@@ -61,15 +62,11 @@ public class EdgeData
 public class EdgeMono : MonoBehaviour
 {
     public  EdgeData data;
-
-
-    public bool isHidden;
-
-    public Transform cylinder;
-
     public NodeMono[] pairMono;
-    //public NodeMono[] pairMono;
 
+    public float thickness = 0.2f;
+    public Transform cylinder;
+    public bool isHidden;
 
     public void Set(NodeMono pairMono0, string verb, NodeMono pairMono1, bool isDirectional, string uid)
     {
@@ -81,9 +78,28 @@ public class EdgeMono : MonoBehaviour
         data.verb = verb;
         data.uid = uid;
         data.isDirectional = isDirectional;
+
+
+        //foreach(NodeMono node in pairMono)
+        //{
+        //    Debug.Log($"adding edge to nodeMono {node.name}");
+        //    node.edgeMonos.Add(this);
+
+        //    Debug.Log("now edgedata to nodedata");
+        //    data.Print();
+        //  //  node.data.edgeDataList.Add(this.data);
+        //}
+
+       pairMono0.AddEdge(this);
+       pairMono1.AddEdge(this);
+
+
     }
 
-    public float thickness = 0.2f;
+
+
+
+    
 
     public void UpdateTransform()
     {
@@ -108,14 +124,7 @@ public class EdgeMono : MonoBehaviour
 
 
 
-    public NodeMono getOtherNode(NodeMono thisNode)
-    {
-        if (thisNode == pairMono[0]) { return pairMono[1]; }
-        else if (thisNode == pairMono[1]) { return pairMono[0]; }
-        else
-            Debug.LogError("Node I'm not connected to just asked me about the other");
-            return null;
-    }
+ 
 
     public void UpdateLabel()
     {
@@ -131,24 +140,31 @@ public class EdgeMono : MonoBehaviour
         
     }
 
-
+    public NodeMono GetOtherNode(NodeMono thisNode)
+    {
+        if (thisNode == pairMono[0]) { return pairMono[1]; }
+        else if (thisNode == pairMono[1]) { return pairMono[0]; }
+        else
+            Debug.LogError("Node I'm not connected to just asked me about the other");
+        return null;
+    }
 
     private void Update()
     {
         /// ALL THIS SHOULD BE DONE BY EVENTS ?
         /// 
-        if (pairMono != null && pairMono[0] != null && pairMono[1] != null)
-        {
-            if (pairMono[0].gameObject.activeSelf && pairMono[1].gameObject.activeSelf)
-            {
-                isHidden = false;
-            }
-            else
-            {
-                isHidden = true;
-            }
+        //if (pairMono != null && pairMono[0] != null && pairMono[1] != null)
+        //{
+        //    if (pairMono[0].gameObject.activeSelf && pairMono[1].gameObject.activeSelf)
+        //    {
+        //        isHidden = false;
+        //    }
+        //    else
+        //    {
+        //        isHidden = true;
+        //    }
 
-        }
+        //}
         // ///
 
         if (isHidden)
@@ -174,7 +190,7 @@ public class EdgeMono : MonoBehaviour
     public void Print()
     {
         Debug.Log(this.ToString());
-        Debug.Log($"{pairMono[0].transform.position} {pairMono[1].transform.position}");
+        //Debug.Log($"{pairMono[0].transform.position} {pairMono[1].transform.position}");
     }
 
 

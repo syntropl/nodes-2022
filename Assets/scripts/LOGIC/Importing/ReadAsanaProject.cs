@@ -75,6 +75,7 @@ public class ReadAsanaProject : MonoBehaviour
             // TODO if task has tag, link to or create tag node
 
 
+
         }
 
 
@@ -91,7 +92,7 @@ public class ReadAsanaProject : MonoBehaviour
         NodeData groupData = new NodeData(groupUID, groupName,groupType);
         
         NodeMono groupNode = graph.LinkToExistingNodeOrCreateNew(taskNode, "is in", groupData).pairMono[1];
-        groupNode.labelPanelRect.transform.position = new Vector3(-100,0,0);
+        groupNode.mainLayoutRect.transform.position = new Vector3(-100,0,0);
         NodeList2D groupList;
         if(groupNode.GetComponentInChildren<NodeList2D>() == null)
         {
@@ -112,7 +113,7 @@ public class ReadAsanaProject : MonoBehaviour
        
     }
 
-    //THis WORKS
+    //THis WORKS.  // THIS WILL BE SOON OBSOLETE
     [ExposeMethodInEditor]
     void ConnectTasksToProjects()
     {
@@ -127,7 +128,7 @@ public class ReadAsanaProject : MonoBehaviour
                     projectNodeData.uid = memberhsip.project.gid;
                     NodeMono taskNode = graph.GetNodeByUID(task.gid);
                     NodeMono projectNode = graph.LinkToExistingNodeOrCreateNew(taskNode, "is in", projectNodeData, true).pairMono[1];
-                    projectNode.labelPanelRect.gameObject.SetActive(false);
+                    projectNode.mainLayoutRect.gameObject.SetActive(false);
                     NodeList2D projectList;
 
                     if (projectNode.GetComponentInChildren<NodeList2D>() == null)
@@ -152,7 +153,7 @@ public class ReadAsanaProject : MonoBehaviour
 
 
 
-    // THIS WILL BE SOON OBSOLETE
+   
     [ExposeMethodInEditor]
     public void ImportTasks() 
     {
@@ -166,38 +167,60 @@ public class ReadAsanaProject : MonoBehaviour
 
         foreach (AsanaTask task in asanaTasks)
         {
+
+            // INSTANTIATE TASK
             NodeMono taskNode = InstantiateTask(task);
-            if (task.assignee.gid != null)
-            {
-                NodeMono userNode = InstantiateUser(task.assignee);
-                graph.LinkTwoNodes(taskNode, "is assigned to:", userNode, true);
-            }
-            if(task.tags != null)
-            {
-                foreach(AsanaTag tag in task.tags)
-                {
-                    NodeMono tagNode = InstantiateTag(tag);
-                    graph.LinkTwoNodes(taskNode, "is tagged", tagNode, true);
-                }
-                
-            }
-            if(task.notes != null)
+
+            // ADD TASK DESCRIPTION
+            if (task.notes != null)
             {
                 // checking for mentions of other tasks inside task description
                 string asanaLinkRoot = "https://app.asana.com/0/0/";
                 if (task.notes.Contains(asanaLinkRoot))
                 {
                     int start = task.notes.IndexOf(asanaLinkRoot) + asanaLinkRoot.Length;
+                    Debug.Log($"{task.name} task.notes: {task.notes}");
+
                     string mentionUID = task.notes.Substring(start, 16); // if asana ever changes length of gids this will break;
                     string[] protoEdge = { mentionUID, "is referenced by", taskNode.data.uid };
-                    
+
                     mentions.Add(protoEdge);
-                   
+
                 }
+            }
+
+            if (task.assignee.gid != null)
+            {
+                // INSTANTIATE USER as node
+
+                Debug.Log($"instantiating user -  {task.assignee.name}");
+                NodeMono userNode = InstantiateUser(task.assignee);
+                graph.LinkTwoNodes(taskNode, "is assigned to:", userNode, true);
+            }
+            
+            if (task.tags != null)
+            {
+            // INSTANTIATE TAGS as nodes
+                foreach (AsanaTag tag in task.tags)
+                {
+                    NodeMono tagNode;
+                    if(graph.GetNodesByName(tag.name, "tag").Length > 0)
+                    {
+                        NodeMono[] similarTagNodes = graph.GetNodesByName(tag.name, "tag");
+                        if (similarTagNodes.Length > 1) { similarTagNodes.Print($"tagNodes found named>{tag.name}<"); }
+                        tagNode = similarTagNodes[0];
+                    }
+                    else
+                    {
+                        tagNode = InstantiateTag(tag);              
+                    }
+                    graph.LinkTwoNodes(taskNode, "is tagged", tagNode, true);
+                }
+
             }
         }
 
-        // manifesting mentions as edges
+        // INSTANTIATE MENTIONS  as edges
         foreach(string[] mention in mentions)
         {
 
@@ -213,15 +236,19 @@ public class ReadAsanaProject : MonoBehaviour
 
                 if (callerNode != null)
                 {
-                    string mentionURL = "https://app.asana.com/0/0/" + mention[2];
+                    Debug.Log($"<color=blue>!!! {callerNode.name}</color> mentions something");
+                    string mentionURL = @"https://app.asana.com/0/0/" + mention[0];
 
-                    Debug.Log("");
-                    Debug.Log(callerNode.data.description);
-                    Debug.Log($"replacing {mentionURL} with {mentionedNode.data.name}");
 
-                    string correctedDescription = callerNode.data.description.Replace(mentionURL, mentionedNode.data.name);
+                    string correctedDescription = callerNode.data.description.Replace(mentionURL,$"// go to:{mentionedNode.data.name}//");
+
+                    Debug.Log($"mentionURL: {mentionURL}");
+                    Debug.Log($"mentionedNode.data.name and uid: {mentionedNode.data.name} {mentionedNode.data.uid}");
+
+                    Debug.Log($"callerNode.data.name and uid: {callerNode.data.name} {callerNode.data.uid}");
+                    Debug.Log($"callerNode.data.description: {callerNode.data.description}");
                     callerNode.data.description = correctedDescription;
-                    Debug.Log(callerNode.data.description);
+                    Debug.Log($"after correction task description is : {callerNode.data.description}");
 
                     //TODO  make it bold?
                     callerNode.UpdateDisplays();
@@ -254,7 +281,7 @@ public class ReadAsanaProject : MonoBehaviour
             data.due_on = System.DateTime.Parse(task.due_on, null, System.Globalization.DateTimeStyles.RoundtripKind);
         NodeMono taskNode = graph.CreateOrGetNode(data);
 
-        if(data.status == "completed") { taskNode.SetVisibility(0.2f); }
+        if(data.status == "completed") { taskNode.GreyOutVisibleNode(); }
         if (task.subtasks.Length > 0)
         {
             foreach (AsanaTask subtask in task.subtasks)
@@ -276,7 +303,7 @@ public class ReadAsanaProject : MonoBehaviour
         data.type = "Person";
         data.uid = user.gid;
 
-        //Debug.Log($"data created {data.name}  {data.uid}");
+        Debug.Log($"user data created ({data.name}) ({data.uid})");
 
         return graph.CreateOrGetNode(data);
     }
@@ -286,7 +313,7 @@ public class ReadAsanaProject : MonoBehaviour
         NodeData data = new NodeData();
         data.name = tag.name;
         data.type = "tag";
-        data.uid = tag.gid;
+        data.uid = tag.gid; 
 
         //Debug.Log($"data created {data.name}  {data.uid}");
 
@@ -386,13 +413,13 @@ public class AsanaTask
         }
         if (tags.Length > 0)
         {
-            string tagString = "tags: ";
+            string tagString = "tags:";
+            
+            foreach (AsanaTag tag in tags)
             {
-                foreach (AsanaTag tag in tags)
-                {
-                    tagString = tagString + tag.name; 
-                }
+                tagString = tagString + tag.name; 
             }
+            
             Debug.Log(tagString);
         }
         if (subtasks.Length > 0)
@@ -412,7 +439,7 @@ public class AsanaTask
 }
 
 [System.Serializable]
-public class AsanaUser // ? assignee?
+public class AsanaUser 
 {
     public string gid;
     public string name;

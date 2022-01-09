@@ -19,6 +19,7 @@ public class NodeData
     public DateTime due_on;
     public List<string> tags;
 
+    [HideInInspector]
     public List<EdgeData> edgeDataList = new List<EdgeData>();
 
     public NodeData(string Uid = null, string Name = null, string Type = null, long due_date_as_TICKS = -23, string Description=null, List<string> Tags = null)
@@ -33,7 +34,7 @@ public class NodeData
 
     public override string ToString()
     {
-        return $" {type} { name}  { due_on.ToShortDateString()}";
+        return $" {type} { name}";
     }
     public void Print()
     {
@@ -50,23 +51,24 @@ public class NodeData
 public class NodeMono : MonoBehaviour
 {
 
+    public TextPanel namePanel;
+
+
+    public TextPanel tagsPanel;
+    public TextPanel typePanel;
+    public TextPanel descriptionPanel;
+    public TextPanel datePanel;
+
+
     public NodeData data;
     public List<EdgeMono> edgeMonos;
 
-    public Text nameText;
-    public Text tagsText;
-    public Text typeText;
-    public Text descriptionText;
-    public Text dateText;
 
-    // panels for highlighting specific texts
-    public Image namePanel;
-    public Image typePanel;
-    // more panels ?
+
 
     public Collider nodeCollider;
     public Transform visibleNode;
-    public RectTransform labelPanelRect;
+    public RectTransform mainLayoutRect;
 
     public Color defaultPanelColor;
     public Color defaultTextColor;
@@ -77,16 +79,17 @@ public class NodeMono : MonoBehaviour
     public Color discretePanelColor;
     public Color discreteTextColor;
 
-    public float labelWidth
+    
+    public float layoutWidth
     {
-        get { return labelPanelRect.GetWidth(); }
-        set { labelPanelRect.sizeDelta = new Vector2(value, labelHeight); }
+        get { return mainLayoutRect.GetWidth(); }
+        set { mainLayoutRect.sizeDelta = new Vector2(value, layoutHeight); }
     }
 
-    public float labelHeight
+    public float layoutHeight
     {
-        get { return labelPanelRect.GetHeight(); }
-        set { labelPanelRect.sizeDelta = new Vector2(labelWidth, value); }
+        get { return mainLayoutRect.GetHeight(); }
+        set { mainLayoutRect.sizeDelta = new Vector2(layoutWidth, value); }
     }
 
     //Properties for easy access
@@ -112,100 +115,106 @@ public class NodeMono : MonoBehaviour
     }
 
 
-    
-
     [ExposeMethodInEditor]
-    void HighlightNamePanel()
+    public void PrintEdges()
     {
-        HighlightPanel(namePanel);
-    }
-
-    [ExposeMethodInEditor]
-    void UnHighlightNamePanel()
-    {
-        ResetPanelColors(namePanel);
-    }
-
-    void DeEmphasizePanel(Image panel)
-    {
-        Text text = panel.GetComponentInChildren<Text>();
-        SetPanelColors(panel, discretePanelColor, text, discreteTextColor);
-    }
-    
-    void ResetPanelColors(Image panel)
-    {
-        Text text = panel.GetComponentInChildren<Text>();
-        SetPanelColors(panel, defaultPanelColor, text, defaultTextColor);
-
-    }
-
-    void HighlightPanel(Image panel)
-    {
-        Text text = panel.GetComponentInChildren<Text>();
-        SetPanelColors(panel, highlightedPanelColor, text, highlightedTextColor);
+        edgeMonos.Print();
     }
 
 
-    void SetPanelColors(Image panel, Color panelColor, Text text, Color textColor)
+    public void AddEdge(EdgeMono edgeMono)
     {
-        panel.color = panelColor;
-        text.color = textColor;
-        Debug.Log(panel.name + " " + panel.color);
-        Debug.Log(text.name + " " + text.color);
+        Debug.Log($"attempting to add edge to list on node {this.name}");
+
+        if (edgeMono.GetOtherNode(this)) // null if edge does not remember this node
+        {
+            edgeMonos.Add(edgeMono);
+            edgeMonos.Print($"edgemonos on {this.name}");
+
+            //data.edgeDataList.Add(edgeMono.data);
+            //data.edgeDataList.Print($"edgeDataList on { this.name}");
+        }
+
     }
 
-
-    void Start()
+    void Awake()
     {
 
         edgeMonos = new List<EdgeMono>();
+
+    }
+
+    private void OnEnable()
+    {
+        foreach (EdgeMono edge in edgeMonos)
+        {
+            Debug.Log($"showing {edge.name}");
+            edge.isHidden = false;
+        }
+
+    }
+
+    private void OnDisable()
+    {
+        foreach (EdgeMono edge in edgeMonos)
+        {
+            if(edge != null)
+            {
+                Debug.Log($"hiding {edge.name}");
+                edge.isHidden = true;
+            }
+
+        }
+
     }
 
 
 
     public void UpdateDisplays()
     {
-        typeText.text = data.type;
-        nameText.text = data.name;
-        descriptionText.text = data.description;
-        dateText.gameObject.SetActive(false);
+        typePanel.textString = data.type;
+        namePanel.textString = data.name;
+        if(data.tags == null) { tagsPanel.textString = ""; }
+        else { tagsPanel.textString = data.tags.ToString(); }
+        descriptionPanel.textString = data.description;
+        datePanel.gameObject.SetActive(false);
 
 
-        UpdateColliderSize();
+        //UpdateColliderSize();
     }
 
 
-    //TODO show incompleted tasks greyed out?
-    public void SetVisibility(float fraction = 1)
-    {
-        if(fraction == 0) { visibleNode.gameObject.SetActive(false);}
-        else
-        {
-            visibleNode.gameObject.SetActive(true);
-            Text[] texts = visibleNode.GetComponentsInChildren<Text>();
-            foreach(Text text in texts)
-            {
-                text.color = new Color(0, 0, 0, fraction);
-            }
-            // TODO alpha of renderer material?
-        }
+    ////TODO show incompleted tasks greyed out?
+    //public void SetVisibility(float fraction = 1)
+    //{
+    //    if(fraction == 0) { visibleNode.gameObject.SetActive(false);}
+    //    else
+    //    {
+    //        visibleNode.gameObject.SetActive(true);
+    //        Text[] texts = visibleNode.GetComponentsInChildren<Text>();
+    //        foreach(Text text in texts)
+    //        {
+    //            text.color = new Color(0, 0, 0, fraction);
+    //        }
+    //        // TODO alpha of renderer material?
+    //    }
 
         
-    }
+    //}
 
 
-    [ExposeMethodInEditor]
-    public void UpdateColliderSize()
-    {
+    //[ExposeMethodInEditor]
+    //public void UpdateColliderSize()
+    //{
         
-        float labelWidth  = labelPanelRect.GetWidth() + 40;
-        float labelHeight = labelPanelRect.GetHeight();
-        float depth = 1f;
+    //    float layoutWidth  = mainLayoutRect.GetWidth() + 40;
+    //    float layoutHeight = mainLayoutRect.GetHeight();
+    //    float depth = 1f;
 
-        nodeCollider.transform.position = labelPanelRect.position;
-        nodeCollider.transform.localScale = new Vector3(labelWidth, labelHeight, depth);
-        // not implemented
-    }
+    //    nodeCollider.transform.position = mainLayoutRect.position;
+    //    nodeCollider.transform.localScale = new Vector3(layoutWidth, layoutHeight, depth);
+    //    // not implemented
+    //}
 
     public void RotateXYToFace(Transform looker)
     {
@@ -240,19 +249,61 @@ public class NodeMono : MonoBehaviour
 
     }
 
+    public void GreyOutVisibleNode()
+    {
+        List<TextPanel> allPanels = new List<TextPanel>() { namePanel, typePanel, tagsPanel, datePanel, descriptionPanel};
+
+        foreach(TextPanel panel in allPanels)
+        {
+            DeEmphasizePanel(panel);
+        }
+
+        //visibleNode.GetComponentInChildren<Renderer>(true).enabled = false;
+        // todo: object for performing operations on node's 3d renderers
+    }
+
+    [ExposeMethodInEditor]
+    void HighlightNamePanel()
+    {
+        HighlightPanel(namePanel);
+    }
+
+    [ExposeMethodInEditor]
+    void UnHighlightNamePanel()
+    {
+        ResetPanelColors(namePanel);
+    }
+
+    void DeEmphasizePanel(TextPanel panel)
+    {
+        panel.ApplyColors(discretePanelColor, discreteTextColor);
+    }
+
+    void ResetPanelColors(TextPanel panel)
+    {
+        panel.ApplyColors(defaultPanelColor, defaultTextColor);
+    }
+
+    void HighlightPanel(TextPanel panel)
+    {
+        panel.ApplyColors(highlightedPanelColor, highlightedTextColor);
+    }
+
+    [ExposeMethodInEditor]
     public void Minimize()
     {
-        typeText.gameObject.SetActive(false);
-        descriptionText.gameObject.SetActive(false);
-        dateText.gameObject.SetActive(false);
+        typePanel.gameObject.SetActive(false);
+        descriptionPanel.gameObject.SetActive(false);
+        datePanel.gameObject.SetActive(false);
 
     }
 
+    [ExposeMethodInEditor]
     public void Maximize()
     {
-        typeText.gameObject.SetActive(true);
-        descriptionText.gameObject.SetActive(true);
-        dateText.gameObject.SetActive(true);
+        typePanel.gameObject.SetActive(true);
+        descriptionPanel.gameObject.SetActive(true);
+        datePanel.gameObject.SetActive(true);
 
     }
 

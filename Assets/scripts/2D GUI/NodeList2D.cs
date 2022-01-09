@@ -98,7 +98,7 @@ public class NodeList2D : MonoBehaviour
                 Vector3 newGlobalPosition = transform.TransformPoint(localPos);
 
                 node.MoveTowards(newGlobalPosition, 50);
-                xPosRelative = xPosRelative + spacing + node.labelPanelRect.GetWidth();
+                xPosRelative = xPosRelative + spacing + node.layoutWidth;
 
             }
         }
@@ -136,7 +136,7 @@ public class NodeList2D : MonoBehaviour
             {
                 Vector3 newGlobalPosition = transform.TransformPoint(new Vector3(0, yPosRelative, 0));
                 node.MoveTowards(newGlobalPosition);
-                yPosRelative = yPosRelative - node.labelPanelRect.GetHeight() + spacing;
+                yPosRelative = yPosRelative - node.layoutHeight + spacing;
 
                 //Debug.Log($"newGlobalPosition = {newGlobalPosition}");
             }

@@ -15,5 +15,4 @@ public class TemplateBase : MonoBehaviour
     // all instantiation could be done here instead of in graph
 
 
-
 }

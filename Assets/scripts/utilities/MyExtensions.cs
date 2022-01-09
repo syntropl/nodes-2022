@@ -197,6 +197,16 @@ namespace ExtentionMethods
 
             return new Color(r, g, b, a);
         }
+
+        public static string ToString(this string[] thisStringArray)
+        {
+            string output = "";
+            foreach(string str in thisStringArray)
+            {
+                output = output + ", " + str;
+            }
+            return output;
+        }
     }
 }
 

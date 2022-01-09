@@ -15,21 +15,21 @@ public class ListingNode : NodeMono
         set
         {
             float newX;
-            float y = labelPanelRect.localPosition.y;
-            float z = labelPanelRect.localPosition.z;
+            float y = mainLayoutRect.localPosition.y;
+            float z = mainLayoutRect.localPosition.z;
             
 
             if (value == true)
             {
-                newX = -1 * labelWidth;
+                newX = -1 * layoutWidth;
                 Vector3 newPosition = new Vector3(newX, y, z);
-                labelPanelRect.localPosition = newPosition;
+                mainLayoutRect.localPosition = newPosition;
             }
             else
             {
                 newX = GetComponentInChildren<Canvas>().GetComponent<RectTransform>().GetWidth()/2;
                 Vector3 newPosition = new Vector3(newX, y, z);
-                labelPanelRect.localPosition = newPosition;
+                mainLayoutRect.localPosition = newPosition;
 
             }
                 _labelsShiftedLeft = value;
@@ -129,7 +129,7 @@ public class ListingNode : NodeMono
                 Vector3 newGlobalPosition = transform.TransformPoint(localPos);
 
                 node.MoveTowards(newGlobalPosition, 50);
-                xPosRelative = xPosRelative + childrenSpacing + node.labelPanelRect.GetWidth();
+                xPosRelative = xPosRelative + childrenSpacing + node.mainLayoutRect.GetWidth();
 
             }
         }
