@@ -1,6 +1,6 @@
 {
   "data" : [ {
-    "gid" : "1201622457564560",
+    "gid" : "1201622457585672",
     "assignee" : {
       "gid" : "6120693648102",
       "name" : "marek_syntro_pl",
@@ -14,7 +14,7 @@
     },
     "completed" : false,
     "completed_at" : null,
-    "created_at" : "2022-01-06T00:37:20.293Z",
+    "created_at" : "2022-01-06T00:37:21.980Z",
     "due_at" : null,
     "due_on" : "2022-01-09",
     "followers" : [ {
@@ -38,7 +38,131 @@
         "resource_type" : "section"
       }
     } ],
-    "modified_at" : "2022-01-08T23:04:10.379Z",
+    "modified_at" : "2022-01-11T00:53:11.317Z",
+    "name" : "mirror node",
+    "notes" : "the idea is original and mirrors negotiate who has which edges hidden\nwhere is it decided?\nand how exactly?\n\nedges to other nodes are not duplicated. original is substituted by mirror in some edges.\nnodeData on mirrors must be pointers instead of copies",
+    "num_hearts" : 0,
+    "num_likes" : 0,
+    "parent" : null,
+    "permalink_url" : "https://app.asana.com/0/1201622386926277/1201622457585672",
+    "projects" : [ {
+      "gid" : "1201622386926277",
+      "name" : "NODES 2022",
+      "resource_type" : "project"
+    } ],
+    "resource_type" : "task",
+    "start_at" : null,
+    "start_on" : null,
+    "subtasks" : [ {
+      "gid" : "1201637784963888",
+      "assignee" : null,
+      "assignee_status" : "upcoming",
+      "completed" : false,
+      "completed_at" : null,
+      "created_at" : "2022-01-11T00:53:11.014Z",
+      "due_at" : null,
+      "due_on" : null,
+      "followers" : [ {
+        "gid" : "6120693648102",
+        "name" : "marek_syntro_pl",
+        "resource_type" : "user"
+      } ],
+      "hearted" : false,
+      "hearts" : [ ],
+      "liked" : false,
+      "likes" : [ ],
+      "memberships" : [ ],
+      "modified_at" : "2022-01-11T00:53:17.404Z",
+      "name" : "nodeData on mirrors must be pointers instead of copies",
+      "notes" : "",
+      "num_hearts" : 0,
+      "num_likes" : 0,
+      "parent" : {
+        "gid" : "1201622457585672",
+        "name" : "mirror node",
+        "resource_type" : "task"
+      },
+      "permalink_url" : "https://app.asana.com/0/1201637784963888/1201637784963888",
+      "projects" : [ ],
+      "resource_type" : "task",
+      "start_at" : null,
+      "start_on" : null,
+      "subtasks" : [ ],
+      "tags" : [ {
+        "gid" : "1201630305909521",
+        "name" : "data",
+        "resource_type" : "tag"
+      } ],
+      "resource_subtype" : "default_task",
+      "workspace" : {
+        "gid" : "1201616985016651",
+        "name" : "syntro.pl",
+        "resource_type" : "workspace"
+      }
+    } ],
+    "tags" : [ {
+      "gid" : "1201630305909512",
+      "name" : "class",
+      "resource_type" : "tag"
+    }, {
+      "gid" : "1201630305909521",
+      "name" : "data",
+      "resource_type" : "tag"
+    }, {
+      "gid" : "1201631861011877",
+      "name" : "camera",
+      "resource_type" : "tag"
+    }, {
+      "gid" : "1201631861011888",
+      "name" : "3d",
+      "resource_type" : "tag"
+    } ],
+    "resource_subtype" : "default_task",
+    "workspace" : {
+      "gid" : "1201616985016651",
+      "name" : "syntro.pl",
+      "resource_type" : "workspace"
+    }
+  }, {
+    "gid" : "1201622457564560",
+    "assignee" : {
+      "gid" : "6120693648102",
+      "name" : "marek_syntro_pl",
+      "resource_type" : "user"
+    },
+    "assignee_status" : "inbox",
+    "assignee_section" : {
+      "gid" : "1201622386868023",
+      "name" : "Recently assigned",
+      "resource_type" : "section"
+    },
+    "completed" : false,
+    "completed_at" : null,
+    "created_at" : "2022-01-06T00:37:20.293Z",
+    "due_at" : null,
+    "due_on" : "2022-01-10",
+    "followers" : [ {
+      "gid" : "6120693648102",
+      "name" : "marek_syntro_pl",
+      "resource_type" : "user"
+    } ],
+    "hearted" : false,
+    "hearts" : [ ],
+    "liked" : false,
+    "likes" : [ ],
+    "memberships" : [ {
+      "project" : {
+        "gid" : "1201622386926277",
+        "name" : "NODES 2022",
+        "resource_type" : "project"
+      },
+      "section" : {
+        "gid" : "1201631861011880",
+        "name" : "NOW",
+        "resource_type" : "section"
+      }
+    } ],
+    "modified_at" : "2022-01-11T00:53:42.259Z",
     "name" : "NodeList (insteadOf DayList)",
     "notes" : "SortByDate(bool ascending)\nSortBy(string nodeType, List<string> showFirst)",
     "num_hearts" : 0,
@@ -135,8 +259,8 @@
     "gid" : "1201622457753553",
     "assignee" : null,
     "assignee_status" : "upcoming",
-    "completed" : false,
-    "completed_at" : null,
+    "completed" : true,
+    "completed_at" : "2022-01-09T23:19:27.102Z",
     "created_at" : "2022-01-06T00:37:36.464Z",
     "due_at" : null,
     "due_on" : "2022-01-08",
@@ -161,9 +285,9 @@
         "resource_type" : "section"
       }
     } ],
-    "modified_at" : "2022-01-09T14:50:51.737Z",
+    "modified_at" : "2022-01-09T23:19:27.274Z",
     "name" : "hiding links ",
-    "notes" : "(EdgeMono.IsVisible=false)",
+    "notes" : "",
     "num_hearts" : 0,
     "num_likes" : 0,
     "parent" : null,
@@ -189,23 +313,14 @@
       "resource_type" : "workspace"
     }
   }, {
-    "gid" : "1201622457585672",
-    "assignee" : {
-      "gid" : "6120693648102",
-      "name" : "marek_syntro_pl",
-      "resource_type" : "user"
-    },
-    "assignee_status" : "inbox",
-    "assignee_section" : {
-      "gid" : "1201622386868023",
-      "name" : "Recently assigned",
-      "resource_type" : "section"
-    },
+    "gid" : "1201634306116571",
+    "assignee" : null,
+    "assignee_status" : "upcoming",
     "completed" : false,
     "completed_at" : null,
-    "created_at" : "2022-01-06T00:37:21.980Z",
+    "created_at" : "2022-01-09T23:21:34.465Z",
     "due_at" : null,
-    "due_on" : "2022-01-09",
+    "due_on" : null,
     "followers" : [ {
       "gid" : "6120693648102",
       "name" : "marek_syntro_pl",
@@ -227,13 +342,13 @@
         "resource_type" : "section"
       }
     } ],
-    "modified_at" : "2022-01-08T23:04:10.622Z",
-    "name" : "mirror node",
-    "notes" : "",
+    "modified_at" : "2022-01-09T23:25:21.552Z",
+    "name" : "getting all nodes within a region (or collider?)",
+    "notes" : "purposes\n    deciding wether all connect to a common node (to hide the connections / highlight the node)\n    deciding wether to create a mirror node or pull one that's in view\n",
     "num_hearts" : 0,
     "num_likes" : 0,
     "parent" : null,
-    "permalink_url" : "https://app.asana.com/0/1201622386926277/1201622457585672",
+    "permalink_url" : "https://app.asana.com/0/1201622386926277/1201634306116571",
     "projects" : [ {
       "gid" : "1201622386926277",
       "name" : "NODES 2022",
@@ -243,23 +358,7 @@
     "start_at" : null,
     "start_on" : null,
     "subtasks" : [ ],
-    "tags" : [ {
-      "gid" : "1201630305909512",
-      "name" : "class",
-      "resource_type" : "tag"
-    }, {
-      "gid" : "1201630305909521",
-      "name" : "data",
-      "resource_type" : "tag"
-    }, {
-      "gid" : "1201631861011877",
-      "name" : "camera",
-      "resource_type" : "tag"
-    }, {
-      "gid" : "1201631861011888",
-      "name" : "3d",
-      "resource_type" : "tag"
-    } ],
+    "tags" : [ ],
     "resource_subtype" : "default_task",
     "workspace" : {
       "gid" : "1201616985016651",
@@ -292,7 +391,7 @@
         "resource_type" : "section"
       }
     } ],
-    "modified_at" : "2022-01-08T22:52:10.381Z",
+    "modified_at" : "2022-01-09T23:25:19.244Z",
     "name" : "pulling all  directly connected nodes into camera view",
     "notes" : "",
     "num_hearts" : 0,
@@ -797,7 +896,7 @@
         "resource_type" : "section"
       }
     } ],
-    "modified_at" : "2022-01-08T22:56:04.839Z",
+    "modified_at" : "2022-01-09T23:26:05.663Z",
     "name" : "node name panel and text do not resize when multiline",
     "notes" : "",
     "num_hearts" : 0,
@@ -813,7 +912,11 @@
     "start_at" : null,
     "start_on" : null,
     "subtasks" : [ ],
-    "tags" : [ ],
+    "tags" : [ {
+      "gid" : "1201634306116575",
+      "name" : "bug",
+      "resource_type" : "tag"
+    } ],
     "resource_subtype" : "default_task",
     "workspace" : {
       "gid" : "1201616985016651",
@@ -824,11 +927,11 @@
     "gid" : "1201622515692760",
     "assignee" : null,
     "assignee_status" : "upcoming",
-    "completed" : false,
-    "completed_at" : null,
+    "completed" : true,
+    "completed_at" : "2022-01-09T16:04:12.053Z",
     "created_at" : "2022-01-06T19:15:31.224Z",
     "due_at" : null,
-    "due_on" : "2022-01-10",
+    "due_on" : null,
     "followers" : [ {
       "gid" : "6120693648102",
       "name" : "marek_syntro_pl",
@@ -850,7 +953,7 @@
         "resource_type" : "section"
       }
     } ],
-    "modified_at" : "2022-01-08T22:52:25.317Z",
+    "modified_at" : "2022-01-09T23:28:09.820Z",
     "name" : "replacing mention urls with names not working",
     "notes" : "https://app.asana.com/0/0/1201622516661327",
     "num_hearts" : 0,
@@ -877,8 +980,8 @@
     "gid" : "1201622457865519",
     "assignee" : null,
     "assignee_status" : "upcoming",
-    "completed" : false,
-    "completed_at" : null,
+    "completed" : true,
+    "completed_at" : "2022-01-09T23:25:25.475Z",
     "created_at" : "2022-01-06T00:37:44.123Z",
     "due_at" : null,
     "due_on" : null,
@@ -899,7 +1002,7 @@
         "resource_type" : "section"
       }
     } ],
-    "modified_at" : "2022-01-08T22:53:49.699Z",
+    "modified_at" : "2022-01-09T23:25:25.647Z",
     "name" : "switch lerp to smoothdamp ",
     "notes" : "ExtentionMethods.MoveTowards(...)",
     "num_hearts" : 0,
@@ -952,7 +1055,7 @@
         "resource_type" : "section"
       }
     } ],
-    "modified_at" : "2022-01-06T00:37:44.894Z",
+    "modified_at" : "2022-01-09T23:25:42.107Z",
     "name" : "what happens if there is a section in subtasks?",
     "notes" : "subtasks are members of section\nsection is how related to task?",
     "num_hearts" : 0,
@@ -968,7 +1071,11 @@
     "start_at" : null,
     "start_on" : null,
     "subtasks" : [ ],
-    "tags" : [ ],
+    "tags" : [ {
+      "gid" : "1201634306116574",
+      "name" : "bug",
+      "resource_type" : "tag"
+    } ],
     "resource_subtype" : "default_task",
     "workspace" : {
       "gid" : "1201616985016651",
@@ -1005,7 +1112,7 @@
         "resource_type" : "section"
       }
     } ],
-    "modified_at" : "2022-01-07T20:03:58.894Z",
+    "modified_at" : "2022-01-09T23:25:47.719Z",
     "name" : "subtask's tag is not in graph",
     "notes" : "(see task: https://app.asana.com/0/0/1201622516643292)",
     "num_hearts" : 0,
@@ -1021,7 +1128,11 @@
     "start_at" : null,
     "start_on" : null,
     "subtasks" : [ ],
-    "tags" : [ ],
+    "tags" : [ {
+      "gid" : "1201634306116575",
+      "name" : "bug",
+      "resource_type" : "tag"
+    } ],
     "resource_subtype" : "default_task",
     "workspace" : {
       "gid" : "1201616985016651",
@@ -1058,9 +1169,9 @@
         "resource_type" : "section"
       }
     } ],
-    "modified_at" : "2022-01-07T19:47:57.996Z",
+    "modified_at" : "2022-01-09T23:20:23.644Z",
     "name" : "search and highlight ",
-    "notes" : "",
+    "notes" : "should be  be done after https://app.asana.com/0/0/1201622388604525",
     "num_hearts" : 0,
     "num_likes" : 0,
     "parent" : null,
@@ -1524,6 +1635,59 @@
     "num_likes" : 0,
     "parent" : null,
     "permalink_url" : "https://app.asana.com/0/1201622386926277/1201622457746909",
+    "projects" : [ {
+      "gid" : "1201622386926277",
+      "name" : "NODES 2022",
+      "resource_type" : "project"
+    } ],
+    "resource_type" : "task",
+    "start_at" : null,
+    "start_on" : null,
+    "subtasks" : [ ],
+    "tags" : [ ],
+    "resource_subtype" : "default_task",
+    "workspace" : {
+      "gid" : "1201616985016651",
+      "name" : "syntro.pl",
+      "resource_type" : "workspace"
+    }
+  }, {
+    "gid" : "1201634306116576",
+    "assignee" : null,
+    "assignee_status" : "upcoming",
+    "completed" : false,
+    "completed_at" : null,
+    "created_at" : "2022-01-09T23:28:58.030Z",
+    "due_at" : null,
+    "due_on" : null,
+    "followers" : [ {
+      "gid" : "6120693648102",
+      "name" : "marek_syntro_pl",
+      "resource_type" : "user"
+    } ],
+    "hearted" : false,
+    "hearts" : [ ],
+    "liked" : false,
+    "likes" : [ ],
+    "memberships" : [ {
+      "project" : {
+        "gid" : "1201622386926277",
+        "name" : "NODES 2022",
+        "resource_type" : "project"
+      },
+      "section" : {
+        "gid" : "1201622515692749",
+        "name" : "ideas",
+        "resource_type" : "section"
+      }
+    } ],
+    "modified_at" : "2022-01-09T23:29:25.139Z",
+    "name" : "creating paralel timeline",
+    "notes" : "for completed tasks or other projects",
+    "num_hearts" : 0,
+    "num_likes" : 0,
+    "parent" : null,
+    "permalink_url" : "https://app.asana.com/0/1201622386926277/1201634306116576",
     "projects" : [ {
       "gid" : "1201622386926277",
       "name" : "NODES 2022",

@@ -15,6 +15,7 @@ public class Graph : MonoBehaviour
 
     public Dictionary<string, NodeMono> nodesByUID;
     public Dictionary<string, EdgeMono> edgesByUID;
+    public Dictionary<string, List<MirrorNode>> mirrorsByUID;
 
     public Transform edgesContainer;
     public Transform nodesContainer;
@@ -25,6 +26,7 @@ public class Graph : MonoBehaviour
     public GameObject nodeFormTemplate;
     public GameObject edgeTemplate;
     public GameObject nodeListTemplate;
+    public GameObject mirrorNodeTemplate;
 
     public Vector3 newNodesListPosition = new Vector3(-425, 290, 380);
     public Vector3 newNodesListRotation = new Vector3(0, -66, 0);
@@ -40,6 +42,7 @@ public class Graph : MonoBehaviour
     {
         nodesByUID = new Dictionary<string, NodeMono>();
         edgesByUID = new Dictionary<string, EdgeMono>();
+        mirrorsByUID = new Dictionary<string, List<MirrorNode>>();
 
         createdNodes = new List<NodeMono>();
         newNodesList2D = CreateNewNodeList("new nodes", new Vector3(-100, -200, 200), null, 1, nodesContainer);
@@ -47,6 +50,7 @@ public class Graph : MonoBehaviour
         newNodesList2D.transform.localEulerAngles = newNodesListRotation;
 
         Debug.Log(newNodesList2D);
+
         nodeTemplate.gameObject.SetActive(false);
         nodeFormTemplate.gameObject.SetActive(false);
         //
@@ -59,15 +63,16 @@ public class Graph : MonoBehaviour
 
         //RotateAllYTowardsCamera();
 
-        if (Time.frameCount == 100)
+        if (Time.frameCount == 50)
         {
             // LATE START DEBUG
 
-
-            TimelineTest();
+            MirrorTest();
+            //TimelineTest();
 
 
         }
+
     }
 
     [ExposeMethodInEditor]
@@ -85,6 +90,8 @@ public class Graph : MonoBehaviour
         inactiveNodes.Print();
     }
 
+
+ 
 
 
     [ExposeMethodInEditor]
@@ -124,7 +131,7 @@ public class Graph : MonoBehaviour
         edgeMono.Set(node0, verb, node1, isDirectional, uid); 
         edgeMono.data = new EdgeData(new NodeData[]{ node0.data, node1.data}, verb, isDirectional,uid);
 
-        // TODO check for existing edge like this
+        // TODO check for existing edge like this (see: mirrorNode.FindSimilarEdges)
         // at node0 looka at every edge and for each
         //          if node on other end is node1
         //              if verb is the same
@@ -135,6 +142,9 @@ public class Graph : MonoBehaviour
 
         return edgeMono;
     }
+
+
+
 
 
     //public EdgeMono CreateEmptyEdge(NodeMono node0, NodeMono node1)
@@ -157,6 +167,9 @@ public class Graph : MonoBehaviour
     }
 
 
+
+
+   
     public NodeMono CreateOrGetNode(NodeData data, NodeList2D location = null) // rename to CreateOrGet
     {
 
@@ -175,7 +188,6 @@ public class Graph : MonoBehaviour
             data.uid = MakeNewUID();
         }
         
-
         // instantiate and position new empty node
         if(location == null) { location = newNodesList2D; }
         GameObject newGo = Instantiate(nodeTemplate, location.transform);
@@ -185,13 +197,7 @@ public class Graph : MonoBehaviour
         newNode.data = data;
         newNode.UpdateDisplays();
 
-        //newGo.transform.localPosition = newNodePlane.offerVacantLocalPosition(newNode);
-        //newGo.transform.localRotation = Quaternion.identity;
         location.AdoptNode(newNode);
-
-        //TODO created nodes should be completely substituted by nodesByUID
-      //  createdNodes.Add(newNode);
-
 
         nodesByUID.Add(newNode.data.uid, newNode);
 
@@ -220,7 +226,22 @@ public class Graph : MonoBehaviour
         return timeline;
     }
 
+    public string MakeNewUID(string readablePart = "")
+    {
+        string proposition = null;
+        bool uniquenessConfirmed = false;
 
+        while (!uniquenessConfirmed)
+        {
+            proposition = GenrateRandomNumberString(15) + readablePart;
+            uniquenessConfirmed = isThisIDunique(proposition);
+        }
+        return proposition;
+    }
+
+    /// <summary>
+    /// TODO this will be probably replaced by ListingNode 
+    /// 
     public NodeList2D CreateNewNodeList(string label, Vector3 globalPosition, List<NodeMono> nodes=null, int layout = 1, Transform parent = null, bool labelsShiftedLeft = false)
     {
         if (parent == null) { parent = this.transform; }
@@ -243,6 +264,8 @@ public class Graph : MonoBehaviour
         return nodeList;
     }
 
+
+    //TODO this should be in mono handling gui
     public void showNewNodeForm()
     {
 
@@ -251,10 +274,7 @@ public class Graph : MonoBehaviour
         form.MoveTowards(camera.hudPlane.transform.position);
         form.ObjectLookAt(camera.transform.position);
         form.transform.parent = camera.hudPlane.transform;
-
-
-        
-       
+   
     }
 
     private NodeForm makeNodeForm(Vector3 globalPosition)
@@ -271,39 +291,126 @@ public class Graph : MonoBehaviour
     }
 
 
+    /// /// DEALING WITH MIRRORS
+    /// /// DEALING WITH MIRRORS
+    /// /// DEALING WITH MIRRORS 
+
+    public EdgeMono LinkMirrors(NodeMono mirror0, NodeMono mirror1)
+    {
+        GameObject newGo = Instantiate(edgeTemplate, edgesContainer);
+        newGo.SetActive(true);
+
+        string verb = "reflects";
+        newGo.name = $"-[{verb}]-";
+        if (newGo.GetComponent<EdgeMono>() == null) { Debug.Log("New Edge is missing an EdgeMono component"); }
+        EdgeMono edgeMono = newGo.GetComponent<EdgeMono>();
+        string uid = MakeNewUID($"({verb})");
+
+        edgeMono.Set(mirror0, verb, mirror1, false, uid);
+        edgeMono.data = new EdgeData(new NodeData[] { mirror0.data, mirror1.data }, verb, false, uid);
+
+        // TODO check for existing edge like this
+        // at node0 looka at every edge and for each
+        //          if node on other end is node1
+        //              if verb is the same
+        //                  show warning, compare two verbs, ask for confirmation;
+
+
+        //TODO maybye add to dict mirrorEdgesByUID?
+        //edgesByUID.Add(uid, edgeMono);
+
+        return edgeMono;
+    }
+
+    public MirrorNode CreateMirror(NodeMono original)
+    {
+        GameObject newGo = Instantiate(mirrorNodeTemplate, newNodesList2D.transform);
+        newGo.name = "○○ mirror: " + original.data.name;
+        newGo.SetActive(true);
+        MirrorNode newMirror = newGo.AddOrGetComponent<MirrorNode>();
+        //TODO use ref data instead of copying it
+        newMirror.data = original.data;
+
+
+        newMirror.original = original;
+        newMirror.mirrorID = MakeNewUID();
+
+        string uid = original.data.uid;
+
+        // if this is first mirror with this uid, create new key value pair for it
+        if (!mirrorsByUID.ContainsKey(uid))
+        {
+            List<MirrorNode> emptyList = new List<MirrorNode>() { newMirror };
+            mirrorsByUID.Add(uid, emptyList);
+        }
+        // find kvp and add new mirror to the (list) value side;
+        mirrorsByUID[uid].Add(newMirror);
+        original.mirrorsByMirrorID.Add(newMirror.mirrorID, newMirror);
+        EdgeMono edgeToOriginal = LinkTwoNodes(newMirror, "mirrors", original, true);
+
+        newMirror.UpdateDisplays();
+        newMirror.UpdateTraversableEdges();
+
+
+        // linkt to all other mirrors
+        foreach(var kvp in original.mirrorsByMirrorID)
+        {
+            MirrorNode mirrorToLink = kvp.Value;
+            string id = mirrorToLink.mirrorID;
+            bool isNotThis = id != newMirror.mirrorID;
+            bool isNotLinkedToThis = !newMirror.mirrorsByMirrorID.ContainsKey(id);
+
+            if(isNotThis && isNotLinkedToThis)
+            {
+                EdgeMono mirrorBridge = LinkMirrors(newMirror, mirrorToLink);
+            }
+
+        }
+        
+        Debug.Log($"created new mirror { newMirror.mirrorID}");
+        return newMirror;
+
+    }
+
+    [ExposeMethodInEditor]
+    public void MirrorTest()
+    {
+
+        // Decativate all nodes except marek
+
+        //foreach (var kvp in nodesByUID)
+        //{
+        //    NodeMono node = kvp.Value;
+        //    if (node.data.uid != "6120693648102")
+        //    {
+        //        node.gameObject.SetActive(false);
+        //    }
+
+        //}
+        //    MirrorNode marek = CreateMirror(GetNodeByUID("6120693648102"));
+        //marek.MoveTowards(new Vector3(800, 800, -200));
+
+        NodeMono originalMarek = GetNodeByUID("6120693648102");
+
+        MirrorNode marek2 = CreateMirror(originalMarek);
+
+        marek2.MoveTowards(new Vector3(800, 500, -200));
+
+        NodeList2D newlist = CreateNewNodeList("mirrored links", new Vector3(800, 500, 400), null, 1, originalMarek.transform);
+        originalMarek.MirrorAllLinkedNodes(newlist);
+        //marek2.TakeOverEdge(marek2.original.edgeMonos[0]);
+        
+    }
+
+    // GETTING NODES AND EDGES
+
     public NodeMono GetNodeByUID(string uid)
     {
-     
-
-
         if (nodesByUID.ContainsKey(uid))
         {
             return nodesByUID[uid];
         }
-        else { return null; }
-
-
-        //List<NodeMono> matches = new List<NodeMono>();
-
-        //    //foreach(NodeMono node in createdNodes)
-        //    //{
-        //    //    if(node.data.uid == uid)
-        //    //    {
-        //    //        matches.Add(node);             
-        //    //    }
-        //    //}
-
-        //    if (matches.Count == 0)
-        //    {
-        //        return null;
-        //    }
-        //    if (matches.Count > 1)
-        //    {
-        //        Debug.LogError($"somehow ... id {uid} appears in {matches.Count} nodes");
-        //        matches.Print();
-
-        //    }
-        //    return matches[0];   
+        else { return null; } 
      }
 
     public EdgeMono GetEdgeByUID(string uid)
@@ -339,45 +446,6 @@ public class Graph : MonoBehaviour
             }
         }
         return matches.ToArray();
-    }
-
-
-    //public EdgeMono GetEdgeByUID(string uid)
-    //{
-    //    List<EdgeMono> matches = new List<EdgeMono>();
-
-    //    foreach(EdgeMono edge in createdEdges)
-    //    {
-    //        if(edge.data.uid == uid)
-    //        {
-    //            matches.Add(edge);
-    //        }
-    //    }
-    //    if (matches.Count == 0)
-    //    {
-    //        return null;
-    //    }
-    //    if (matches.Count > 1)
-    //    {
-    //        Debug.LogError($"somehow ... id {uid} appears in {matches.Count} edges");
-    //        matches.Print();
-    //    }
-
-    //    return matches[0];
-
-    //}
-
-    public string MakeNewUID(string readablePart = "")
-    {
-        string proposition = null;
-        bool uniquenessConfirmed = false;
-
-        while (!uniquenessConfirmed)
-        {
-            proposition =  GenrateRandomNumberString(15) + readablePart;
-            uniquenessConfirmed = isThisIDunique(proposition);            
-        }
-        return proposition;
     }
 
 
@@ -464,6 +532,31 @@ public class Graph : MonoBehaviour
         }
 
 
+    }
+
+    
+
+    public List<NodeMono> AllNodeMonosLinkedTo(NodeMono origin)
+    {
+        List<NodeMono> allLinked = new List<NodeMono>();
+        foreach(string originsEdgeID in origin.data.edgeDataReferences)
+        {
+            NodeMono linkedMono = edgesByUID[originsEdgeID].GetOtherNode(origin);
+            allLinked.Add(linkedMono);
+        }
+        return allLinked;
+    }
+
+    public List<NodeData> AllNodeDatasLinkedTo(NodeData origin)
+    {
+
+        List<NodeData> allLinked = new List<NodeData>();
+        foreach (string originsEdgeID in origin.edgeDataReferences)
+        {
+            NodeData linkedData = edgesByUID[originsEdgeID].data.OtherThan(origin);
+            allLinked.Add(linkedData);
+        }
+        return allLinked;
     }
 
 }

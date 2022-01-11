@@ -179,13 +179,9 @@ public class ReadAsanaProject : MonoBehaviour
                 if (task.notes.Contains(asanaLinkRoot))
                 {
                     int start = task.notes.IndexOf(asanaLinkRoot) + asanaLinkRoot.Length;
-                    Debug.Log($"{task.name} task.notes: {task.notes}");
-
                     string mentionUID = task.notes.Substring(start, 16); // if asana ever changes length of gids this will break;
                     string[] protoEdge = { mentionUID, "is referenced by", taskNode.data.uid };
-
                     mentions.Add(protoEdge);
-
                 }
             }
 
@@ -193,7 +189,7 @@ public class ReadAsanaProject : MonoBehaviour
             {
                 // INSTANTIATE USER as node
 
-                Debug.Log($"instantiating user -  {task.assignee.name}");
+          
                 NodeMono userNode = InstantiateUser(task.assignee);
                 graph.LinkTwoNodes(taskNode, "is assigned to:", userNode, true);
             }
@@ -236,20 +232,11 @@ public class ReadAsanaProject : MonoBehaviour
 
                 if (callerNode != null)
                 {
-                    Debug.Log($"<color=blue>!!! {callerNode.name}</color> mentions something");
                     string mentionURL = @"https://app.asana.com/0/0/" + mention[0];
 
 
                     string correctedDescription = callerNode.data.description.Replace(mentionURL,$"// go to:{mentionedNode.data.name}//");
-
-                    Debug.Log($"mentionURL: {mentionURL}");
-                    Debug.Log($"mentionedNode.data.name and uid: {mentionedNode.data.name} {mentionedNode.data.uid}");
-
-                    Debug.Log($"callerNode.data.name and uid: {callerNode.data.name} {callerNode.data.uid}");
-                    Debug.Log($"callerNode.data.description: {callerNode.data.description}");
                     callerNode.data.description = correctedDescription;
-                    Debug.Log($"after correction task description is : {callerNode.data.description}");
-
                     //TODO  make it bold?
                     callerNode.UpdateDisplays();
 
@@ -303,7 +290,7 @@ public class ReadAsanaProject : MonoBehaviour
         data.type = "Person";
         data.uid = user.gid;
 
-        Debug.Log($"user data created ({data.name}) ({data.uid})");
+    //    Debug.Log($"user data created ({data.name}) ({data.uid})");
 
         return graph.CreateOrGetNode(data);
     }

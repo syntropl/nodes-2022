@@ -67,6 +67,10 @@ public class EdgeMono : MonoBehaviour
     public float thickness = 0.2f;
     public Transform cylinder;
     public bool isHidden;
+    public Material defaultMaterial;
+    public Material mirrorMaterial;
+    public Material highlightedMaterial;
+
 
     public void Set(NodeMono pairMono0, string verb, NodeMono pairMono1, bool isDirectional, string uid)
     {
@@ -80,25 +84,47 @@ public class EdgeMono : MonoBehaviour
         data.isDirectional = isDirectional;
 
 
-        //foreach(NodeMono node in pairMono)
-        //{
-        //    Debug.Log($"adding edge to nodeMono {node.name}");
-        //    node.edgeMonos.Add(this);
-
-        //    Debug.Log("now edgedata to nodedata");
-        //    data.Print();
-        //  //  node.data.edgeDataList.Add(this.data);
-        //}
-
-       pairMono0.AddEdge(this);
-       pairMono1.AddEdge(this);
-
+        if(verb == "mirrors" || verb == "reflects")
+        {
+            SetStyle("mirror");
+            pairMono0.mirrorBridgesByUID.Add(uid, this);
+            pairMono1.mirrorBridgesByUID.Add(uid, this);
+            Print($"oo  {data.uid}    ");
+        }
+        else
+        {
+            pairMono0.AddEdge(this);
+            pairMono1.AddEdge(this);
+        }
 
     }
 
 
 
+    public bool IsThisSimilarTo(EdgeData comparedEdgeData)
+    {
 
+
+        this.data.ToString();
+        comparedEdgeData.ToString();
+
+        bool isPair0inComparedEdge = data.pair[0].uid == comparedEdgeData.pair[0].uid || data.pair[0].uid == comparedEdgeData.pair[1].uid;
+        bool isPair1inComparedEdge = data.pair[1].uid == comparedEdgeData.pair[0].uid || data.pair[1].uid == comparedEdgeData.pair[1].uid;
+
+        bool arePairUIDsIdentical = isPair0inComparedEdge && isPair1inComparedEdge;
+        bool areVerbsIdentical = this.data.verb == comparedEdgeData.verb;
+
+        if (areVerbsIdentical && arePairUIDsIdentical)
+        {
+            return true;
+        }
+        else
+        {
+
+            return false;
+        }
+
+    }
     
 
     public void UpdateTransform()
@@ -142,8 +168,8 @@ public class EdgeMono : MonoBehaviour
 
     public NodeMono GetOtherNode(NodeMono thisNode)
     {
-        if (thisNode == pairMono[0]) { return pairMono[1]; }
-        else if (thisNode == pairMono[1]) { return pairMono[0]; }
+        if (thisNode.data.uid == pairMono[0].data.uid) { return pairMono[1]; }
+        else if (thisNode.data.uid == pairMono[1].data.uid) { return pairMono[0]; }
         else
             Debug.LogError("Node I'm not connected to just asked me about the other");
         return null;
@@ -181,15 +207,41 @@ public class EdgeMono : MonoBehaviour
         
     }
 
+    public void SetStyle(string styleName)
+    {
+        Renderer rend = cylinder.GetComponent<Renderer>();
+
+        switch(styleName)
+        {
+            case "default":
+                rend.material = defaultMaterial;
+                thickness = .2f;
+                break;
+
+            case "highlighted":
+                rend.material = highlightedMaterial;
+                thickness = .5f;
+                break;
+
+            case "mirror":
+                rend.material = mirrorMaterial;
+                thickness = 1;
+                break;
+
+
+        }
+
+    }
+
     public override string ToString()
     {
         return data.ToString();
     }
 
     [ExposeMethodInEditor]
-    public void Print()
+    public void Print(string label="")
     {
-        Debug.Log(this.ToString());
+        Debug.Log(label + " " + this.ToString());
         //Debug.Log($"{pairMono[0].transform.position} {pairMono[1].transform.position}");
     }
 

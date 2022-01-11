@@ -27,6 +27,13 @@ public class TextPanel : MonoBehaviour
     float textTopMargin= 5;
 
 
+    public void MimicStyle(TextPanel original)
+    {
+        panel.color = original.panel.color;
+        text.color = original.text.color;
+
+    }
+
 
 
     public void ApplyColors(Color panelColor, Color textColor)
